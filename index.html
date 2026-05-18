@@ -269,38 +269,6 @@
     }
 
     /* ===== EMAIL FORM ===== */
-    .waitlist-form {
-      display: flex;
-      gap: 10px;
-      max-width: 460px;
-      margin: 0 auto 44px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .waitlist-input {
-      flex: 1;
-      min-width: 220px;
-      padding: 13px 18px;
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-pill);
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 400;
-      color: var(--text-primary);
-      background: var(--bg-white);
-      outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .waitlist-input:focus {
-      border-color: var(--turquoise);
-      box-shadow: 0 0 0 3px rgba(0,209,178,0.15);
-    }
-
-    .waitlist-input::placeholder {
-      color: var(--text-muted);
-    }
 
     .btn-primary {
       padding: 13px 26px;
@@ -746,25 +714,6 @@
     }
 
     /* ===== SUCCESS MESSAGE ===== */
-    .form-success {
-      display: none;
-      align-items: center;
-      gap: 10px;
-      background: rgba(0,200,83,0.12);
-      border: 1px solid rgba(0,200,83,0.3);
-      border-radius: var(--radius-pill);
-      padding: 12px 22px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #00874a;
-      margin: 0 auto;
-      max-width: 460px;
-      justify-content: center;
-    }
-
-    .form-success.show {
-      display: flex;
-    }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
@@ -811,9 +760,7 @@
 
     @media (max-width: 480px) {
       .navbar-logo-text { font-size: 1.1rem; }
-      .waitlist-form { flex-direction: column; }
-      .waitlist-input { min-width: unset; width: 100%; }
-      .btn-primary { width: 100%; text-align: center; }
+.btn-primary { width: 100%; text-align: center; }
     }
 
     /* ===== FEATURES GRID RESPONSIVE ===== */
@@ -867,39 +814,7 @@
       </div>
     </div>
 
-    <!--
-      EMAIL WAITLIST FORM
-      Replace "REPLACE_WITH_YOUR_ID" in the action URL below with your actual Formspree form ID.
-      Sign up free at https://formspree.io to get a form ID.
-      Example: action="https://formspree.io/f/xwkgpqzb"
-    -->
-    <form
-      id="waitlist-form"
-      class="waitlist-form"
-      action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
-      method="POST"
-      onsubmit="handleSubmit(event)"
-    >
-      <input
-        type="email"
-        name="email"
-        class="waitlist-input"
-        data-placeholder-tr="E-posta adresiniz"
-        data-placeholder-en="Your email address"
-        placeholder="E-posta adresiniz"
-        required
-        aria-label="Email address"
-      />
-      <button type="submit" class="btn-primary">
-        <span data-tr="Beni Bildir" data-en="Notify Me">Beni Bildir</span>
-      </button>
-    </form>
-
-    <div class="form-success" id="form-success" role="alert">
-      ✅ <span data-tr="Harika! Uygulama yayınlandığında sizi bilgilendireceğiz." data-en="Great! We'll notify you when the app launches.">Harika! Uygulama yayınlandığında sizi bilgilendireceğiz.</span>
-    </div>
-
-    <div class="store-buttons" style="margin-top: 28px;">
+    <div class="store-buttons" style="margin-top: 8px;">
       <div class="store-btn" aria-label="App Store - Coming Soon">
         <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
         <div class="store-btn-icon">🍎</div>
@@ -1127,43 +1042,6 @@
       }
     }
 
-    // ── Waitlist form ───────────────────────────────────────────────────────
-    function handleSubmit(e) {
-      var form = document.getElementById('waitlist-form');
-      var successEl = document.getElementById('form-success');
-
-      // If Formspree ID hasn't been replaced, prevent actual submit and show success UI
-      if (form.action.indexOf('REPLACE_WITH_YOUR_ID') !== -1) {
-        e.preventDefault();
-        form.style.display = 'none';
-        successEl.classList.add('show');
-        // Run lang update on the success message too
-        successEl.querySelectorAll('[data-tr]').forEach(function(el) {
-          var text = el.getAttribute('data-' + currentLang);
-          if (text) el.innerHTML = text;
-        });
-        return;
-      }
-
-      // Real Formspree submit — handle async
-      e.preventDefault();
-      var data = new FormData(form);
-      fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(function(res) {
-        if (res.ok) {
-          form.style.display = 'none';
-          successEl.classList.add('show');
-        } else {
-          // On error, fall back to native submit
-          form.submit();
-        }
-      }).catch(function() {
-        form.submit();
-      });
-    }
 
     // ── Intersection Observer for fade-up animations ────────────────────────
     (function() {
