@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>DeutschGo — Almancayı Eğlenceli Öğren | A1-A2</title>
+  <meta name="description" content="DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play'de!" />
+  <meta name="keywords" content="Almanca öğren, Deutsch lernen, A1 A2, flashcard, AI sohbet, Almanca uygulama" />
+  <meta name="author" content="DeutschGo" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DeutschGo — Learn German the Fun Way" />
+  <meta property="og:description" content="Flashcards, AI chat, mini games and grammar lessons for A1-A2 German learners." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deutsch-go.com" />
+  <!-- Replace with actual og:image URL -->
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DeutschGo — Learn German the Fun Way" />
+  <meta name="twitter:description" content="Flashcards, AI chat, mini games and grammar lessons for A1-A2 German learners." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --turquoise: #00D1B2;
+      --turquoise-dark: #00b89c;
+      --turquoise-light: #e0faf6;
+      --green: #00C853;
+      --purple: #9C27B0;
+      --orange: #FF7043;
+      --gold: #FFA000;
+      --red: #FF4B4B;
+      --dark: #111418;
+      --dark-2: #1e2328;
+      --bg-light: #F0F4F8;
+      --bg-white: #ffffff;
+      --text-primary: #111418;
+      --text-secondary: #5a6478;
+      --text-muted: #9ca3af;
+      --border: #e8edf3;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 40px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 999px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== UTILITY ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+    }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+
+    .navbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .navbar-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 2px 8px rgba(0,209,178,0.35);
+    }
+
+    .navbar-logo-text {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--turquoise);
+      letter-spacing: -0.3px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      background: var(--bg-light);
+      border-radius: var(--radius-pill);
+      padding: 3px;
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+
+    .lang-btn {
+      padding: 6px 16px;
+      border: none;
+      background: transparent;
+      border-radius: var(--radius-pill);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      letter-spacing: 0.3px;
+    }
+
+    .lang-btn.active {
+      background: var(--bg-white);
+      color: var(--turquoise);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--bg-white);
+      padding: 96px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(0,209,178,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--turquoise-light);
+      color: var(--turquoise-dark);
+      border: 1px solid rgba(0,209,178,0.3);
+      border-radius: var(--radius-pill);
+      padding: 6px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.2px;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      color: var(--text-primary);
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00a896 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    .coming-soon-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
+      color: #fff;
+      border-radius: var(--radius-pill);
+      padding: 7px 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 14px rgba(0,209,178,0.4);
+    }
+
+    .coming-soon-dot {
+      width: 7px;
+      height: 7px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse-dot 1.5s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* ===== EMAIL FORM ===== */
+    .waitlist-form {
+      display: flex;
+      gap: 10px;
+      max-width: 460px;
+      margin: 0 auto 44px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .waitlist-input {
+      flex: 1;
+      min-width: 220px;
+      padding: 13px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-pill);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      background: var(--bg-white);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .waitlist-input:focus {
+      border-color: var(--turquoise);
+      box-shadow: 0 0 0 3px rgba(0,209,178,0.15);
+    }
+
+    .waitlist-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .btn-primary {
+      padding: 13px 26px;
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-pill);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      box-shadow: 0 4px 14px rgba(0,209,178,0.4);
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0,209,178,0.5);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    /* ===== STORE BUTTONS ===== */
+    .store-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .store-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      background: var(--bg-light);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      opacity: 0.55;
+      cursor: not-allowed;
+      position: relative;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+
+    .store-btn-icon {
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+
+    .store-btn-text {
+      text-align: left;
+    }
+
+    .store-btn-label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    .store-btn-name {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+
+    .store-coming-badge {
+      position: absolute;
+      top: -9px;
+      right: -4px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.58rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 6px rgba(255,160,0,0.4);
+    }
+
+    /* ===== HERO MASCOT ===== */
+    .hero-mascot {
+      margin-top: 64px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mascot-card {
+      background: linear-gradient(135deg, #f0faf8 0%, #e8f5f2 100%);
+      border: 1.5px solid rgba(0,209,178,0.2);
+      border-radius: var(--radius-xl);
+      padding: 40px 60px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .mascot-emoji {
+      font-size: 5rem;
+      line-height: 1;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+      animation: float 3.5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .mascot-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--turquoise-dark);
+      letter-spacing: 0.2px;
+    }
+
+    /* ===== SECTION SHARED ===== */
+    section {
+      padding: 80px 24px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--turquoise);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    .section-header {
+      margin-bottom: 52px;
+    }
+
+    .section-header.centered {
+      text-align: center;
+    }
+
+    .section-header.centered .section-sub {
+      margin: 0 auto;
+    }
+
+    /* ===== FEATURES ===== */
+    .features {
+      background: var(--bg-light);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .feature-icon.turquoise { background: var(--turquoise-light); }
+    .feature-icon.purple { background: rgba(156,39,176,0.1); }
+    .feature-icon.orange { background: rgba(255,112,67,0.1); }
+    .feature-icon.green { background: rgba(0,200,83,0.1); }
+
+    .feature-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .how-it-works {
+      background: var(--bg-white);
+    }
+
+    .steps-row {
+      display: flex;
+      gap: 0;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .steps-row::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: calc(50% / 3 + 10px);
+      right: calc(50% / 3 + 10px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--turquoise), var(--turquoise));
+      opacity: 0.2;
+    }
+
+    .step {
+      flex: 1;
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+    }
+
+    .step-number {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 16px rgba(0,209,178,0.35);
+    }
+
+    .step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .step-connector {
+      position: absolute;
+      top: 35px;
+      right: -20px;
+      width: 40px;
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
+
+    .step:last-child .step-connector { display: none; }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      background: var(--dark);
+      padding: 60px 24px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 32px;
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stat-number {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--turquoise);
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.2px;
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(255,255,255,0.08);
+      align-self: center;
+    }
+
+    @media (max-width: 600px) {
+      .stat-divider { display: none; }
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--dark-2);
+      padding: 40px 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .footer-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+    }
+
+    .footer-logo-text {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--turquoise);
+    }
+
+    .footer-center {
+      text-align: center;
+      flex: 1;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.7;
+    }
+
+    .footer-copy a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-copy a:hover {
+      color: var(--turquoise);
+    }
+
+    .footer-stores {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-store-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .footer-store-btn span:first-child {
+      font-size: 1.1rem;
+    }
+
+    .footer-store-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ===== SUCCESS MESSAGE ===== */
+    .form-success {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      background: rgba(0,200,83,0.12);
+      border: 1px solid rgba(0,200,83,0.3);
+      border-radius: var(--radius-pill);
+      padding: 12px 22px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #00874a;
+      margin: 0 auto;
+      max-width: 460px;
+      justify-content: center;
+    }
+
+    .form-success.show {
+      display: flex;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero { padding: 72px 20px 60px; }
+      section { padding: 64px 20px; }
+
+      .steps-row {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .steps-row::before { display: none; }
+      .step-connector { display: none; }
+
+      .step {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        gap: 18px;
+        padding: 0;
+      }
+
+      .step-number {
+        margin: 0;
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+      }
+
+      .step-body { padding-top: 6px; }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-center { order: 2; }
+      .footer-stores { order: 3; }
+
+      .mascot-card { padding: 32px 40px; }
+    }
+
+    @media (max-width: 480px) {
+      .navbar-logo-text { font-size: 1.1rem; }
+      .waitlist-form { flex-direction: column; }
+      .waitlist-input { min-width: unset; width: 100%; }
+      .btn-primary { width: 100%; text-align: center; }
+    }
+
+    /* ===== FEATURES GRID RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo" aria-label="DeutschGo Home">
+        <div class="navbar-logo-icon">🐿️</div>
+        <span class="navbar-logo-text">DeutschGo</span>
+      </a>
+
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-badge">🎓 A1-A2 Almanca</div>
+
+    <h1 class="hero-title">
+      <span data-tr="Almancayı Eğlenceli ve" data-en="Learn German in a">Almancayı Eğlenceli ve</span><br />
+      <span data-tr="Etkili Öğren" data-en="Fun &amp; Effective Way">Etkili Öğren</span>
+    </h1>
+
+    <p class="hero-sub" data-tr="Flashcard'lar, AI sohbet, oyunlar ve gramer dersleri ile A1-A2 Almancayı keşfet." data-en="Discover A1-A2 German with flashcards, AI chat, games and grammar lessons.">
+      Flashcard'lar, AI sohbet, oyunlar ve gramer dersleri ile A1-A2 Almancayı keşfet.
+    </p>
+
+    <div style="display:flex;justify-content:center;margin-bottom:36px;">
+      <div class="coming-soon-pill">
+        <div class="coming-soon-dot"></div>
+        <span data-tr="Yakında Geliyor" data-en="Coming Soon">Yakında Geliyor</span>
+      </div>
+    </div>
+
+    <!--
+      EMAIL WAITLIST FORM
+      Replace "REPLACE_WITH_YOUR_ID" in the action URL below with your actual Formspree form ID.
+      Sign up free at https://formspree.io to get a form ID.
+      Example: action="https://formspree.io/f/xwkgpqzb"
+    -->
+    <form
+      id="waitlist-form"
+      class="waitlist-form"
+      action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+      method="POST"
+      onsubmit="handleSubmit(event)"
+    >
+      <input
+        type="email"
+        name="email"
+        class="waitlist-input"
+        data-placeholder-tr="E-posta adresiniz"
+        data-placeholder-en="Your email address"
+        placeholder="E-posta adresiniz"
+        required
+        aria-label="Email address"
+      />
+      <button type="submit" class="btn-primary">
+        <span data-tr="Beni Bildir" data-en="Notify Me">Beni Bildir</span>
+      </button>
+    </form>
+
+    <div class="form-success" id="form-success" role="alert">
+      ✅ <span data-tr="Harika! Uygulama yayınlandığında sizi bilgilendireceğiz." data-en="Great! We'll notify you when the app launches.">Harika! Uygulama yayınlandığında sizi bilgilendireceğiz.</span>
+    </div>
+
+    <div class="store-buttons" style="margin-top: 28px;">
+      <div class="store-btn" aria-label="App Store - Coming Soon">
+        <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
+        <div class="store-btn-icon">🍎</div>
+        <div class="store-btn-text">
+          <span class="store-btn-label" data-tr="İndir" data-en="Download on the">İndir</span>
+          <span class="store-btn-name">App Store</span>
+        </div>
+      </div>
+
+      <div class="store-btn" aria-label="Google Play - Coming Soon">
+        <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
+        <div class="store-btn-icon">▶️</div>
+        <div class="store-btn-text">
+          <span class="store-btn-label" data-tr="Al" data-en="Get it on">Al</span>
+          <span class="store-btn-name">Google Play</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-mascot">
+      <div class="mascot-card">
+        <div class="mascot-emoji">🐿️</div>
+        <div class="mascot-name" data-tr="Eichhörnchen — DeutschGo maskotu" data-en="Eichhörnchen — the DeutschGo mascot">Eichhörnchen — DeutschGo maskotu</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label" data-tr="Özellikler" data-en="Features">Özellikler</span>
+        <h2 class="section-title" data-tr="Her Şey Tek Uygulamada" data-en="Everything in One App">Her Şey Tek Uygulamada</h2>
+        <p class="section-sub" data-tr="Almancayı öğrenmek için ihtiyacınız olan her araç, eğlenceli ve etkili bir şekilde bir araya getirildi." data-en="Every tool you need to learn German, brought together in a fun and effective way.">
+          Almancayı öğrenmek için ihtiyacınız olan her araç, eğlenceli ve etkili bir şekilde bir araya getirildi.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon turquoise">📚</div>
+          <div class="feature-title" data-tr="Flashcard'lar" data-en="Flashcards">Flashcard'lar</div>
+          <p class="feature-desc" data-tr="Kategorilere göre düzenlenmiş 500+ kelime ile kelime dağarcığını hızla genişlet." data-en="Expand your vocabulary fast with 500+ words organized by category.">
+            Kategorilere göre düzenlenmiş 500+ kelime ile kelime dağarcığını hızla genişlet.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon purple">🤖</div>
+          <div class="feature-title" data-tr="AI Sohbet" data-en="AI Chat">AI Sohbet</div>
+          <p class="feature-desc" data-tr="Gerçek senaryolarda Almanca konuş. AI, seviyene göre sana eşlik eder." data-en="Practice German in real-life scenarios. The AI adapts to your level and guides you.">
+            Gerçek senaryolarda Almanca konuş. AI, seviyene göre sana eşlik eder.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon orange">🎮</div>
+          <div class="feature-title" data-tr="Mini Oyunlar" data-en="Mini Games">Mini Oyunlar</div>
+          <p class="feature-desc" data-tr="Öğrendiklerini oyunlarla pekiştir, liderlik tablosunda yüksel!" data-en="Reinforce what you've learned with games and climb the leaderboard!">
+            Öğrendiklerini oyunlarla pekiştir, liderlik tablosunda yüksel!
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon green">📖</div>
+          <div class="feature-title" data-tr="Gramer Kütüphanesi" data-en="Grammar Library">Gramer Kütüphanesi</div>
+          <p class="feature-desc" data-tr="Snap kartlarıyla adım adım Almanca gramer. 40+ konu, net açıklamalar." data-en="Step-by-step German grammar with snap cards. 40+ topics, clear explanations.">
+            Snap kartlarıyla adım adım Almanca gramer. 40+ konu, net açıklamalar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label" data-tr="Nasıl Çalışır?" data-en="How It Works">Nasıl Çalışır?</span>
+        <h2 class="section-title" data-tr="3 Adımda Başla" data-en="Start in 3 Steps">3 Adımda Başla</h2>
+      </div>
+
+      <div class="steps-row fade-up">
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-connector"></div>
+          <div class="step-number">1️⃣</div>
+          <div class="step-body">
+            <div class="step-title" data-tr="İndir &amp; Kayıt Ol" data-en="Download &amp; Sign Up">İndir &amp; Kayıt Ol</div>
+            <p class="step-desc" data-tr="Uygulamayı indir, ücretsiz hesap oluştur." data-en="Download the app and create your free account.">
+              Uygulamayı indir, ücretsiz hesap oluştur.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-connector"></div>
+          <div class="step-number">2️⃣</div>
+          <div class="step-body">
+            <div class="step-title" data-tr="Seviyeni Seç" data-en="Choose Your Level">Seviyeni Seç</div>
+            <p class="step-desc" data-tr="A1 veya A2 seviyesini seç, içerik sana göre şekillensin." data-en="Pick A1 or A2 and let the content adapt to you.">
+              A1 veya A2 seviyesini seç, içerik sana göre şekillensin.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-number">3️⃣</div>
+          <div class="step-body">
+            <div class="step-title" data-tr="Her Gün Pratik Yap" data-en="Practice Every Day">Her Gün Pratik Yap</div>
+            <p class="step-desc" data-tr="Günde 10 dakika ile Almancada fark yarat." data-en="Just 10 minutes a day makes all the difference in German.">
+              Günde 10 dakika ile Almancada fark yarat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar" id="stats" aria-label="App statistics">
+    <div class="stats-grid">
+      <div class="stat-item fade-up">
+        <div class="stat-number">500+</div>
+        <div class="stat-label" data-tr="Kelime" data-en="Words">Kelime</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item fade-up">
+        <div class="stat-number">40+</div>
+        <div class="stat-label" data-tr="Gramer Konusu" data-en="Grammar Topics">Gramer Konusu</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item fade-up">
+        <div class="stat-number">10+</div>
+        <div class="stat-label" data-tr="AI Senaryo" data-en="AI Scenarios">AI Senaryo</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item fade-up">
+        <div class="stat-number">3</div>
+        <div class="stat-label" data-tr="Dil Desteği (TR · EN · DE)" data-en="Languages (TR · EN · DE)">Dil Desteği (TR · EN · DE)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo" aria-label="DeutschGo">
+        <div class="footer-logo-icon">🐿️</div>
+        <span class="footer-logo-text">DeutschGo</span>
+      </a>
+
+      <div class="footer-center">
+        <p class="footer-copy">
+          © 2025 DeutschGo ·
+          <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a>
+        </p>
+        <p class="footer-copy" style="margin-top:4px;font-size:0.75rem;" data-tr="A1-A2 Almanca öğrenme uygulaması" data-en="A1-A2 German language learning app">
+          A1-A2 Almanca öğrenme uygulaması
+        </p>
+      </div>
+
+      <div class="footer-stores" aria-label="App stores — coming soon">
+        <div class="footer-store-btn" aria-label="App Store">
+          <span>🍎</span>
+          <span class="footer-store-label">App Store</span>
+        </div>
+        <div class="footer-store-btn" aria-label="Google Play">
+          <span>▶️</span>
+          <span class="footer-store-label">Google Play</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ── Language switching ──────────────────────────────────────────────────
+    let currentLang = 'tr';
+
+    function setLang(lang) {
+      currentLang = lang;
+
+      // Toggle button states
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
+      document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+
+      // Update <html lang>
+      document.documentElement.lang = lang;
+
+      // Update all [data-tr] / [data-en] text nodes
+      document.querySelectorAll('[data-tr]').forEach(function(el) {
+        var text = el.getAttribute('data-' + lang);
+        if (text !== null) el.innerHTML = text;
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-placeholder-' + lang + ']').forEach(function(el) {
+        el.placeholder = el.getAttribute('data-placeholder-' + lang);
+      });
+
+      // Update page title & meta description
+      if (lang === 'en') {
+        document.title = 'DeutschGo — Learn German in a Fun & Effective Way | A1-A2';
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Coming soon on App Store and Google Play!');
+      } else {
+        document.title = 'DeutschGo — Almancayı Eğlenceli Öğren | A1-A2';
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play\'de!');
+      }
+    }
+
+    // ── Waitlist form ───────────────────────────────────────────────────────
+    function handleSubmit(e) {
+      var form = document.getElementById('waitlist-form');
+      var successEl = document.getElementById('form-success');
+
+      // If Formspree ID hasn't been replaced, prevent actual submit and show success UI
+      if (form.action.indexOf('REPLACE_WITH_YOUR_ID') !== -1) {
+        e.preventDefault();
+        form.style.display = 'none';
+        successEl.classList.add('show');
+        // Run lang update on the success message too
+        successEl.querySelectorAll('[data-tr]').forEach(function(el) {
+          var text = el.getAttribute('data-' + currentLang);
+          if (text) el.innerHTML = text;
+        });
+        return;
+      }
+
+      // Real Formspree submit — handle async
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          successEl.classList.add('show');
+        } else {
+          // On error, fall back to native submit
+          form.submit();
+        }
+      }).catch(function() {
+        form.submit();
+      });
+    }
+
+    // ── Intersection Observer for fade-up animations ────────────────────────
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      // Stagger feature cards
+      document.querySelectorAll('.fade-up').forEach(function(el, i) {
+        el.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
