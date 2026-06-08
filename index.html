@@ -6,7 +6,7 @@
 
   <!-- SEO -->
   <title>DeutschGo — Almancayı Eğlenceli Öğren | A1-A2</title>
-  <meta name="description" content="DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play'de!" />
+  <meta name="description" content="DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. App Store'da şimdi, Google Play'de yakında!" />
   <meta name="keywords" content="Almanca öğren, Deutsch lernen, A1 A2, flashcard, AI sohbet, Almanca uygulama" />
   <meta name="author" content="DeutschGo" />
 
@@ -316,6 +316,27 @@
       position: relative;
       transition: opacity 0.2s;
       pointer-events: none;
+    }
+
+    .store-btn-active {
+      opacity: 1;
+      cursor: pointer;
+      pointer-events: auto;
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+
+    .store-btn-active .store-btn-label {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .store-btn-active .store-btn-name {
+      color: #fff;
+    }
+
+    .store-btn-active:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
     }
 
     .store-btn-icon {
@@ -703,6 +724,16 @@
       cursor: not-allowed;
     }
 
+    .footer-store-btn-active {
+      opacity: 1;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .footer-store-btn-active:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
     .footer-store-btn span:first-child {
       font-size: 1.1rem;
     }
@@ -807,26 +838,22 @@
       Flashcard'lar, AI sohbet, oyunlar ve gramer dersleri ile A1-A2 Almancayı keşfet.
     </p>
 
-    <div style="display:flex;justify-content:center;margin-bottom:36px;">
-      <div class="coming-soon-pill">
-        <div class="coming-soon-dot"></div>
-        <span data-tr="Yakında Geliyor" data-en="Coming Soon">Yakında Geliyor</span>
-      </div>
-    </div>
-
     <div class="store-buttons" style="margin-top: 8px;">
-      <div class="store-btn" aria-label="App Store - Coming Soon">
-        <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
-        <div class="store-btn-icon">🍎</div>
+      <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store-btn store-btn-active" aria-label="Download on the App Store" target="_blank" rel="noopener">
+        <div class="store-btn-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="color:#111418"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        </div>
         <div class="store-btn-text">
           <span class="store-btn-label" data-tr="İndir" data-en="Download on the">İndir</span>
           <span class="store-btn-name">App Store</span>
         </div>
-      </div>
+      </a>
 
       <div class="store-btn" aria-label="Google Play - Coming Soon">
         <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
-        <div class="store-btn-icon">▶️</div>
+        <div class="store-btn-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
+        </div>
         <div class="store-btn-text">
           <span class="store-btn-label" data-tr="Al" data-en="Get it on">Al</span>
           <span class="store-btn-name">Google Play</span>
@@ -981,7 +1008,7 @@
 
       <div class="footer-center">
         <p class="footer-copy">
-          © 2025 DeutschGo ·
+          © 2026 DeutschGo ·
           <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a>
         </p>
         <p class="footer-copy" style="margin-top:4px;font-size:0.75rem;" data-tr="A1-A2 Almanca öğrenme uygulaması" data-en="A1-A2 German language learning app">
@@ -989,13 +1016,13 @@
         </p>
       </div>
 
-      <div class="footer-stores" aria-label="App stores — coming soon">
-        <div class="footer-store-btn" aria-label="App Store">
-          <span>🍎</span>
+      <div class="footer-stores" aria-label="App stores">
+        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="footer-store-btn footer-store-btn-active" aria-label="App Store" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           <span class="footer-store-label">App Store</span>
-        </div>
-        <div class="footer-store-btn" aria-label="Google Play">
-          <span>▶️</span>
+        </a>
+        <div class="footer-store-btn" aria-label="Google Play - Coming Soon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
           <span class="footer-store-label">Google Play</span>
         </div>
       </div>
@@ -1034,11 +1061,11 @@
       if (lang === 'en') {
         document.title = 'DeutschGo — Learn German in a Fun & Effective Way | A1-A2';
         var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Coming soon on App Store and Google Play!');
+        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Now on App Store, coming soon on Google Play!');
       } else {
         document.title = 'DeutschGo — Almancayı Eğlenceli Öğren | A1-A2';
         var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play\'de!');
+        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. App Store\'da şimdi, Google Play\'de yakında!');
       }
     }
 
