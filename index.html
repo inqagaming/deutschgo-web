@@ -1032,7 +1032,8 @@
   <!-- ===== JAVASCRIPT ===== -->
   <script>
     // ── Language switching ──────────────────────────────────────────────────
-    let currentLang = 'tr';
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    let currentLang = browserLang.startsWith('tr') ? 'tr' : 'en';
 
     function setLang(lang) {
       currentLang = lang;
@@ -1069,6 +1070,9 @@
       }
     }
 
+
+    // Auto-apply detected language on load
+    setLang(currentLang);
 
     // ── Intersection Observer for fade-up animations ────────────────────────
     (function() {
