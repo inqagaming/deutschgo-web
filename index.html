@@ -4,24 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>DeutschGo — Almancayı Eğlenceli Öğren | A1-A2</title>
-  <meta name="description" content="DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play'de!" />
-  <meta name="keywords" content="Almanca öğren, Deutsch lernen, A1 A2, flashcard, AI sohbet, Almanca uygulama" />
+  <!-- SEO: Primary -->
+  <title>DeutschGo — Almanca Öğrenme Uygulaması | A1-A2 Deutsch Lernen</title>
+  <meta name="description" content="DeutschGo ile Almancayı ücretsiz öğren. Flashcard'lar, AI sohbet, mini oyunlar ve 80+ gramer konusu. Türkçe arayüzle A1-A2 Almanca. App Store'da şimdi!" />
+  <meta name="keywords" content="almanca öğren, almanca öğrenme uygulaması, deutsch lernen, almanca uygulama, a1 almanca, a2 almanca, almanca flashcard, almanca gramer, almanca ai sohbet, türkçe almanca, almanca başlangıç, Deutsch lernen App, German learning app, learn German free" />
   <meta name="author" content="DeutschGo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deutsch-go.com/" />
+
+  <!-- Hreflang: dil/bölge hedefleme -->
+  <link rel="alternate" hreflang="tr" href="https://deutsch-go.com/?lang=tr" />
+  <link rel="alternate" hreflang="en" href="https://deutsch-go.com/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://deutsch-go.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DeutschGo — Learn German the Fun Way" />
-  <meta property="og:description" content="Flashcards, AI chat, mini games and grammar lessons for A1-A2 German learners." />
+  <meta property="og:title" content="DeutschGo — Almanca Öğrenme Uygulaması" />
+  <meta property="og:description" content="Flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle A1-A2 Almancayı öğren. Türkçe arayüz, ücretsiz başla." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deutsch-go.com" />
-  <!-- Replace with actual og:image URL -->
-  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:image" content="https://deutsch-go.com/screenshots/17.png" />
+  <meta property="og:image:width" content="1242" />
+  <meta property="og:image:height" content="2688" />
+  <meta property="og:site_name" content="DeutschGo" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DeutschGo — Learn German the Fun Way" />
-  <meta name="twitter:description" content="Flashcards, AI chat, mini games and grammar lessons for A1-A2 German learners." />
+  <meta name="twitter:title" content="DeutschGo — Almanca Öğrenme Uygulaması" />
+  <meta name="twitter:description" content="Flashcard'lar, AI sohbet ve mini oyunlarla A1-A2 Almancayı öğren. Ücretsiz başla!" />
+  <meta name="twitter:image" content="https://deutsch-go.com/screenshots/17.png" />
+
+  <!-- JSON-LD: Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "DeutschGo",
+    "description": "DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren.",
+    "url": "https://deutsch-go.com",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "10",
+      "bestRating": "5"
+    },
+    "inLanguage": ["tr", "en", "de"],
+    "downloadUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
+    "installUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
+    "screenshot": "https://deutsch-go.com/screenshots/17.png",
+    "featureList": "Flashcards, AI Chat, Mini Games, Grammar Library, Reading Practice, Pronunciation Practice, Listening Practice, Daily Streaks",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DeutschGo",
+      "url": "https://deutsch-go.com"
+    }
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,6 +164,29 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 16px;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .navbar-links a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .navbar-links a:hover { color: var(--turquoise); }
+
+    @media (max-width: 600px) {
+      .navbar-links { display: none; }
     }
 
     .navbar-logo {
@@ -181,10 +250,51 @@
     /* ===== HERO ===== */
     .hero {
       background: var(--bg-white);
-      padding: 96px 24px 80px;
-      text-align: center;
+      padding: 80px 24px 60px;
       overflow: hidden;
       position: relative;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero-content {
+      text-align: left;
+    }
+
+    .hero-mockup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-mockup img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.12);
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-mockup {
+        order: -1;
+      }
+      .hero-mockup img {
+        max-width: 240px;
+      }
     }
 
     .hero::before {
@@ -197,6 +307,26 @@
       height: 700px;
       background: radial-gradient(circle, rgba(0,209,178,0.08) 0%, transparent 70%);
       pointer-events: none;
+    }
+
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .hero-stars {
+      color: #FFC107;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+
+    .hero-rating-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
     }
 
     .hero-badge {
@@ -316,6 +446,27 @@
       position: relative;
       transition: opacity 0.2s;
       pointer-events: none;
+    }
+
+    .store-btn-active {
+      opacity: 1;
+      cursor: pointer;
+      pointer-events: auto;
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+
+    .store-btn-active .store-btn-label {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .store-btn-active .store-btn-name {
+      color: #fff;
+    }
+
+    .store-btn-active:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
     }
 
     .store-btn-icon {
@@ -609,6 +760,18 @@
       letter-spacing: 0.2px;
     }
 
+    .lang-flags {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .lang-flag-item {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
     .stat-divider {
       width: 1px;
       height: 40px;
@@ -618,6 +781,228 @@
 
     @media (max-width: 600px) {
       .stat-divider { display: none; }
+    }
+
+    /* ===== FAQ ===== */
+    .faq-section {
+      background: #fff;
+      padding: 100px 24px;
+      text-align: center;
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 48px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .faq-item {
+      border: 1.5px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item.open {
+      border-color: var(--turquoise);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      transition: background 0.15s;
+    }
+
+    .faq-question:hover { background: rgba(0,209,178,0.04); }
+
+    .faq-icon {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--turquoise);
+      flex-shrink: 0;
+      transition: transform 0.25s;
+      line-height: 1;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 24px 20px;
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    /* ===== PRICING ===== */
+    .pricing-section {
+      background: var(--bg-light);
+      padding: 100px 24px;
+      text-align: center;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 780px;
+      margin: 48px auto 0;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: 2px solid transparent;
+      position: relative;
+      text-align: left;
+    }
+
+    .pricing-free {
+      border-color: rgba(0,0,0,0.08);
+    }
+
+    .pricing-pro {
+      border-color: var(--turquoise);
+      box-shadow: 0 8px 40px rgba(0, 209, 178, 0.15);
+    }
+
+    .pricing-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.06);
+      color: #555;
+      width: fit-content;
+    }
+
+    .pricing-badge-pro {
+      background: var(--turquoise);
+      color: #fff;
+    }
+
+    .pricing-plan-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1;
+    }
+
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .pricing-features li {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #444;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .pricing-features li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-size: contain;
+    }
+
+    .feat-yes::before {
+      content: '✓';
+      color: var(--turquoise);
+      font-weight: 800;
+      font-size: 0.85rem;
+      top: 0;
+      transform: none;
+      width: auto;
+      height: auto;
+    }
+
+    .feat-no {
+      opacity: 0.4;
+      text-decoration: line-through;
+    }
+
+    .feat-no::before {
+      content: '✕';
+      color: #999;
+      font-weight: 600;
+      font-size: 0.8rem;
+      top: 0;
+      transform: none;
+      width: auto;
+      height: auto;
+    }
+
+    .pricing-cta {
+      display: block;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .pricing-cta:hover { opacity: 0.85; }
+
+    .pricing-cta-free {
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .pricing-cta-pro {
+      background: var(--turquoise);
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ===== FOOTER ===== */
@@ -701,6 +1086,16 @@
       opacity: 0.4;
       pointer-events: none;
       cursor: not-allowed;
+    }
+
+    .footer-store-btn-active {
+      opacity: 1;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .footer-store-btn-active:hover {
+      background: rgba(255,255,255,0.1);
     }
 
     .footer-store-btn span:first-child {
@@ -787,6 +1182,12 @@
         <span class="navbar-logo-text">DeutschGo</span>
       </a>
 
+      <nav class="navbar-links">
+        <a href="#features" data-tr="Özellikler" data-en="Features">Özellikler</a>
+        <a href="#pricing" data-tr="Planlar" data-en="Plans">Planlar</a>
+        <a href="#faq" data-tr="SSS" data-en="FAQ">SSS</a>
+      </nav>
+
       <div class="lang-toggle" role="group" aria-label="Language selector">
         <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
         <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
@@ -796,48 +1197,50 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <div class="hero-badge">🎓 A1-A2 Almanca</div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" data-tr="🇩🇪 Yeni Başlayanlar için Almanca" data-en="🇩🇪 German for Beginners">🇩🇪 Yeni Başlayanlar için Almanca</div>
 
-    <h1 class="hero-title">
-      <span data-tr="Almancayı Eğlenceli ve" data-en="Learn German in a">Almancayı Eğlenceli ve</span><br />
-      <span data-tr="Etkili Öğren" data-en="Fun &amp; Effective Way">Etkili Öğren</span>
-    </h1>
+        <h1 class="hero-title">
+          <span data-tr="Almancayı Eğlenceli ve" data-en="Learn German in a">Almancayı Eğlenceli ve</span><br />
+          <span data-tr="Etkili Öğren" data-en="Fun &amp; Effective Way">Etkili Öğren</span>
+        </h1>
 
-    <p class="hero-sub" data-tr="Flashcard'lar, AI sohbet, oyunlar ve gramer dersleri ile A1-A2 Almancayı keşfet." data-en="Discover A1-A2 German with flashcards, AI chat, games and grammar lessons.">
-      Flashcard'lar, AI sohbet, oyunlar ve gramer dersleri ile A1-A2 Almancayı keşfet.
-    </p>
+        <p class="hero-sub" data-tr="İlk kelimenden ilk konuşmana — DeutschGo seni flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle oraya ulaştırır." data-en="From your first word to your first conversation — DeutschGo gets you there with flashcards, AI chat, mini games and grammar lessons.">
+          İlk kelimenden ilk konuşmana — DeutschGo seni flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle oraya ulaştırır.
+        </p>
 
-    <div style="display:flex;justify-content:center;margin-bottom:36px;">
-      <div class="coming-soon-pill">
-        <div class="coming-soon-dot"></div>
-        <span data-tr="Yakında Geliyor" data-en="Coming Soon">Yakında Geliyor</span>
-      </div>
-    </div>
+        <div class="hero-rating">
+          <span class="hero-stars">★★★★★</span>
+          <span class="hero-rating-text" data-tr="App Store'da 5 Yıldız" data-en="5 Stars on App Store">App Store'da 5 Yıldız</span>
+        </div>
 
-    <div class="store-buttons" style="margin-top: 8px;">
-      <div class="store-btn" aria-label="App Store - Coming Soon">
-        <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
-        <div class="store-btn-icon">🍎</div>
-        <div class="store-btn-text">
-          <span class="store-btn-label" data-tr="İndir" data-en="Download on the">İndir</span>
-          <span class="store-btn-name">App Store</span>
+        <div class="store-buttons" style="margin-top: 8px;">
+          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store-btn store-btn-active" aria-label="Download on the App Store" target="_blank" rel="noopener">
+            <div class="store-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </div>
+            <div class="store-btn-text">
+              <span class="store-btn-label" data-tr="İndir" data-en="Download on the">İndir</span>
+              <span class="store-btn-name">App Store</span>
+            </div>
+          </a>
+
+          <div class="store-btn" aria-label="Google Play - Coming Soon">
+            <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
+            <div class="store-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
+            </div>
+            <div class="store-btn-text">
+              <span class="store-btn-label" data-tr="Al" data-en="Get it on">Al</span>
+              <span class="store-btn-name">Google Play</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="store-btn" aria-label="Google Play - Coming Soon">
-        <span class="store-coming-badge" data-tr="Yakında" data-en="Soon">Yakında</span>
-        <div class="store-btn-icon">▶️</div>
-        <div class="store-btn-text">
-          <span class="store-btn-label" data-tr="Al" data-en="Get it on">Al</span>
-          <span class="store-btn-name">Google Play</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-mascot">
-      <div class="mascot-card">
-        <div class="mascot-emoji"><img src="icon.png" alt="DeutschGo"></div>
-        <div class="mascot-name" data-tr="Eichhörnchen — DeutschGo maskotu" data-en="Eichhörnchen — the DeutschGo mascot">Eichhörnchen — DeutschGo maskotu</div>
+      <div class="hero-mockup">
+        <img src="screenshots/16_v4.png" alt="DeutschGo App Screenshot" />
       </div>
     </div>
   </section>
@@ -858,8 +1261,8 @@
         <div class="feature-card fade-up">
           <div class="feature-icon turquoise">📚</div>
           <div class="feature-title" data-tr="Flashcard'lar" data-en="Flashcards">Flashcard'lar</div>
-          <p class="feature-desc" data-tr="Kategorilere göre düzenlenmiş 1900+ kelime ile kelime dağarcığını hızla genişlet." data-en="Expand your vocabulary fast with 1900+ words organized by category.">
-            Kategorilere göre düzenlenmiş 1900+ kelime ile kelime dağarcığını hızla genişlet.
+          <p class="feature-desc" data-tr="Kategorilere göre düzenlenmiş 2000+ kelime ile kelime dağarcığını hızla genişlet." data-en="Expand your vocabulary fast with 2000+ words organized by category.">
+            Kategorilere göre düzenlenmiş 2000+ kelime ile kelime dağarcığını hızla genişlet.
           </p>
         </div>
 
@@ -876,8 +1279,8 @@
         <div class="feature-card fade-up">
           <div class="feature-icon orange">🎮</div>
           <div class="feature-title" data-tr="Mini Oyunlar" data-en="Mini Games">Mini Oyunlar</div>
-          <p class="feature-desc" data-tr="Öğrendiklerini oyunlarla pekiştir, liderlik tablosunda yüksel!" data-en="Reinforce what you've learned with games and climb the leaderboard!">
-            Öğrendiklerini oyunlarla pekiştir, liderlik tablosunda yüksel!
+          <p class="feature-desc" data-tr="Öğrendiklerini eğlenceli oyunlarla pekiştir, günlük pratikle ilerlemeyi hisset." data-en="Reinforce what you've learned with fun games and feel your progress every day.">
+            Öğrendiklerini eğlenceli oyunlarla pekiştir, günlük pratikle ilerlemeyi hisset.
           </p>
         </div>
 
@@ -885,8 +1288,44 @@
         <div class="feature-card fade-up">
           <div class="feature-icon green">📖</div>
           <div class="feature-title" data-tr="Gramer Kütüphanesi" data-en="Grammar Library">Gramer Kütüphanesi</div>
-          <p class="feature-desc" data-tr="Snap kartlarıyla adım adım Almanca gramer. 75+ konu, net açıklamalar." data-en="Step-by-step German grammar with snap cards. 75+ topics, clear explanations.">
-            Snap kartlarıyla adım adım Almanca gramer. 75+ konu, net açıklamalar.
+          <p class="feature-desc" data-tr="Snap kartlarıyla adım adım Almanca gramer. 80+ konu, net açıklamalar." data-en="Step-by-step German grammar with snap cards. 80+ topics, clear explanations.">
+            Snap kartlarıyla adım adım Almanca gramer. 80+ konu, net açıklamalar.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon turquoise">📰</div>
+          <div class="feature-title" data-tr="Okuma Pratiği" data-en="Reading Practice">Okuma Pratiği</div>
+          <p class="feature-desc" data-tr="Günlük değişen hikayelerle okuma becerisini geliştir, sınavlarla kendini test et." data-en="Improve your reading skills with daily stories and test yourself with quizzes.">
+            Günlük değişen hikayelerle okuma becerisini geliştir, sınavlarla kendini test et.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon purple">🎤</div>
+          <div class="feature-title" data-tr="Telaffuz Pratiği" data-en="Pronunciation Practice">Telaffuz Pratiği</div>
+          <p class="feature-desc" data-tr="Mikrofona konuş, Almanca telaffuzunu sesli olarak pratik yap." data-en="Speak into the mic and practice your German pronunciation out loud.">
+            Mikrofona konuş, Almanca telaffuzunu sesli olarak pratik yap.
+          </p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon orange">🔥</div>
+          <div class="feature-title" data-tr="Günlük Seri & Rozetler" data-en="Daily Streaks & Badges">Günlük Seri & Rozetler</div>
+          <p class="feature-desc" data-tr="Her gün giriş yap, serinini kır ve başarılarını rozetlerle belgele." data-en="Log in every day, keep your streak alive and earn badges for your achievements.">
+            Her gün giriş yap, serinini kır ve başarılarını rozetlerle belgele.
+          </p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="feature-card fade-up">
+          <div class="feature-icon green">🎧</div>
+          <div class="feature-title" data-tr="Dinleme Pratiği" data-en="Listening Practice">Dinleme Pratiği</div>
+          <p class="feature-desc" data-tr="Almanca cümleleri dinle, kulağını yeni dile alıştır." data-en="Listen to German sentences and train your ear to the new language.">
+            Almanca cümleleri dinle, kulağını yeni dile alıştır.
           </p>
         </div>
       </div>
@@ -919,9 +1358,9 @@
           <div class="step-connector"></div>
           <div class="step-number">2️⃣</div>
           <div class="step-body">
-            <div class="step-title" data-tr="Seviyeni Seç" data-en="Choose Your Level">Seviyeni Seç</div>
-            <p class="step-desc" data-tr="A1 veya A2 seviyesini seç, içerik sana göre şekillensin." data-en="Pick A1 or A2 and let the content adapt to you.">
-              A1 veya A2 seviyesini seç, içerik sana göre şekillensin.
+            <div class="step-title" data-tr="Modülünü Seç" data-en="Pick Your Module">Modülünü Seç</div>
+            <p class="step-desc" data-tr="Flashcard, AI sohbet, gramer veya okuma — hangi modülden başlayacağına sen karar ver." data-en="Flashcards, AI chat, grammar or reading — you decide where to start.">
+              Flashcard, AI sohbet, gramer veya okuma — hangi modülden başlayacağına sen karar ver.
             </p>
           </div>
         </div>
@@ -940,33 +1379,152 @@
     </div>
   </section>
 
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section" id="pricing" aria-label="Pricing">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-tr="PLANLAR" data-en="PLANS">PLANLAR</p>
+      <h2 class="section-title" data-tr="Ücretsiz Başla, İstersen Yükselt" data-en="Start Free, Upgrade Anytime">Ücretsiz Başla, İstersen Yükselt</h2>
+      <p class="section-subtitle" data-tr="DeutschGo'yu tamamen ücretsiz kullanabilirsin. Pro ile sınırları kaldır." data-en="DeutschGo is fully usable for free. Go Pro to remove all limits.">DeutschGo'yu tamamen ücretsiz kullanabilirsin. Pro ile sınırları kaldır.</p>
+
+      <div class="pricing-grid">
+        <!-- FREE -->
+        <div class="pricing-card pricing-free">
+          <div class="pricing-badge" data-tr="Ücretsiz" data-en="Free">Ücretsiz</div>
+          <h3 class="pricing-plan-name">Free</h3>
+          <ul class="pricing-features">
+            <li class="feat-yes" data-tr="Tüm flashcard kategorileri (sınırlı)" data-en="Flashcard categories (limited)">Tüm flashcard kategorileri (sınırlı)</li>
+            <li class="feat-yes" data-tr="Günlük 5 can" data-en="5 lives per day">Günlük 5 can</li>
+            <li class="feat-yes" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</li>
+            <li class="feat-yes" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</li>
+            <li class="feat-yes" data-tr="Günlük AI sohbet (sınırlı)" data-en="Daily AI chat (limited)">Günlük AI sohbet (sınırlı)</li>
+            <li class="feat-no" data-tr="Reklam gösterimleri" data-en="Ads shown">Reklam gösterimleri</li>
+            <li class="feat-no" data-tr="Tüm premium kategoriler" data-en="All premium categories">Tüm premium kategoriler</li>
+          </ul>
+          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="pricing-cta pricing-cta-free" target="_blank" rel="noopener" data-tr="Ücretsiz İndir" data-en="Download Free">Ücretsiz İndir</a>
+        </div>
+
+        <!-- PRO -->
+        <div class="pricing-card pricing-pro">
+          <div class="pricing-badge pricing-badge-pro" data-tr="Pro" data-en="Pro">Pro</div>
+          <h3 class="pricing-plan-name">Pro</h3>
+          <ul class="pricing-features">
+            <li class="feat-yes" data-tr="Tüm A1-A2 premium kategoriler" data-en="All A1-A2 premium categories">Tüm A1-A2 premium kategoriler</li>
+            <li class="feat-yes" data-tr="Sınırsız can" data-en="Unlimited lives">Sınırsız can</li>
+            <li class="feat-yes" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</li>
+            <li class="feat-yes" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</li>
+            <li class="feat-yes" data-tr="Sınırsız AI sohbet" data-en="Unlimited AI chat">Sınırsız AI sohbet</li>
+            <li class="feat-yes" data-tr="Tamamen reklamsız" data-en="No ads">Tamamen reklamsız</li>
+            <li class="feat-yes" data-tr="Tüm premium kategoriler açık" data-en="All premium categories unlocked">Tüm premium kategoriler açık</li>
+          </ul>
+          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="pricing-cta pricing-cta-pro" target="_blank" rel="noopener" data-tr="App Store'da Görüntüle" data-en="View on App Store">App Store'da Görüntüle</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section" id="faq">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-tr="SSS" data-en="FAQ">SSS</p>
+      <h2 class="section-title" data-tr="Sıkça Sorulan Sorular" data-en="Frequently Asked Questions">Sıkça Sorulan Sorular</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="DeutschGo ücretsiz mi?" data-en="Is DeutschGo free?">DeutschGo ücretsiz mi?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="Evet, DeutschGo'yu ücretsiz olarak kullanabilirsin. Flashcard'lar, gramer kütüphanesi, mini oyunlar ve günlük AI sohbet Free planda dahildir. Pro'ya geçerek sınırsız can, tüm kategoriler, sınırsız AI sohbet ve reklamsız deneyim elde edebilirsin." data-en="Yes, DeutschGo is free to use. Flashcards, grammar library, mini games and daily AI chat are all included in the Free plan. Upgrade to Pro for unlimited lives, all categories, unlimited AI chat and an ad-free experience.">Evet, DeutschGo'yu ücretsiz olarak kullanabilirsin. Flashcard'lar, gramer kütüphanesi, mini oyunlar ve günlük AI sohbet Free planda dahildir. Pro'ya geçerek sınırsız can, tüm kategoriler, sınırsız AI sohbet ve reklamsız deneyim elde edebilirsin.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="Android versiyonu ne zaman çıkacak?" data-en="When will the Android version be available?">Android versiyonu ne zaman çıkacak?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="Android versiyonu üzerinde aktif olarak çalışıyoruz. Çok yakında Google Play'de yayınlanacak. Şu an sadece App Store'da mevcut." data-en="We're actively working on the Android version. It will be available on Google Play very soon. Currently only available on the App Store.">Android versiyonu üzerinde aktif olarak çalışıyoruz. Çok yakında Google Play'de yayınlanacak. Şu an sadece App Store'da mevcut.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="Almanca bilgim olmadan başlayabilir miyim?" data-en="Can I start with zero German knowledge?">Almanca bilgim olmadan başlayabilir miyim?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="Kesinlikle. DeutschGo A1 seviyesinden, yani sıfırdan başlayacak şekilde tasarlandı. Temel kelimelerden günlük konuşmaya kadar adım adım ilerleyebilirsin." data-en="Absolutely. DeutschGo is designed to start from A1 level — from scratch. You can progress step by step from basic vocabulary to everyday conversations.">Kesinlikle. DeutschGo A1 seviyesinden, yani sıfırdan başlayacak şekilde tasarlandı. Temel kelimelerden günlük konuşmaya kadar adım adım ilerleyebilirsin.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="İnternet bağlantısı gerekiyor mu?" data-en="Does it require an internet connection?">İnternet bağlantısı gerekiyor mu?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="Flashcard'lar ve gramer içerikleri için internet gerekmez, çevrimdışı çalışır. AI sohbet ve bazı özellikler için internet bağlantısı gereklidir." data-en="Flashcards and grammar content work offline — no internet needed. AI chat and some features require an internet connection.">Flashcard'lar ve gramer içerikleri için internet gerekmez, çevrimdışı çalışır. AI sohbet ve bazı özellikler için internet bağlantısı gereklidir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="Uygulama hangi dillerde kullanılabiliyor?" data-en="What languages is the app available in?">Uygulama hangi dillerde kullanılabiliyor?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="DeutschGo şu an Türkçe, İngilizce ve Almanca arayüz desteklemektedir. Uygulama içinden istediğin dili seçebilirsin." data-en="DeutschGo currently supports Turkish, English and German interfaces. You can switch between languages from within the app.">DeutschGo şu an Türkçe, İngilizce ve Almanca arayüz desteklemektedir. Uygulama içinden istediğin dili seçebilirsin.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-tr="AI sohbet nasıl çalışıyor?" data-en="How does the AI chat work?">AI sohbet nasıl çalışıyor?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-tr="AI sohbet, gerçek hayat senaryoları üzerine kurulu rol yapma konuşmalarından oluşur. Kafe siparişi, otel rezervasyonu, iş görüşmesi gibi 44 farklı senaryo arasından seçim yapabilirsin. AI seviyene göre uyum sağlar, hatalarını düzeltir ve seni yönlendirir." data-en="AI chat is built around real-life roleplay scenarios — ordering at a café, booking a hotel, job interviews and more. Choose from 44 scenarios across A1 and A2 levels. The AI adapts to your level, corrects your mistakes and guides you through the conversation.">AI sohbet, gerçek hayat senaryoları üzerine kurulu rol yapma konuşmalarından oluşur. Kafe siparişi, otel rezervasyonu, iş görüşmesi gibi 44 farklı senaryo arasından seçim yapabilirsin. AI seviyene göre uyum sağlar, hatalarını düzeltir ve seni yönlendirir.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ===== STATS BAR ===== -->
   <section class="stats-bar" id="stats" aria-label="App statistics">
     <div class="stats-grid">
       <div class="stat-item fade-up">
-        <div class="stat-number">1900+</div>
+        <div class="stat-number">2000+</div>
         <div class="stat-label" data-tr="Kelime" data-en="Words">Kelime</div>
       </div>
 
       <div class="stat-divider" aria-hidden="true"></div>
 
       <div class="stat-item fade-up">
-        <div class="stat-number">75+</div>
+        <div class="stat-number">80+</div>
         <div class="stat-label" data-tr="Gramer Konusu" data-en="Grammar Topics">Gramer Konusu</div>
       </div>
 
       <div class="stat-divider" aria-hidden="true"></div>
 
       <div class="stat-item fade-up">
-        <div class="stat-number">25+</div>
+        <div class="stat-number">40+</div>
         <div class="stat-label" data-tr="AI Senaryo" data-en="AI Scenarios">AI Senaryo</div>
       </div>
 
       <div class="stat-divider" aria-hidden="true"></div>
 
       <div class="stat-item fade-up">
-        <div class="stat-number">3</div>
-        <div class="stat-label" data-tr="Dil Desteği (TR · EN · DE)" data-en="Languages (TR · EN · DE)">Dil Desteği (TR · EN · DE)</div>
+        <div class="lang-flags">
+          <span class="lang-flag-item">🇹🇷</span>
+          <span class="lang-flag-item">🇬🇧</span>
+          <span class="lang-flag-item">🇩🇪</span>
+        </div>
+        <div class="stat-label" data-tr="Dil Desteği" data-en="Language Support">Dil Desteği</div>
       </div>
     </div>
   </section>
@@ -981,21 +1539,26 @@
 
       <div class="footer-center">
         <p class="footer-copy">
-          © 2025 DeutschGo ·
+          © 2026 DeutschGo ·
           <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a>
         </p>
         <p class="footer-copy" style="margin-top:4px;font-size:0.75rem;" data-tr="A1-A2 Almanca öğrenme uygulaması" data-en="A1-A2 German language learning app">
           A1-A2 Almanca öğrenme uygulaması
         </p>
+        <p class="footer-copy" style="margin-top:10px;font-size:0.75rem;">
+          <a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
+          &nbsp;·&nbsp;
+          <a href="https://deutsch-go.com/terms" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a>
+        </p>
       </div>
 
-      <div class="footer-stores" aria-label="App stores — coming soon">
-        <div class="footer-store-btn" aria-label="App Store">
-          <span>🍎</span>
+      <div class="footer-stores" aria-label="App stores">
+        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="footer-store-btn footer-store-btn-active" aria-label="App Store" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           <span class="footer-store-label">App Store</span>
-        </div>
-        <div class="footer-store-btn" aria-label="Google Play">
-          <span>▶️</span>
+        </a>
+        <div class="footer-store-btn" aria-label="Google Play - Coming Soon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
           <span class="footer-store-label">Google Play</span>
         </div>
       </div>
@@ -1005,7 +1568,8 @@
   <!-- ===== JAVASCRIPT ===== -->
   <script>
     // ── Language switching ──────────────────────────────────────────────────
-    let currentLang = 'tr';
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    let currentLang = browserLang.startsWith('tr') ? 'tr' : 'en';
 
     function setLang(lang) {
       currentLang = lang;
@@ -1034,14 +1598,33 @@
       if (lang === 'en') {
         document.title = 'DeutschGo — Learn German in a Fun & Effective Way | A1-A2';
         var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Coming soon on App Store and Google Play!');
+        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Now on App Store, coming soon on Google Play!');
       } else {
         document.title = 'DeutschGo — Almancayı Eğlenceli Öğren | A1-A2';
         var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. Yakında App Store ve Google Play\'de!');
+        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. App Store\'da şimdi, Google Play\'de yakında!');
       }
     }
 
+
+    // Auto-apply detected language on load
+    setLang(currentLang);
+
+    // ── FAQ accordion ───────────────────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
 
     // ── Intersection Observer for fade-up animations ────────────────────────
     (function() {
