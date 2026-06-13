@@ -1113,6 +1113,32 @@
       color: var(--turquoise);
     }
 
+    .footer-guides {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-guides-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin: 0 0 4px;
+    }
+
+    .footer-guides-link {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-guides-link:hover {
+      color: var(--turquoise);
+    }
+
     .footer-stores {
       display: flex;
       gap: 12px;
@@ -1599,6 +1625,11 @@
           &nbsp;·&nbsp;
           <a href="https://deutsch-go.com/terms" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a>
         </p>
+      </div>
+
+      <div class="footer-guides">
+        <p class="footer-guides-title" data-tr="Rehberler" data-en="Guides">Rehberler</p>
+        <a href="/blog/der-die-das" class="footer-guides-link">Der, Die, Das — Artikel Rehberi</a>
       </div>
 
       <div class="footer-stores" aria-label="App stores">
