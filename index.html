@@ -12,6 +12,10 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://deutsch-go.com/" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
   <!-- Hreflang: dil/bölge hedefleme -->
   <link rel="alternate" hreflang="tr" href="https://deutsch-go.com/?lang=tr" />
   <link rel="alternate" hreflang="en" href="https://deutsch-go.com/?lang=en" />
@@ -22,9 +26,9 @@
   <meta property="og:description" content="Flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle A1-A2 Almancayı öğren. Türkçe arayüz, ücretsiz başla." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deutsch-go.com" />
-  <meta property="og:image" content="https://deutsch-go.com/screenshots/17.png" />
-  <meta property="og:image:width" content="1242" />
-  <meta property="og:image:height" content="2688" />
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="DeutschGo" />
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -33,7 +37,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DeutschGo — Almanca Öğrenme Uygulaması" />
   <meta name="twitter:description" content="Flashcard'lar, AI sohbet ve mini oyunlarla A1-A2 Almancayı öğren. Ücretsiz başla!" />
-  <meta name="twitter:image" content="https://deutsch-go.com/screenshots/17.png" />
+  <meta name="twitter:image" content="https://deutsch-go.com/og-image.png" />
 
   <!-- JSON-LD: Structured Data -->
   <script type="application/ld+json">
@@ -59,7 +63,7 @@
     "inLanguage": ["tr", "en", "de"],
     "downloadUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
     "installUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
-    "screenshot": "https://deutsch-go.com/screenshots/17.png",
+    "screenshot": "https://deutsch-go.com/og-image.png",
     "featureList": "Flashcards, AI Chat, Mini Games, Grammar Library, Reading Practice, Pronunciation Practice, Listening Practice, Daily Streaks",
     "publisher": {
       "@type": "Organization",
@@ -78,7 +82,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet" /></noscript>
 
   <style>
     /* ===== RESET & BASE ===== */
