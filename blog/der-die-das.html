@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Der, Die, Das: Almanca Artikel Rehberi + Ezber İpuçları | DeutschGo</title>
+  <meta name="description" content="Almanca der, die, das artikellerini nasıl öğrenirsiniz? Kelime sonlarına göre artikel bulma kuralları, renk sistemi ve pratik ipuçlarıyla A1-A2 seviyesi için kapsamlı rehber." />
+  <meta name="keywords" content="der die das, almanca artikel, almanca der die das kuralları, artikel öğrenme, almanca öğren, deutsch artikel" />
+  <meta name="author" content="DeutschGo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deutsch-go.com/blog/der-die-das" />
+
+  <meta property="og:title" content="Der, Die, Das: Almanca Artikel Rehberi" />
+  <meta property="og:description" content="Almanca artikelleri ezberlemeden öğrenin. Kelime sonlarına göre kurallar ve ipuçları." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://deutsch-go.com/blog/der-die-das" />
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:site_name" content="DeutschGo" />
+
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Der, Die, Das: Almanca Artikel Rehberi + Ezber İpuçları",
+    "description": "Almanca der, die, das artikellerini nasıl öğrenirsiniz? Kelime sonlarına göre artikel bulma kuralları ve pratik ipuçları.",
+    "url": "https://deutsch-go.com/blog/der-die-das",
+    "image": "https://deutsch-go.com/og-image.png",
+    "author": { "@type": "Organization", "name": "DeutschGo" },
+    "publisher": { "@type": "Organization", "name": "DeutschGo", "url": "https://deutsch-go.com" },
+    "inLanguage": "tr",
+    "datePublished": "2026-06-14"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --turquoise: #00D1B2;
+      --turquoise-dark: #00b89c;
+      --turquoise-light: #e0faf6;
+      --der: #4A90D9;
+      --der-light: #EBF4FF;
+      --die: #E8547A;
+      --die-light: #FFF0F4;
+      --das: #00C853;
+      --das-light: #EDFFF4;
+      --dark: #111418;
+      --bg-light: #F0F4F8;
+      --text-primary: #111418;
+      --text-secondary: #5a6478;
+      --border: #e8edf3;
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; color: var(--text-primary); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAVBAR */
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .navbar-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .navbar-logo-icon { width: 34px; height: 34px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+    .navbar-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .navbar-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--turquoise); }
+    .navbar-back { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .navbar-back:hover { color: var(--turquoise); }
+
+    /* LAYOUT */
+    .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    /* HERO */
+    .blog-hero { background: linear-gradient(135deg, var(--turquoise-light) 0%, #fff 60%); padding: 60px 24px 48px; text-align: center; }
+    .blog-hero .breadcrumb { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 16px; }
+    .blog-hero .breadcrumb a { color: var(--turquoise); text-decoration: none; }
+    .blog-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .blog-hero .subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto 24px; }
+    .blog-hero .meta { font-size: 0.82rem; color: var(--text-secondary); }
+
+    /* ARTIKEL BADGES */
+    .artikel-badges { display: flex; justify-content: center; gap: 12px; margin: 32px 0; flex-wrap: wrap; }
+    .artikel-badge { padding: 10px 28px; border-radius: 999px; font-size: 1.4rem; font-weight: 800; letter-spacing: 0.5px; }
+    .artikel-badge.der { background: var(--der-light); color: var(--der); border: 2px solid var(--der); }
+    .artikel-badge.die { background: var(--die-light); color: var(--die); border: 2px solid var(--die); }
+    .artikel-badge.das { background: var(--das-light); color: var(--das); border: 2px solid var(--das); }
+
+    /* ARTICLE BODY */
+    .blog-body { padding: 48px 0 80px; }
+    .blog-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; }
+    .blog-body h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; }
+    .blog-body p { margin-bottom: 16px; font-size: 1rem; color: var(--text-primary); }
+    .blog-body ul, .blog-body ol { padding-left: 20px; margin-bottom: 16px; }
+    .blog-body li { margin-bottom: 8px; font-size: 1rem; }
+
+    /* INFO BOX */
+    .info-box { background: var(--turquoise-light); border-left: 4px solid var(--turquoise); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .info-box p { margin: 0; font-size: 0.95rem; }
+    .info-box strong { color: var(--turquoise-dark); }
+
+    .warning-box { background: #FFF8E1; border-left: 4px solid #FFA000; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .warning-box p { margin: 0; font-size: 0.95rem; }
+
+    /* ARTIKEL CARDS */
+    .artikel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .artikel-grid { grid-template-columns: 1fr; } }
+
+    .artikel-card { border-radius: var(--radius-lg); padding: 24px 20px; }
+    .artikel-card.der { background: var(--der-light); border: 1.5px solid #c5deff; }
+    .artikel-card.die { background: var(--die-light); border: 1.5px solid #ffd0dc; }
+    .artikel-card.das { background: var(--das-light); border: 1.5px solid #b2f5d0; }
+    .artikel-card .label { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+    .artikel-card.der .label { color: var(--der); }
+    .artikel-card.die .label { color: var(--die); }
+    .artikel-card.das .label { color: var(--das); }
+    .artikel-card .gender { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 12px; }
+    .artikel-card .examples { font-size: 0.9rem; line-height: 1.8; }
+    .artikel-card.der .examples { color: #1a4d8a; }
+    .artikel-card.die .examples { color: #8a1a35; }
+    .artikel-card.das .examples { color: #0a5c2a; }
+
+    /* RULES TABLE */
+    .rules-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
+    .rules-table th { text-align: left; padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; }
+    .rules-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .rules-table tr:last-child td { border-bottom: none; }
+    .rules-table .der-row th { background: var(--der-light); color: var(--der); }
+    .rules-table .der-row td { background: var(--der-light); }
+    .rules-table .die-row th { background: var(--die-light); color: var(--die); }
+    .rules-table .die-row td { background: var(--die-light); }
+    .rules-table .das-row th { background: var(--das-light); color: var(--das); }
+    .rules-table .das-row td { background: var(--das-light); }
+    .ending { font-family: monospace; font-weight: 700; font-size: 1rem; }
+    .example-word { color: var(--text-secondary); font-size: 0.85rem; margin-top: 2px; }
+
+    /* TIPS */
+    .tips-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .tips-grid { grid-template-columns: 1fr; } }
+    .tip-card { background: var(--bg-light); border-radius: var(--radius-md); padding: 20px; }
+    .tip-card .tip-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .tip-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .tip-card p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+
+    /* QUIZ PREVIEW */
+    .quiz-preview { background: var(--turquoise-light); border-radius: var(--radius-lg); padding: 32px; margin: 48px 0; text-align: center; }
+    .quiz-preview h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+    .quiz-preview p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 24px; }
+    .quiz-word { font-size: 1.6rem; font-weight: 800; margin-bottom: 20px; }
+    .quiz-options { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .quiz-opt { padding: 10px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; border: 2px solid; cursor: default; }
+    .quiz-opt.der { border-color: var(--der); color: var(--der); background: var(--der-light); }
+    .quiz-opt.die { border-color: var(--die); color: var(--die); background: var(--die-light); }
+    .quiz-opt.das { border-color: var(--das); color: var(--das); background: var(--das-light); }
+    .quiz-opt.correct { border-color: #00C853; background: #EDFFF4; color: #00a844; }
+
+    /* CTA */
+    .cta-section { background: var(--dark); border-radius: var(--radius-lg); padding: 48px 32px; text-align: center; margin: 48px 0; }
+    .cta-section h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .cta-section p { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--turquoise); color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 999px; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
+    footer a { color: var(--turquoise); text-decoration: none; }
+
+    /* DIVIDER */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+    /* FADE IN */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="https://deutsch-go.com" class="navbar-logo" aria-label="DeutschGo Ana Sayfa">
+        <div class="navbar-logo-icon">
+          <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
+        </div>
+        <span class="navbar-logo-text">DeutschGo</span>
+      </a>
+      <a href="https://deutsch-go.com" class="navbar-back">
+        ← Ana Sayfa
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="blog-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="https://deutsch-go.com">DeutschGo</a> · Blog · Almanca Gramer</p>
+      <h1>Der, Die, Das:<br>Almanca Artikel Rehberi</h1>
+      <p class="subtitle">Artikelleri ezberlemeden öğrenin — kelime sonlarına göre kurallar, renk sistemi ve pratik ipuçları.</p>
+      <p class="meta">📚 Okuma süresi: ~7 dakika · A1–A2 seviyesi</p>
+      <div class="artikel-badges">
+        <div class="artikel-badge der">der</div>
+        <div class="artikel-badge die">die</div>
+        <div class="artikel-badge das">das</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <main class="blog-body">
+    <div class="container">
+
+      <!-- Giriş -->
+      <p>Almanca öğrenmeye başlayan herkesin karşılaştığı ilk büyük engel artikellerdir. Türkçede böyle bir kavram olmadığı için <strong>der, die, das</strong> ayrımı başlangıçta oldukça kafa karıştırıcı görünebilir. Ama iyi haber şu: tamamen rastgele değil. Belirli kurallar ve örüntüler var — bunları öğrenirseniz yeni bir kelimeyle karşılaştığınızda çoğu zaman doğru artikeli tahmin edebilirsiniz.</p>
+
+      <div class="info-box">
+        <p><strong>Kısa özet:</strong> Almancada her ismin bir grammatik cinsiyeti vardır. <strong style="color:var(--der)">der</strong> = eril, <strong style="color:var(--die)">die</strong> = dişil, <strong style="color:var(--das)">das</strong> = nötr. Bu cinsiyet her zaman biyolojik cinsiyetle örtüşmez.</p>
+      </div>
+
+      <hr class="divider">
+
+      <!-- 3 Artikel -->
+      <h2 class="fade-up">Üç Artikel, Üç Renk</h2>
+      <p>Almancayı öğretenlerin en çok önerdiği yöntemlerden biri, kelimeleri renk kodlarıyla öğrenmektir. Her artikeli bir renkle eşleştirin ve kelimeyi o renkle görselleştirin:</p>
+
+      <div class="artikel-grid fade-up">
+        <div class="artikel-card der">
+          <div class="label">der</div>
+          <div class="gender">Eril · Maskulin</div>
+          <div class="examples">
+            der Mann (adam)<br>
+            der Hund (köpek)<br>
+            der Tisch (masa)<br>
+            der Tag (gün)
+          </div>
+        </div>
+        <div class="artikel-card die">
+          <div class="label">die</div>
+          <div class="gender">Dişil · Feminin</div>
+          <div class="examples">
+            die Frau (kadın)<br>
+            die Katze (kedi)<br>
+            die Schule (okul)<br>
+            die Nacht (gece)
+          </div>
+        </div>
+        <div class="artikel-card das">
+          <div class="label">das</div>
+          <div class="gender">Nötr · Neutrum</div>
+          <div class="examples">
+            das Kind (çocuk)<br>
+            das Buch (kitap)<br>
+            das Haus (ev)<br>
+            das Auto (araba)
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <p>⚠️ <strong>Dikkat:</strong> "das Mädchen" (kız) ve "das Weib" (kadın) nötr artikelle kullanılır, çünkü Almancada <em>-chen</em> ve <em>-lein</em> küçültme ekleri alan tüm kelimeler her zaman <strong>das</strong> alır.</p>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Kelime Sonu Kuralları -->
+      <h2 class="fade-up">Kelime Sonlarına Göre Artikel Bulma</h2>
+      <p>Bir kelimenin sonuna baktığınızda çoğu zaman artikelini tahmin edebilirsiniz. Bu kurallar %80–90 oranında işe yarar — istisnalar vardır ama başlangıç için çok güçlü bir araçtır.</p>
+
+      <table class="rules-table fade-up">
+        <thead>
+          <tr class="der-row">
+            <th colspan="2">🔵 DER — Eril (Maskulin)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="der-row">
+            <td><span class="ending">-er</span><div class="example-word">der Lehrer, der Vater, der Computer</div></td>
+            <td><span class="ending">-ling</span><div class="example-word">der Frühling, der Lehrling</div></td>
+          </tr>
+          <tr class="der-row">
+            <td><span class="ending">-ig</span><div class="example-word">der König, der Honig</div></td>
+            <td><span class="ending">-ist</span><div class="example-word">der Tourist, der Pianist</div></td>
+          </tr>
+          <tr class="der-row">
+            <td><span class="ending">-ismus</span><div class="example-word">der Tourismus, der Realismus</div></td>
+            <td><span class="ending">-ant</span><div class="example-word">der Praktikant, der Elefant</div></td>
+          </tr>
+          <tr class="der-row">
+            <td colspan="2"><span class="ending">Günler, aylar, mevsimler, yön adları</span><div class="example-word">der Montag, der Januar, der Sommer, der Norden</div></td>
+          </tr>
+        </tbody>
+
+        <thead>
+          <tr class="die-row">
+            <th colspan="2">🔴 DIE — Dişil (Feminin)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="die-row">
+            <td><span class="ending">-ung</span><div class="example-word">die Zeitung, die Wohnung, die Übung</div></td>
+            <td><span class="ending">-heit / -keit</span><div class="example-word">die Freiheit, die Möglichkeit</div></td>
+          </tr>
+          <tr class="die-row">
+            <td><span class="ending">-schaft</span><div class="example-word">die Freundschaft, die Mannschaft</div></td>
+            <td><span class="ending">-tion / -sion</span><div class="example-word">die Nation, die Pension</div></td>
+          </tr>
+          <tr class="die-row">
+            <td><span class="ending">-tät / -ität</span><div class="example-word">die Universität, die Qualität</div></td>
+            <td><span class="ending">-ik</span><div class="example-word">die Musik, die Klinik, die Fabrik</div></td>
+          </tr>
+          <tr class="die-row">
+            <td><span class="ending">-ie</span><div class="example-word">die Familie, die Energie, die Demokratie</div></td>
+            <td><span class="ending">-e (çoğu)</span><div class="example-word">die Straße, die Schule, die Sprache</div></td>
+          </tr>
+        </tbody>
+
+        <thead>
+          <tr class="das-row">
+            <th colspan="2">🟢 DAS — Nötr (Neutrum)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="das-row">
+            <td><span class="ending">-chen / -lein</span><div class="example-word">das Mädchen, das Brötchen, das Fräulein</div></td>
+            <td><span class="ending">-ment</span><div class="example-word">das Instrument, das Experiment</div></td>
+          </tr>
+          <tr class="das-row">
+            <td><span class="ending">-um</span><div class="example-word">das Museum, das Zentrum, das Datum</div></td>
+            <td><span class="ending">-tum</span><div class="example-word">das Wachstum, das Eigentum</div></td>
+          </tr>
+          <tr class="das-row">
+            <td><span class="ending">Fiilden türeyen isimler (sonsuz)</span><div class="example-word">das Essen, das Schreiben, das Lesen</div></td>
+            <td><span class="ending">Renk isimleri</span><div class="example-word">das Blau, das Rot, das Grün</div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <!-- Pratik İpuçları -->
+      <h2 class="fade-up">5 Pratik Ezber İpucu</h2>
+
+      <div class="tips-grid fade-up">
+        <div class="tip-card">
+          <div class="tip-icon">🎨</div>
+          <h4>Renk Sistemi Kullan</h4>
+          <p>Der = mavi, Die = kırmızı, Das = yeşil. Flashcard'larınızı bu renklerde yapın. Kelimeyi düşündüğünüzde renk de aklınıza gelir.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔗</div>
+          <h4>Artikeli Kelimeyle Birlikte Öğren</h4>
+          <p>"Tisch" değil, "der Tisch" olarak kaydet. Artikeli kelimeden asla ayırmayın — baştan doğru öğrenmek sonradan değiştirmekten çok daha kolaydır.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🏷️</div>
+          <h4>Ev Eşyalarını Etiketle</h4>
+          <p>Evdeki eşyalara renk kodlu yapışkan not yapıştırın. Her gün gözünüze çarpar ve farkında olmadan ezberlersiniz.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🧠</div>
+          <h4>Kelime Ailelerini Kullan</h4>
+          <p>Aynı sonekten türeyen kelimeler aynı artikeli alır. "die Freiheit, die Schönheit, die Wahrheit" — hepsi <strong>-heit</strong> ile bitiyor, hepsi die.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🎯</div>
+          <h4>Sık Kullanılanları Önce Öğren</h4>
+          <p>A1 seviyesinde sadece ~200 kelime yeterli. Bu kelimelerin artikellerini ezberlemek öğrenmenizin %80'ini karşılar.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📱</div>
+          <h4>Düzenli Tekrar Şart</h4>
+          <p>Beyin yeni bilgiyi ancak tekrarla kalıcı bellekte saklar. Günde 10 dakika uygulama ile hafıza güçlendirilir.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Quiz preview -->
+      <div class="quiz-preview fade-up">
+        <h3>Kendinizi Test Edin</h3>
+        <p>Bu kelimenin artikeli ne? (Cevabı gördükten sonra uygulamada daha fazlasını deneyin)</p>
+        <div class="quiz-word">___ Schule</div>
+        <div class="quiz-options">
+          <div class="quiz-opt der">der</div>
+          <div class="quiz-opt correct">✓ die</div>
+          <div class="quiz-opt das">das</div>
+        </div>
+        <p style="margin-top:16px;font-size:0.85rem;color:var(--text-secondary)">Schule → <strong>-e</strong> ile bitiyor → çoğunlukla <strong style="color:var(--die)">die</strong> ✓</p>
+      </div>
+
+      <hr class="divider">
+
+      <!-- İstisnalar -->
+      <h2 class="fade-up">Kuralların İstisnaları</h2>
+      <p>Kurallar çoğunlukla işe yarasa da Almanca her zaman sürpriz yapabilir. En sık karşılaşılan istisnalar:</p>
+      <ul>
+        <li><strong>das Mädchen</strong> — biyolojik olarak dişil ama -chen eki aldığı için <em>das</em></li>
+        <li><strong>der See</strong> (göl) vs <strong>die See</strong> (deniz) — aynı yazım, farklı anlam, farklı artikel</li>
+        <li><strong>das Café, das Hotel, das Restaurant</strong> — yabancı kökenli kelimeler çoğunlukla <em>das</em> alır</li>
+        <li><strong>die E-Mail</strong> ama <strong>der Brief</strong> — benzer kavramlar farklı artikel alabilir</li>
+      </ul>
+
+      <div class="info-box">
+        <p><strong>Altın kural:</strong> İstisnaları görmezden gelmeyin — ama sizi cesaretten düşürmesin de. Kuralları öğrenin, istisnalara zamanla alışırsınız. Dil öğrenmek maraton, sprint değil.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-section fade-up">
+        <h2>Artikelleri Uygulayarak Öğren</h2>
+        <p>DeutschGo'nun artikel oyunu ile 2000+ kelimeyi renk kodlu flashcard'lar ve mini oyunlarla pratik yapın. Ücretsiz başlayın.</p>
+        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store'dan İndir — Ücretsiz
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="https://deutsch-go.com">Ana Sayfa</a></p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
