@@ -3,11 +3,77 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://deutsch-go.com/</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/?lang=tr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deutsch-go.com/"/>
+  </url>
+
+  <!-- Blog: Gramer -->
+  <url>
+    <loc>https://deutsch-go.com/blog/der-die-das</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-akkusativ</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-dativ</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-cogul</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-fiil-cekimi</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-kein-nicht</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Kelime -->
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-sayilar</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-renkler</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-gunler-aylar</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Konuşma -->
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-selamlasma</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

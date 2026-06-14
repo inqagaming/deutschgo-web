@@ -268,45 +268,21 @@
     }
 
     .hero-inner {
-      max-width: 1100px;
+      max-width: 720px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 48px;
+      text-align: center;
     }
 
     .hero-content {
-      text-align: left;
+      text-align: center;
+      width: 100%;
     }
 
     .hero-mockup {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-mockup img {
-      width: 100%;
-      max-width: 340px;
-      border-radius: 24px;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.12);
-    }
-
-    @media (max-width: 768px) {
-      .hero-inner {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .hero-content {
-        text-align: center;
-      }
-      .hero-mockup {
-        order: -1;
-      }
-      .hero-mockup img {
-        max-width: 240px;
-      }
+      display: none;
     }
 
     .hero::before {
@@ -1634,6 +1610,11 @@
         <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link">Almanca Fiil Çekimi</a>
         <a href="/blog/almanca-akkusativ" class="footer-guides-link">Akkusativ — Belirtme Hâli</a>
         <a href="/blog/almanca-kein-nicht" class="footer-guides-link">Kein ve Nicht: Olumsuzluk</a>
+        <a href="/blog/almanca-dativ" class="footer-guides-link">Dativ — Wem? Sorusunun Cevabı</a>
+        <a href="/blog/almanca-sayilar" class="footer-guides-link">Almanca Sayılar: 1'den 1000'e</a>
+        <a href="/blog/almanca-selamlasma" class="footer-guides-link">Almanca Selamlaşma İfadeleri</a>
+        <a href="/blog/almanca-renkler" class="footer-guides-link">Almanca Renkler (Farben)</a>
+        <a href="/blog/almanca-gunler-aylar" class="footer-guides-link">Almanca Günler ve Aylar</a>
       </div>
 
       <div class="footer-stores" aria-label="App stores">
