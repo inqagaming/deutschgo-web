@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-tr="Almanca Öğrenme Rehberleri — Blog | DeutschGo" data-en="German Learning Guides — Blog | DeutschGo">Almanca Öğrenme Rehberleri — Blog | DeutschGo</title>
+  <meta name="description" content="Almanca gramer rehberleri, kelime listeleri ve öğrenme ipuçları. A1-A2 seviyesi için ücretsiz içerikler." />
+  <meta name="keywords" content="almanca öğren, almanca gramer, almanca kelime, deutsch lernen, german grammar, learn german" />
+  <meta name="author" content="DeutschGo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deutsch-go.com/blog" />
+
+  <link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog?lang=tr" />
+  <link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://deutsch-go.com/blog" />
+
+  <meta property="og:title" content="Almanca Öğrenme Rehberleri | DeutschGo Blog" />
+  <meta property="og:description" content="Almanca gramer ve kelime rehberleri. A1-A2 için ücretsiz içerikler." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deutsch-go.com/blog" />
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:site_name" content="DeutschGo" />
+
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "DeutschGo Blog",
+    "description": "German learning guides for A1-A2 learners",
+    "url": "https://deutsch-go.com/blog",
+    "publisher": { "@type": "Organization", "name": "DeutschGo", "url": "https://deutsch-go.com" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --turquoise: #00D1B2;
+      --turquoise-dark: #00b89c;
+      --turquoise-light: #e0faf6;
+      --dark: #111418;
+      --bg-light: #F0F4F8;
+      --text-primary: #111418;
+      --text-secondary: #5a6478;
+      --border: #e8edf3;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; color: var(--text-primary); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* Navbar */
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .navbar-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .navbar-logo-icon { width: 34px; height: 34px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+    .navbar-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .navbar-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--turquoise); }
+    .navbar-right { display: flex; align-items: center; gap: 16px; }
+    .navbar-home { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+    .navbar-home:hover { color: var(--turquoise); }
+    .lang-toggle { display: flex; border: 1.5px solid var(--border); border-radius: 999px; overflow: hidden; }
+    .lang-btn { background: none; border: none; padding: 5px 14px; font-size: 0.82rem; font-weight: 700; cursor: pointer; color: var(--text-secondary); font-family: inherit; transition: background 0.2s, color 0.2s; }
+    .lang-btn.active { background: var(--turquoise); color: #fff; }
+
+    /* Hero */
+    .blog-hero { background: linear-gradient(135deg, var(--turquoise-light) 0%, #fff 60%); padding: 64px 24px 56px; text-align: center; }
+    .blog-hero .hero-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--turquoise-dark); margin-bottom: 12px; }
+    .blog-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
+    .blog-hero p { font-size: 1.05rem; color: var(--text-secondary); max-width: 520px; margin: 0 auto; }
+
+    /* Filter tabs */
+    .filter-bar { max-width: 1100px; margin: 40px auto 0; padding: 0 24px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 20px; border-radius: 999px; border: 1.5px solid var(--border); background: #fff; font-size: 0.88rem; font-weight: 700; cursor: pointer; color: var(--text-secondary); font-family: inherit; transition: all 0.2s; }
+    .filter-btn:hover { border-color: var(--turquoise); color: var(--turquoise); }
+    .filter-btn.active { background: var(--turquoise); border-color: var(--turquoise); color: #fff; }
+
+    /* Grid */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px 0 80px; }
+
+    /* Post card */
+    .post-card { display: block; text-decoration: none; color: var(--text-primary); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px; transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s; }
+    .post-card:hover { border-color: var(--turquoise); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,209,178,0.12); }
+    .post-card .card-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--turquoise-dark); margin-bottom: 10px; }
+    .post-card h2 { font-size: 1.05rem; font-weight: 800; line-height: 1.4; margin-bottom: 10px; }
+    .post-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px; }
+    .post-card .card-meta { font-size: 0.78rem; color: var(--text-secondary); display: flex; align-items: center; gap: 8px; }
+    .post-card .card-meta .dot { opacity: 0.4; }
+    .post-card .card-read { font-size: 0.82rem; font-weight: 700; color: var(--turquoise); margin-top: 14px; display: flex; align-items: center; gap: 4px; }
+
+    /* Hidden by filter */
+    .post-card.hidden { display: none; }
+
+    /* CTA */
+    .blog-cta { background: var(--dark); border-radius: var(--radius-lg); padding: 48px 32px; text-align: center; margin: 0 24px 80px; max-width: 1100px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
+    .blog-cta h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .blog-cta p { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--turquoise); color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 999px; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
+    footer a { color: var(--turquoise); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .posts-grid { grid-template-columns: 1fr; }
+      .blog-cta { margin: 0 16px 60px; padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="https://deutsch-go.com" class="navbar-logo" aria-label="DeutschGo">
+        <div class="navbar-logo-icon">
+          <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
+        </div>
+        <span class="navbar-logo-text">DeutschGo</span>
+      </a>
+      <div class="navbar-right">
+        <a href="https://deutsch-go.com" class="navbar-home" data-tr="← Ana Sayfa" data-en="← Home">← Ana Sayfa</a>
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
+          <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <p class="hero-label" data-tr="DeutschGo Blog" data-en="DeutschGo Blog">DeutschGo Blog</p>
+    <h1 data-tr="Almanca Öğrenme Rehberleri" data-en="German Learning Guides">Almanca Öğrenme Rehberleri</h1>
+    <p data-tr="Gramer kuralları, kelime listeleri ve öğrenme ipuçları — A1-A2 seviyesi için ücretsiz rehberler." data-en="Grammar rules, vocabulary lists and learning tips — free guides for A1-A2 learners.">Gramer kuralları, kelime listeleri ve öğrenme ipuçları — A1-A2 seviyesi için ücretsiz rehberler.</p>
+  </div>
+
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterPosts('all')" data-tr="Tümü" data-en="All">Tümü</button>
+      <button class="filter-btn" onclick="filterPosts('grammar')" data-tr="Gramer" data-en="Grammar">Gramer</button>
+      <button class="filter-btn" onclick="filterPosts('vocabulary')" data-tr="Kelime" data-en="Vocabulary">Kelime</button>
+      <button class="filter-btn" onclick="filterPosts('conversation')" data-tr="Konuşma" data-en="Conversation">Konuşma</button>
+    </div>
+
+    <div class="posts-grid" id="posts-grid">
+
+      <!-- Grammar posts -->
+      <a href="/blog/der-die-das" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A1" data-en="Grammar · A1">Gramer · A1</div>
+        <h2 data-tr="Der, Die, Das: Almanca Artikel Rehberi" data-en="Der, Die, Das: German Articles Guide">Der, Die, Das: Almanca Artikel Rehberi</h2>
+        <p data-tr="Almanca artikelleri ezberlemeden öğrenin. Kelime sonlarına göre kurallar ve ipuçları." data-en="Learn German articles without memorizing. Rules based on word endings and practical tips.">Almanca artikelleri ezberlemeden öğrenin. Kelime sonlarına göre kurallar ve ipuçları.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~8 dakika" data-en="~8 min">~8 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-fiil-cekimi" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A1" data-en="Grammar · A1">Gramer · A1</div>
+        <h2 data-tr="Almanca Fiil Çekimi: Geniş Zaman" data-en="German Verb Conjugation: Present Tense">Almanca Fiil Çekimi: Geniş Zaman</h2>
+        <p data-tr="ich, du, er/sie/es, wir, ihr, sie — 6 ek, sonsuz fiil. Düzenli ve düzensiz fiiller örneklerle." data-en="ich, du, er/sie/es, wir, ihr, sie — 6 endings, endless verbs. Regular and irregular verbs with examples.">ich, du, er/sie/es, wir, ihr, sie — 6 ek, sonsuz fiil. Düzenli ve düzensiz fiiller örneklerle.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~7 dakika" data-en="~7 min">~7 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-akkusativ" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A1" data-en="Grammar · A1">Gramer · A1</div>
+        <h2 data-tr="Almanca Akkusativ: Tek Değişim, Büyük Fark" data-en="German Accusative: One Change, Big Difference">Almanca Akkusativ: Tek Değişim, Büyük Fark</h2>
+        <p data-tr="Akkusativ'de sadece eril artikel değişir: der → den. Hangi fiiller ister? Örneklerle tam rehber." data-en="Only the masculine article changes in accusative: der → den. Which verbs require it? Full guide with examples.">Akkusativ'de sadece eril artikel değişir: der → den. Hangi fiiller ister? Örneklerle tam rehber.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~6 dakika" data-en="~6 min">~6 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-dativ" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A2" data-en="Grammar · A2">Gramer · A2</div>
+        <h2 data-tr="Almanca Dativ: Wem? Sorusunun Cevabı" data-en="German Dative: Answering the Wem? Question">Almanca Dativ: Wem? Sorusunun Cevabı</h2>
+        <p data-tr="Dativ edatları, artikel değişimleri ve kişi zamirleri. Adım adım örneklerle A2 rehberi." data-en="Dative prepositions, article changes and personal pronouns. Step-by-step A2 guide with examples.">Dativ edatları, artikel değişimleri ve kişi zamirleri. Adım adım örneklerle A2 rehberi.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~8 dakika" data-en="~8 min">~8 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-cogul" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A1" data-en="Grammar · A1">Gramer · A1</div>
+        <h2 data-tr="Almanca Çoğul: 5 Tür, Net Kurallar" data-en="German Plural: 5 Types, Clear Rules">Almanca Çoğul: 5 Tür, Net Kurallar</h2>
+        <p data-tr="-e, -er, -en, -(e)s ve değişmez — Almancada çoğul kalıpları cinsiyete göre nasıl seçilir?" data-en="-e, -er, -en, -(e)s and unchanged — how to choose German plural patterns by gender.">-e, -er, -en, -(e)s ve değişmez — Almancada çoğul kalıpları cinsiyete göre nasıl seçilir?</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~6 dakika" data-en="~6 min">~6 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-kein-nicht" class="post-card tr-card" data-category="grammar">
+        <div class="card-tag" data-tr="Gramer · A1" data-en="Grammar · A1">Gramer · A1</div>
+        <h2 data-tr="Kein ve Nicht: Olumsuzluk Kuralları" data-en="Kein vs. Nicht: Negation Rules">Kein ve Nicht: Olumsuzluk Kuralları</h2>
+        <p data-tr="Kein mi, nicht mi? İsim olumsuzlaması için kein, fiil ve sıfat olumsuzlaması için nicht." data-en="Kein or nicht? Use kein to negate nouns, nicht to negate verbs and adjectives.">Kein mi, nicht mi? İsim olumsuzlaması için kein, fiil ve sıfat olumsuzlaması için nicht.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~6 dakika" data-en="~6 min">~6 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <!-- Vocabulary posts -->
+      <a href="/blog/almanca-sayilar" class="post-card tr-card" data-category="vocabulary">
+        <div class="card-tag" data-tr="Kelime · A1" data-en="Vocabulary · A1">Kelime · A1</div>
+        <h2 data-tr="Almanca Sayılar: 1'den 1000'e" data-en="German Numbers: 1 to 1000">Almanca Sayılar: 1'den 1000'e</h2>
+        <p data-tr="1'den 1000'e tüm sayılar, telaffuz ipuçları ve günlük kullanım örnekleri." data-en="All numbers from 1 to 1000, pronunciation tips and everyday usage examples.">1'den 1000'e tüm sayılar, telaffuz ipuçları ve günlük kullanım örnekleri.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~5 dakika" data-en="~5 min">~5 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-renkler" class="post-card tr-card" data-category="vocabulary">
+        <div class="card-tag" data-tr="Kelime · A1" data-en="Vocabulary · A1">Kelime · A1</div>
+        <h2 data-tr="Almanca Renkler (Farben): Tam Liste" data-en="German Colors (Farben): Complete List">Almanca Renkler (Farben): Tam Liste</h2>
+        <p data-tr="Almancada renkler nasıl söylenir? Sıfat çekimi ve cümle içinde kullanım örnekleri." data-en="How to say colors in German? Adjective declension and usage examples in sentences.">Almancada renkler nasıl söylenir? Sıfat çekimi ve cümle içinde kullanım örnekleri.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~5 dakika" data-en="~5 min">~5 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <a href="/blog/almanca-gunler-aylar" class="post-card tr-card" data-category="vocabulary">
+        <div class="card-tag" data-tr="Kelime · A1" data-en="Vocabulary · A1">Kelime · A1</div>
+        <h2 data-tr="Almanca Günler ve Aylar: Tam Rehber" data-en="German Days & Months: Complete Guide">Almanca Günler ve Aylar: Tam Rehber</h2>
+        <p data-tr="Montag'dan Sonntag'a, Januar'dan Dezember'e — tarih ve zaman ifadeleriyle birlikte." data-en="From Montag to Sonntag, Januar to Dezember — with date and time expressions.">Montag'dan Sonntag'a, Januar'dan Dezember'e — tarih ve zaman ifadeleriyle birlikte.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~6 dakika" data-en="~6 min">~6 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <!-- Conversation posts -->
+      <a href="/blog/almanca-selamlasma" class="post-card tr-card" data-category="conversation">
+        <div class="card-tag" data-tr="Konuşma · A1" data-en="Conversation · A1">Konuşma · A1</div>
+        <h2 data-tr="Almanca Selamlaşma İfadeleri: Tam Rehber" data-en="German Greetings & Farewells: Complete Guide">Almanca Selamlaşma İfadeleri: Tam Rehber</h2>
+        <p data-tr="Guten Morgen'dan Auf Wiedersehen'a — resmi ve samimi Almanca selamlaşma ifadeleri." data-en="From Guten Morgen to Auf Wiedersehen — formal and informal German greetings.">Guten Morgen'dan Auf Wiedersehen'a — resmi ve samimi Almanca selamlaşma ifadeleri.</p>
+        <div class="card-meta"><span>📚</span><span data-tr="~5 dakika" data-en="~5 min">~5 dakika</span></div>
+        <div class="card-read" data-tr="Oku →" data-en="Read →">Oku →</div>
+      </a>
+
+      <!-- EN Grammar posts -->
+      <a href="/blog/german-articles-der-die-das" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A1</div>
+        <h2>Der, Die, Das: The Complete Guide to German Articles</h2>
+        <p>Learn German articles without rote memorization. Rules by word endings, gender patterns and memory tips.</p>
+        <div class="card-meta"><span>📚</span><span>~8 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-verb-conjugation" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A1</div>
+        <h2>German Verb Conjugation: Present Tense (Präsens)</h2>
+        <p>ich, du, er/sie/es, wir, ihr, sie — 6 endings, endless verbs. Regular and irregular verbs explained.</p>
+        <div class="card-meta"><span>📚</span><span>~7 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-accusative" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A1</div>
+        <h2>German Accusative Case: One Change, Big Difference</h2>
+        <p>Only the masculine article changes in accusative: der → den. Which verbs require it? Full guide.</p>
+        <div class="card-meta"><span>📚</span><span>~6 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-dative" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A2</div>
+        <h2>German Dative Case: Answering the Wem? Question</h2>
+        <p>Dative prepositions, article changes and personal pronouns. Step-by-step A2 guide with examples.</p>
+        <div class="card-meta"><span>📚</span><span>~8 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-plural" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A1</div>
+        <h2>German Plural: 5 Types, Clear Rules</h2>
+        <p>-e, -er, -en, -(e)s and unchanged — how to choose the right German plural pattern.</p>
+        <div class="card-meta"><span>📚</span><span>~6 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-kein-nicht" class="post-card en-card hidden" data-category="grammar">
+        <div class="card-tag">Grammar · A1</div>
+        <h2>German Kein vs. Nicht: Negation Rules</h2>
+        <p>Kein or nicht? Use kein to negate nouns, nicht to negate verbs and adjectives. With examples.</p>
+        <div class="card-meta"><span>📚</span><span>~6 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <!-- EN Vocabulary posts -->
+      <a href="/blog/german-numbers" class="post-card en-card hidden" data-category="vocabulary">
+        <div class="card-tag">Vocabulary · A1</div>
+        <h2>German Numbers 1-1000: Complete Guide</h2>
+        <p>All numbers from 1 to 1000, pronunciation tips and everyday usage examples in sentences.</p>
+        <div class="card-meta"><span>📚</span><span>~5 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-colors" class="post-card en-card hidden" data-category="vocabulary">
+        <div class="card-tag">Vocabulary · A1</div>
+        <h2>German Colors (Farben): Complete List + Grammar</h2>
+        <p>How to say colors in German, adjective declension rules and example sentences.</p>
+        <div class="card-meta"><span>📚</span><span>~5 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <a href="/blog/german-days-months" class="post-card en-card hidden" data-category="vocabulary">
+        <div class="card-tag">Vocabulary · A1</div>
+        <h2>German Days & Months: Weekdays, 12 Months, Seasons</h2>
+        <p>From Montag to Sonntag, Januar to Dezember — with date expressions and grammar notes.</p>
+        <div class="card-meta"><span>📚</span><span>~6 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+      <!-- EN Conversation posts -->
+      <a href="/blog/german-greetings" class="post-card en-card hidden" data-category="conversation">
+        <div class="card-tag">Conversation · A1</div>
+        <h2>German Greetings & Farewells: Complete Guide</h2>
+        <p>From Guten Morgen to Auf Wiedersehen — formal and informal German greetings with pronunciation.</p>
+        <div class="card-meta"><span>📚</span><span>~5 min</span></div>
+        <div class="card-read">Read →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-cta">
+    <h2 data-tr="Öğrendiklerini Uygula" data-en="Put Your Learning into Practice">Öğrendiklerini Uygula</h2>
+    <p data-tr="Bu rehberlerdeki konuları DeutschGo'da flashcard'lar, AI sohbet ve mini oyunlarla pekiştir." data-en="Reinforce these topics with flashcards, AI chat and mini games in DeutschGo.">Bu rehberlerdeki konuları DeutschGo'da flashcard'lar, AI sohbet ve mini oyunlarla pekiştir.</p>
+    <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span data-tr="App Store'dan İndir — Ücretsiz" data-en="Download on App Store — Free">App Store'dan İndir — Ücretsiz</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="https://deutsch-go.com" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></p>
+  </footer>
+
+  <script>
+    // Language detection
+    const urlLang = new URLSearchParams(window.location.search).get('lang');
+    const browserLang = (navigator.language || 'en').toLowerCase();
+    let currentLang = urlLang || (browserLang.startsWith('tr') ? 'tr' : 'en');
+
+    function setLang(lang) {
+      currentLang = lang;
+
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
+      document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+      document.documentElement.lang = lang;
+
+      // Update text content
+      document.querySelectorAll('[data-tr]').forEach(function(el) {
+        var text = el.getAttribute('data-' + lang);
+        if (text !== null) el.innerHTML = text;
+      });
+
+      // Update page title
+      var titleEl = document.querySelector('title');
+      if (titleEl) {
+        var t = titleEl.getAttribute('data-' + lang);
+        if (t) document.title = t;
+      }
+
+      // Show/hide language cards
+      document.querySelectorAll('.tr-card').forEach(function(el) {
+        el.classList.toggle('hidden', lang === 'en');
+      });
+      document.querySelectorAll('.en-card').forEach(function(el) {
+        el.classList.toggle('hidden', lang === 'tr');
+      });
+
+      // Re-apply active filter
+      filterPosts(activeFilter);
+    }
+
+    // Filter
+    let activeFilter = 'all';
+    function filterPosts(category) {
+      activeFilter = category;
+      document.querySelectorAll('.filter-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+
+      var cards = currentLang === 'tr'
+        ? document.querySelectorAll('.tr-card')
+        : document.querySelectorAll('.en-card');
+
+      var allCards = document.querySelectorAll('.post-card');
+      allCards.forEach(function(card) { card.classList.add('hidden'); });
+
+      cards.forEach(function(card) {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        }
+      });
+    }
+
+    setLang(currentLang);
+  </script>
+
+</body>
+</html>
