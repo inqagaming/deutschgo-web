@@ -117,6 +117,13 @@
     .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .related-section { margin: 48px 0 0; }
+    .related-section h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; font-size: 0.8rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .related-card { display: block; background: var(--bg-light); border-radius: var(--radius-md); padding: 16px 18px; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border); transition: border-color 0.2s, transform 0.15s; }
+    .related-card:hover { border-color: var(--turquoise); transform: translateY(-2px); }
+    .related-card .rc-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--turquoise-dark); margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.92rem; font-weight: 700; line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -289,6 +296,24 @@
           <div class="quiz-opt">den</div>
         </div>
         <p style="margin-top:16px;font-size:0.85rem;color:var(--text-secondary)">"mit" always requires the dative. Bus is masculine → dative → <strong>dem</strong> ✓</p>
+      </div>
+
+      <div class="related-section fade-up">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+          <a href="/blog/german-accusative" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">German Accusative Case</div>
+          </a>
+          <a href="/blog/german-kein-nicht" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">Kein vs. Nicht: Negation</div>
+          </a>
+          <a href="/blog/german-verb-conjugation" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">German Verb Conjugation</div>
+          </a>
+        </div>
       </div>
 
       <div class="cta-section fade-up">

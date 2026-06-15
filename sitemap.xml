@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://deutsch-go.com/</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/?lang=tr"/>
@@ -11,69 +11,175 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deutsch-go.com/"/>
   </url>
 
-  <!-- Blog: Gramer -->
+  <!-- Blog: Gramer (TR) -->
   <url>
     <loc>https://deutsch-go.com/blog/der-die-das</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/der-die-das"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-articles-der-die-das"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-akkusativ</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-akkusativ"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-accusative"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-dativ</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-dativ"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-dative"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-cogul</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-cogul"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-plural"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-fiil-cekimi</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-fiil-cekimi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-verb-conjugation"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-kein-nicht</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-kein-nicht"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-kein-nicht"/>
   </url>
 
-  <!-- Blog: Kelime -->
+  <!-- Blog: Kelime (TR) -->
   <url>
     <loc>https://deutsch-go.com/blog/almanca-sayilar</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-sayilar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-numbers"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-renkler</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-renkler"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-colors"/>
   </url>
   <url>
     <loc>https://deutsch-go.com/blog/almanca-gunler-aylar</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-gunler-aylar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-days-months"/>
   </url>
 
-  <!-- Blog: Konuşma -->
+  <!-- Blog: Konuşma (TR) -->
   <url>
     <loc>https://deutsch-go.com/blog/almanca-selamlasma</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-selamlasma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-greetings"/>
+  </url>
+
+  <!-- Blog: Grammar (EN) -->
+  <url>
+    <loc>https://deutsch-go.com/blog/german-articles-der-die-das</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-articles-der-die-das"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/der-die-das"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-accusative</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-accusative"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-akkusativ"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-dative</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-dative"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-dativ"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-plural</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-plural"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-cogul"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-verb-conjugation</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-verb-conjugation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-fiil-cekimi"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-kein-nicht</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-kein-nicht"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-kein-nicht"/>
+  </url>
+
+  <!-- Blog: Vocabulary (EN) -->
+  <url>
+    <loc>https://deutsch-go.com/blog/german-numbers</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-numbers"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-sayilar"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-colors</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-colors"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-renkler"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-days-months</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-days-months"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-gunler-aylar"/>
+  </url>
+
+  <!-- Blog: Conversation (EN) -->
+  <url>
+    <loc>https://deutsch-go.com/blog/german-greetings</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-greetings"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-selamlasma"/>
   </url>
 </urlset>

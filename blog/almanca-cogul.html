@@ -169,6 +169,13 @@
     .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .related-section { margin: 48px 0 0; }
+    .related-section h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; font-size: 0.8rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .related-card { display: block; background: var(--bg-light); border-radius: var(--radius-md); padding: 16px 18px; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border); transition: border-color 0.2s, transform 0.15s; }
+    .related-card:hover { border-color: var(--turquoise); transform: translateY(-2px); }
+    .related-card .rc-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--turquoise-dark); margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.92rem; font-weight: 700; line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -354,6 +361,24 @@
           <span class="quiz-pl">die Bücher</span>
         </div>
         <p style="font-size:0.85rem;color:var(--text-secondary)">das Buch → nötr kelime → <strong>-er</strong> eki + umlaut (u→ü) ✓</p>
+      </div>
+
+      <div class="related-section fade-up">
+        <h3>İlgili Yazılar</h3>
+        <div class="related-grid">
+          <a href="/blog/der-die-das" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Der, Die, Das — Artikel Rehberi</div>
+          </a>
+          <a href="/blog/almanca-akkusativ" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Akkusativ</div>
+          </a>
+          <a href="/blog/almanca-fiil-cekimi" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Fiil Çekimi</div>
+          </a>
+        </div>
       </div>
 
       <div class="cta-section fade-up">
