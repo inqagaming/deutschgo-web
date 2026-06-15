@@ -1605,16 +1605,16 @@
 
       <div class="footer-guides">
         <p class="footer-guides-title" data-tr="Rehberler" data-en="Guides">Rehberler</p>
-        <a href="/blog/der-die-das" class="footer-guides-link">Der, Die, Das — Artikel Rehberi</a>
-        <a href="/blog/almanca-cogul" class="footer-guides-link">Almanca Çoğul (Plural)</a>
-        <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link">Almanca Fiil Çekimi</a>
-        <a href="/blog/almanca-akkusativ" class="footer-guides-link">Akkusativ — Belirtme Hâli</a>
-        <a href="/blog/almanca-kein-nicht" class="footer-guides-link">Kein ve Nicht: Olumsuzluk</a>
-        <a href="/blog/almanca-dativ" class="footer-guides-link">Dativ — Wem? Sorusunun Cevabı</a>
-        <a href="/blog/almanca-sayilar" class="footer-guides-link">Almanca Sayılar: 1'den 1000'e</a>
-        <a href="/blog/almanca-selamlasma" class="footer-guides-link">Almanca Selamlaşma İfadeleri</a>
-        <a href="/blog/almanca-renkler" class="footer-guides-link">Almanca Renkler (Farben)</a>
-        <a href="/blog/almanca-gunler-aylar" class="footer-guides-link">Almanca Günler ve Aylar</a>
+        <a href="/blog/der-die-das" class="footer-guides-link" data-tr-href="/blog/der-die-das" data-en-href="/blog/german-articles-der-die-das" data-tr="Der, Die, Das — Artikel Rehberi" data-en="Der, Die, Das — German Articles Guide">Der, Die, Das — Artikel Rehberi</a>
+        <a href="/blog/almanca-cogul" class="footer-guides-link" data-tr-href="/blog/almanca-cogul" data-en-href="/blog/german-plural" data-tr="Almanca Çoğul (Plural)" data-en="German Plural (Plural)">Almanca Çoğul (Plural)</a>
+        <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link" data-tr-href="/blog/almanca-fiil-cekimi" data-en-href="/blog/german-verb-conjugation" data-tr="Almanca Fiil Çekimi" data-en="German Verb Conjugation">Almanca Fiil Çekimi</a>
+        <a href="/blog/almanca-akkusativ" class="footer-guides-link" data-tr-href="/blog/almanca-akkusativ" data-en-href="/blog/german-accusative" data-tr="Akkusativ — Belirtme Hâli" data-en="Accusative Case — German Grammar">Akkusativ — Belirtme Hâli</a>
+        <a href="/blog/almanca-kein-nicht" class="footer-guides-link" data-tr-href="/blog/almanca-kein-nicht" data-en-href="/blog/german-kein-nicht" data-tr="Kein ve Nicht: Olumsuzluk" data-en="Kein vs. Nicht: Negation">Kein ve Nicht: Olumsuzluk</a>
+        <a href="/blog/almanca-dativ" class="footer-guides-link" data-tr-href="/blog/almanca-dativ" data-en-href="/blog/german-dative" data-tr="Dativ — Wem? Sorusunun Cevabı" data-en="Dative Case — The Wem? Question">Dativ — Wem? Sorusunun Cevabı</a>
+        <a href="/blog/almanca-sayilar" class="footer-guides-link" data-tr-href="/blog/almanca-sayilar" data-en-href="/blog/german-numbers" data-tr="Almanca Sayılar: 1'den 1000'e" data-en="German Numbers: 1 to 1000">Almanca Sayılar: 1'den 1000'e</a>
+        <a href="/blog/almanca-selamlasma" class="footer-guides-link" data-tr-href="/blog/almanca-selamlasma" data-en-href="/blog/german-greetings" data-tr="Almanca Selamlaşma İfadeleri" data-en="German Greetings &amp; Farewells">Almanca Selamlaşma İfadeleri</a>
+        <a href="/blog/almanca-renkler" class="footer-guides-link" data-tr-href="/blog/almanca-renkler" data-en-href="/blog/german-colors" data-tr="Almanca Renkler (Farben)" data-en="German Colors (Farben)">Almanca Renkler (Farben)</a>
+        <a href="/blog/almanca-gunler-aylar" class="footer-guides-link" data-tr-href="/blog/almanca-gunler-aylar" data-en-href="/blog/german-days-months" data-tr="Almanca Günler ve Aylar" data-en="German Days &amp; Months">Almanca Günler ve Aylar</a>
       </div>
 
       <div class="footer-stores" aria-label="App stores">
@@ -1652,6 +1652,12 @@
       document.querySelectorAll('[data-tr]').forEach(function(el) {
         var text = el.getAttribute('data-' + lang);
         if (text !== null) el.innerHTML = text;
+      });
+
+      // Update href for footer guide links
+      document.querySelectorAll('.footer-guides-link[data-tr-href]').forEach(function(el) {
+        var href = el.getAttribute('data-' + lang + '-href');
+        if (href) el.setAttribute('href', href);
       });
 
       // Update placeholders
