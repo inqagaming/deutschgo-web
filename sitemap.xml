@@ -97,6 +97,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-days-months"/>
   </url>
 
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-gecmis-zaman</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-gecmis-zaman"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-past-tense"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-modal-fiiller</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-modal-fiiller"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-modal-verbs"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-b1-nasil-gecilir</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-b1-nasil-gecilir"/>
+  </url>
+
   <!-- Blog: Konuşma (TR) -->
   <url>
     <loc>https://deutsch-go.com/blog/almanca-selamlasma</loc>
@@ -181,6 +205,30 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-days-months"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-gunler-aylar"/>
+  </url>
+
+  <url>
+    <loc>https://deutsch-go.com/blog/german-past-tense</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-past-tense"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-gecmis-zaman"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-modal-verbs</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-modal-verbs"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-modal-fiiller"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-word-order</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-word-order"/>
   </url>
 
   <!-- Blog: Conversation (EN) -->

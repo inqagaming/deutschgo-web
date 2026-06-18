@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>German Word Order: The Complete Beginner's Guide | DeutschGo</title>
+  <meta name="description" content="How does German word order work? Main clauses, verb-second rule, time-manner-place, subordinate clauses with weil and dass. A1-A2 guide with examples." />
+  <meta name="keywords" content="german word order, german sentence structure, verb second rule, weil dass word order, learn german, deutsch satzstellung" />
+  <meta name="author" content="DeutschGo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deutsch-go.com/blog/german-word-order" />
+
+  <meta property="og:title" content="German Word Order: The Rules That Make It Click" />
+  <meta property="og:description" content="Main clauses, verb-second rule, time-manner-place, subordinate clauses. A1-A2 guide with examples." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://deutsch-go.com/blog/german-word-order" />
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:site_name" content="DeutschGo" />
+
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "German Word Order: The Complete Beginner's Guide",
+    "description": "How does German word order work? Main clauses, verb-second rule, time-manner-place, subordinate clauses with weil and dass.",
+    "url": "https://deutsch-go.com/blog/german-word-order",
+    "image": "https://deutsch-go.com/og-image.png",
+    "author": { "@type": "Organization", "name": "DeutschGo" },
+    "publisher": { "@type": "Organization", "name": "DeutschGo", "url": "https://deutsch-go.com" },
+    "inLanguage": "en",
+    "datePublished": "2026-06-18"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --turquoise: #00D1B2;
+      --turquoise-dark: #00b89c;
+      --turquoise-light: #e0faf6;
+      --nom: #3B82F6;
+      --nom-light: #EFF6FF;
+      --akk: #F97316;
+      --akk-light: #FFF7ED;
+      --verb-color: #8B5CF6;
+      --verb-light: #F5F3FF;
+      --time-color: #16a34a;
+      --time-light: #F0FDF4;
+      --dark: #111418;
+      --bg-light: #F0F4F8;
+      --text-primary: #111418;
+      --text-secondary: #5a6478;
+      --border: #e8edf3;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; color: var(--text-primary); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .navbar-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .navbar-logo-icon { width: 34px; height: 34px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+    .navbar-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .navbar-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--turquoise); }
+    .navbar-back { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .navbar-back:hover { color: var(--turquoise); }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    .blog-hero { background: linear-gradient(135deg, #f5f3ff 0%, #fff 60%); padding: 60px 24px 48px; text-align: center; }
+    .blog-hero .breadcrumb { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 16px; }
+    .blog-hero .breadcrumb a { color: var(--turquoise); text-decoration: none; }
+    .blog-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .blog-hero .subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto 24px; }
+    .blog-hero .meta { font-size: 0.82rem; color: var(--text-secondary); }
+
+    .word-order-visual { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 32px 0; flex-wrap: wrap; }
+    .wo-box { padding: 14px 24px; border-radius: var(--radius-md); font-size: 1.1rem; font-weight: 800; text-align: center; }
+    .wo-box .wo-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.65; display: block; margin-bottom: 4px; }
+    .wo-box.pos1 { background: var(--nom-light); color: var(--nom); border: 2px solid #bfdbfe; }
+    .wo-box.pos2 { background: var(--verb-light); color: var(--verb-color); border: 2px solid #ddd6fe; }
+    .wo-box.pos3 { background: var(--bg-light); color: var(--text-secondary); border: 2px solid var(--border); }
+    .wo-arrow { font-size: 1.4rem; color: var(--text-secondary); }
+
+    .blog-body { padding: 48px 0 80px; }
+    .blog-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; }
+    .blog-body h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; }
+    .blog-body p { margin-bottom: 16px; font-size: 1rem; }
+    .blog-body ul, .blog-body ol { padding-left: 20px; margin-bottom: 16px; }
+    .blog-body li { margin-bottom: 8px; font-size: 1rem; }
+
+    .info-box { background: var(--turquoise-light); border-left: 4px solid var(--turquoise); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .info-box p { margin: 0; font-size: 0.95rem; }
+    .info-box strong { color: var(--turquoise-dark); }
+
+    .warning-box { background: #FFF8E1; border-left: 4px solid #FFA000; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .warning-box p { margin: 0; font-size: 0.95rem; }
+
+    .table-simple { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.95rem; }
+    .table-simple th { padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; text-align: left; background: var(--bg-light); border-bottom: 2px solid var(--border); }
+    .table-simple td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .table-simple tr:last-child td { border-bottom: none; }
+    .table-simple tr:hover td { background: var(--bg-light); }
+
+    .sentence-list { list-style: none; padding: 0; margin: 20px 0; }
+    .sentence-list li { padding: 14px 20px; border-radius: var(--radius-md); margin-bottom: 10px; font-size: 1rem; line-height: 1.5; }
+    .sentence-list li:nth-child(odd) { background: var(--bg-light); }
+    .sentence-list li:nth-child(even) { background: #fff; border: 1px solid var(--border); }
+    .s-word { color: var(--nom); font-weight: 800; }
+    .v-word { color: var(--verb-color); font-weight: 800; }
+    .t-word { color: var(--time-color); font-weight: 800; }
+    .sub-word { color: var(--akk); font-weight: 800; }
+    .end-verb { color: var(--akk); font-weight: 800; text-decoration: underline; text-decoration-color: var(--akk); text-underline-offset: 3px; }
+    .en-translation { color: var(--text-secondary); font-size: 0.88rem; display: block; margin-top: 4px; }
+
+    .tips-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .tips-grid { grid-template-columns: 1fr; } }
+    .tip-card { background: var(--bg-light); border-radius: var(--radius-md); padding: 20px; }
+    .tip-card .tip-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .tip-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .tip-card p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+
+    .quiz-preview { background: var(--akk-light); border-radius: var(--radius-lg); padding: 32px; margin: 48px 0; text-align: center; border: 1.5px solid #fed7aa; }
+    .quiz-preview h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+    .quiz-preview p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px; }
+    .quiz-sent { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
+    .quiz-blank { display: inline-block; border-bottom: 3px solid var(--akk); min-width: 80px; color: var(--akk); font-weight: 800; padding: 0 8px; }
+    .quiz-answer { display: inline-block; background: #DCFCE7; color: #16a34a; font-weight: 800; padding: 4px 16px; border-radius: 999px; margin-top: 12px; font-size: 1rem; }
+
+    .cta-section { background: var(--dark); border-radius: var(--radius-lg); padding: 48px 32px; text-align: center; margin: 48px 0; }
+    .cta-section h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .cta-section p { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--turquoise); color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 999px; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
+    footer a { color: var(--turquoise); text-decoration: none; }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .related-section { margin: 48px 0 0; }
+    .related-section h3 { font-size: 0.8rem; font-weight: 700; margin-bottom: 16px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .related-card { display: block; background: var(--bg-light); border-radius: var(--radius-md); padding: 16px 18px; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border); transition: border-color 0.2s, transform 0.15s; }
+    .related-card:hover { border-color: var(--turquoise); transform: translateY(-2px); }
+    .related-card .rc-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--turquoise-dark); margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.92rem; font-weight: 700; line-height: 1.4; }
+
+    .tmp-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.95rem; }
+    .tmp-table th { padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; text-align: center; background: var(--bg-light); border-bottom: 2px solid var(--border); }
+    .tmp-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); text-align: center; }
+    .tmp-table tr:last-child td { border-bottom: none; }
+    .tmp-time { color: var(--time-color); font-weight: 800; background: var(--time-light); border-radius: 8px; padding: 4px 12px; }
+    .tmp-manner { color: var(--nom); font-weight: 800; background: var(--nom-light); border-radius: 8px; padding: 4px 12px; }
+    .tmp-place { color: var(--verb-color); font-weight: 800; background: var(--verb-light); border-radius: 8px; padding: 4px 12px; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="https://deutsch-go.com" class="navbar-logo" aria-label="DeutschGo Home">
+        <div class="navbar-logo-icon">
+          <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
+        </div>
+        <span class="navbar-logo-text">DeutschGo</span>
+      </a>
+      <a href="https://deutsch-go.com" class="navbar-back">← Home</a>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="https://deutsch-go.com">DeutschGo</a> · Blog · German Grammar</p>
+      <h1>German Word Order:<br>The Rules That Make It Click</h1>
+      <p class="subtitle">German word order feels strange at first — but it follows clear rules. Once you see the pattern, building sentences becomes much easier.</p>
+      <p class="meta">📚 Reading time: ~8 min · A1–A2 level</p>
+      <div class="word-order-visual">
+        <div class="wo-box pos1">
+          <span class="wo-label">Position 1</span>
+          Subject
+        </div>
+        <div class="wo-arrow">→</div>
+        <div class="wo-box pos2">
+          <span class="wo-label">Position 2 — always</span>
+          Verb
+        </div>
+        <div class="wo-arrow">→</div>
+        <div class="wo-box pos3">
+          <span class="wo-label">Rest</span>
+          Object / Details
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="blog-body">
+    <div class="container">
+
+      <p>In English, the order is almost always Subject–Verb–Object. German also defaults to this — but with one crucial rule: <strong>the verb must always be in second position</strong>. This opens up more flexibility in what you put first, but also introduces some surprises.</p>
+      <p>Once you internalize this rule, a lot of German sentence structure falls into place naturally.</p>
+
+      <div class="info-box">
+        <p><strong>The golden rule:</strong> In a main clause, the conjugated verb is always in position 2. Not second <em>word</em> — second <em>element</em>.<br><br>
+        "Heute lerne ich Deutsch" = Today (1) + <strong>lerne</strong> (2) + ich + Deutsch. ✓</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Basic Word Order (Subject–Verb–Object)</h2>
+
+      <table class="table-simple fade-up">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Verb</th>
+            <th>Object / Details</th>
+            <th>Translation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span style="color:var(--nom);font-weight:800;">Ich</span></td>
+            <td><span style="color:var(--verb-color);font-weight:800;">lerne</span></td>
+            <td>Deutsch</td>
+            <td>I learn German.</td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--nom);font-weight:800;">Er</span></td>
+            <td><span style="color:var(--verb-color);font-weight:800;">kauft</span></td>
+            <td>ein Buch</td>
+            <td>He buys a book.</td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--nom);font-weight:800;">Sie</span></td>
+            <td><span style="color:var(--verb-color);font-weight:800;">spricht</span></td>
+            <td>gut Deutsch</td>
+            <td>She speaks German well.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">The Verb-Second Rule (V2)</h2>
+      <p>When you move something other than the subject to position 1 (for emphasis or to highlight time), the subject and verb swap positions — but the verb stays in slot 2.</p>
+
+      <ul class="sentence-list fade-up">
+        <li>
+          Normal: <span class="s-word">Ich</span> <span class="v-word">lerne</span> heute Deutsch.
+          <span class="en-translation">I learn German today. (subject first)</span>
+        </li>
+        <li>
+          Inverted: <span class="t-word">Heute</span> <span class="v-word">lerne</span> <span class="s-word">ich</span> Deutsch.
+          <span class="en-translation">Today I learn German. (time word first → subject and verb swap)</span>
+        </li>
+        <li>
+          Inverted: <span class="t-word">Deutsch</span> <span class="v-word">lerne</span> <span class="s-word">ich</span> jeden Tag.
+          <span class="en-translation">German I learn every day. (object fronted for emphasis)</span>
+        </li>
+      </ul>
+
+      <div class="warning-box">
+        <p>⚠️ Moving an element to position 1 does <strong>not</strong> change the verb form — only the order. The verb always stays in slot 2, and the subject moves to slot 3.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Time — Manner — Place (TMP)</h2>
+      <p>When adding multiple details (when, how, where), German follows a fixed order: <strong>Time → Manner → Place</strong>.</p>
+
+      <table class="tmp-table fade-up">
+        <thead>
+          <tr>
+            <th>Verb phrase</th>
+            <th>Time (wann?)</th>
+            <th>Manner (wie?)</th>
+            <th>Place (wohin?)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ich fahre</td>
+            <td><span class="tmp-time">morgen</span></td>
+            <td><span class="tmp-manner">mit dem Zug</span></td>
+            <td><span class="tmp-place">nach Berlin</span></td>
+          </tr>
+          <tr>
+            <td>Sie geht</td>
+            <td><span class="tmp-time">jeden Abend</span></td>
+            <td><span class="tmp-manner">alleine</span></td>
+            <td><span class="tmp-place">in den Park</span></td>
+          </tr>
+          <tr>
+            <td>Er fliegt</td>
+            <td><span class="tmp-time">nächste Woche</span></td>
+            <td><span class="tmp-manner">direkt</span></td>
+            <td><span class="tmp-place">nach Tokyo</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <p><strong>Memory trick:</strong> TeaMPot — <strong>T</strong>ime, <strong>M</strong>anner, <strong>P</strong>lace. Always in this order when all three appear in one clause.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Subordinate Clauses — Verb Goes to the End</h2>
+      <p>Conjunctions like <strong>weil</strong> (because), <strong>dass</strong> (that), and <strong>wenn</strong> (when/if) introduce subordinate clauses. In these clauses, the conjugated verb moves to the very end.</p>
+
+      <ul class="sentence-list fade-up">
+        <li>
+          Ich lerne Deutsch, <span class="sub-word">weil</span> es interessant <span class="end-verb">ist</span>.
+          <span class="en-translation">I learn German because it is interesting.</span>
+        </li>
+        <li>
+          Ich weiß, <span class="sub-word">dass</span> er morgen <span class="end-verb">kommt</span>.
+          <span class="en-translation">I know that he is coming tomorrow.</span>
+        </li>
+        <li>
+          <span class="sub-word">Wenn</span> ich Zeit <span class="end-verb">habe</span>, lerne ich Deutsch.
+          <span class="en-translation">When I have time, I learn German.</span>
+        </li>
+      </ul>
+
+      <div class="warning-box">
+        <p>⚠️ <strong>This is the #1 mistake English speakers make.</strong> In subordinate clauses (weil, dass, wenn, weil, obwohl…), the conjugated verb goes to the very end — no exceptions.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Separable Verbs</h2>
+      <p>Some German verbs have a prefix that splits off and jumps to the end of the clause. The conjugated part stays in position 2, and the prefix goes last.</p>
+
+      <ul class="sentence-list fade-up">
+        <li>
+          aufmachen → Ich <span class="v-word">mache</span> die Tür <span class="end-verb">auf</span>.
+          <span class="en-translation">I open the door. (aufmachen = to open)</span>
+        </li>
+        <li>
+          anrufen → Er <span class="v-word">ruft</span> mich <span class="end-verb">an</span>.
+          <span class="en-translation">He calls me. (anrufen = to call)</span>
+        </li>
+        <li>
+          einladen → Wir <span class="v-word">laden</span> euch <span class="end-verb">ein</span>.
+          <span class="en-translation">We invite you. (einladen = to invite)</span>
+        </li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Questions</h2>
+
+      <h3>Yes/No Questions — Verb First</h3>
+      <ul class="sentence-list fade-up">
+        <li>
+          <span class="v-word">Lernst</span> du Deutsch?
+          <span class="en-translation">Are you learning German?</span>
+        </li>
+        <li>
+          <span class="v-word">Hast</span> du Zeit?
+          <span class="en-translation">Do you have time?</span>
+        </li>
+      </ul>
+
+      <h3>W-Questions — Question Word + Verb + Subject</h3>
+      <ul class="sentence-list fade-up">
+        <li>
+          <span class="t-word">Wann</span> <span class="v-word">lernst</span> du Deutsch?
+          <span class="en-translation">When do you learn German?</span>
+        </li>
+        <li>
+          <span class="t-word">Wo</span> <span class="v-word">wohnst</span> du?
+          <span class="en-translation">Where do you live?</span>
+        </li>
+        <li>
+          <span class="t-word">Warum</span> <span class="v-word">lernst</span> du Deutsch?
+          <span class="en-translation">Why are you learning German?</span>
+        </li>
+      </ul>
+
+      <hr class="divider">
+
+      <div class="tips-grid fade-up">
+        <div class="tip-card">
+          <div class="tip-icon">🎯</div>
+          <h4>Verb Always #2</h4>
+          <p>In any main clause, count the elements — the verb is always the second one. Internalize this rule first, everything else follows.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">⚠️</div>
+          <h4>weil/dass → Verb Last</h4>
+          <p>Write 5 weil-sentences every day until sending the verb to the end is completely automatic.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔀</div>
+          <h4>Front-loading for Emphasis</h4>
+          <p>Move time words to position 1 for natural-sounding German: "Heute gehe ich ins Kino" sounds more native than always starting with "Ich".</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">✂️</div>
+          <h4>Separable Verbs as a Unit</h4>
+          <p>When you learn a separable verb, memorize it as one unit: aufmachen, anrufen, einladen. The prefix always lands at the end.</p>
+        </div>
+      </div>
+
+      <div class="quiz-preview fade-up">
+        <h3>Test Yourself</h3>
+        <p>Fill in position 1 — show the verb-second rule:</p>
+        <div class="quiz-sent"><span class="quiz-blank">___</span> lerne ich jeden Tag Deutsch.</div>
+        <div class="quiz-answer">✓ Heute / Deshalb / Morgen — verb (lerne) stays in position 2 ✓</div>
+      </div>
+
+      <div class="related-section fade-up">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+          <a href="/blog/german-verb-conjugation" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">German Verb Conjugation</div>
+          </a>
+          <a href="/blog/german-accusative" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">German Accusative Case</div>
+          </a>
+          <a href="/blog/german-kein-nicht" class="related-card">
+            <div class="rc-tag">Grammar</div>
+            <div class="rc-title">Kein vs. Nicht: Negation</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-section fade-up">
+        <h2>Practice Sentence Building with AI Chat</h2>
+        <p>DeutschGo's AI chat corrects your word order in real time — across 44 real-life scenarios.</p>
+        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on App Store — Free
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="https://deutsch-go.com">Home</a></p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
