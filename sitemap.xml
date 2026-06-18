@@ -224,11 +224,20 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-modal-fiiller"/>
   </url>
   <url>
+    <loc>https://deutsch-go.com/blog/almanca-cumle-dizilimi</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-cumle-dizilimi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-word-order"/>
+  </url>
+  <url>
     <loc>https://deutsch-go.com/blog/german-word-order</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-word-order"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-cumle-dizilimi"/>
   </url>
 
   <!-- Blog: Conversation (EN) -->

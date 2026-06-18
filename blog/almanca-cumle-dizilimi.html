@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Almanca Cümle Dizilimi: Türkçe Konuşanlar için Rehber | DeutschGo</title>
+  <meta name="description" content="Almancada cümle sırası nasıl kurulur? V2 kuralı, zaman-yer sırası, yan cümleler ve soru yapısı — Türkçe karşılaştırmalı kapsamlı rehber." />
+  <meta name="keywords" content="almanca cümle dizilimi, almanca sözdizimi, almanca V2 kuralı, almanca yan cümle, almanca soru yapısı, almanca öğren" />
+  <meta name="author" content="DeutschGo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deutsch-go.com/blog/almanca-cumle-dizilimi" />
+
+  <meta property="og:title" content="Almanca Cümle Dizilimi: Türkçe Konuşanlar için Rehber" />
+  <meta property="og:description" content="V2 kuralı, yan cümleler, zaman-yer sırası — Türkçe ile kıyaslamalı tam rehber." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://deutsch-go.com/blog/almanca-cumle-dizilimi" />
+  <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
+  <meta property="og:site_name" content="DeutschGo" />
+
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Almanca Cümle Dizilimi: Türkçe Konuşanlar için Rehber",
+    "description": "V2 kuralı, yan cümleler, zaman-yer sırası — Türkçe ile kıyaslamalı tam rehber.",
+    "url": "https://deutsch-go.com/blog/almanca-cumle-dizilimi",
+    "image": "https://deutsch-go.com/og-image.png",
+    "author": { "@type": "Organization", "name": "DeutschGo" },
+    "publisher": { "@type": "Organization", "name": "DeutschGo", "url": "https://deutsch-go.com" },
+    "inLanguage": "tr",
+    "datePublished": "2026-06-18"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --turquoise: #00D1B2;
+      --turquoise-dark: #00b89c;
+      --turquoise-light: #e0faf6;
+      --accent: #6366F1;
+      --accent-light: #EEF2FF;
+      --accent2: #F59E0B;
+      --accent2-light: #FFFBEB;
+      --accent3: #EF4444;
+      --accent3-light: #FEF2F2;
+      --green: #10B981;
+      --green-light: #D1FAE5;
+      --dark: #111418;
+      --bg-light: #F0F4F8;
+      --text-primary: #111418;
+      --text-secondary: #5a6478;
+      --border: #e8edf3;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; color: var(--text-primary); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .navbar-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .navbar-logo-icon { width: 34px; height: 34px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+    .navbar-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .navbar-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--turquoise); }
+    .navbar-back { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .navbar-back:hover { color: var(--turquoise); }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    .blog-hero { background: linear-gradient(135deg, var(--accent-light) 0%, #fff 60%); padding: 60px 24px 48px; text-align: center; }
+    .blog-hero .breadcrumb { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 16px; }
+    .blog-hero .breadcrumb a { color: var(--turquoise); text-decoration: none; }
+    .blog-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .blog-hero .subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto 24px; }
+    .blog-hero .meta { font-size: 0.82rem; color: var(--text-secondary); }
+
+    .rule-chips { display: flex; justify-content: center; gap: 8px; margin: 28px 0; flex-wrap: wrap; }
+    .rule-chip { padding: 7px 18px; border-radius: 999px; font-size: 0.9rem; font-weight: 700; background: var(--accent-light); color: var(--accent); border: 2px solid var(--accent); }
+
+    .blog-body { padding: 48px 0 80px; }
+    .blog-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; }
+    .blog-body h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; }
+    .blog-body p { margin-bottom: 16px; font-size: 1rem; }
+    .blog-body ul, .blog-body ol { padding-left: 20px; margin-bottom: 16px; }
+    .blog-body li { margin-bottom: 8px; font-size: 1rem; }
+
+    .info-box { background: var(--turquoise-light); border-left: 4px solid var(--turquoise); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .info-box p { margin: 0; font-size: 0.95rem; }
+    .info-box p + p { margin-top: 8px; }
+    .info-box strong { color: var(--turquoise-dark); }
+
+    .accent-box { background: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .accent-box p { margin: 0; font-size: 0.95rem; }
+    .accent-box strong { color: var(--accent); }
+
+    .warning-box { background: #FFF8E1; border-left: 4px solid #FFA000; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .warning-box p { margin: 0; font-size: 0.95rem; }
+
+    .success-box { background: var(--green-light); border-left: 4px solid var(--green); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 16px 20px; margin: 24px 0; }
+    .success-box p { margin: 0; font-size: 0.95rem; }
+    .success-box strong { color: var(--green); }
+
+    /* Compare table */
+    .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.93rem; }
+    .compare-table th { text-align: left; padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; background: var(--bg-light); }
+    .compare-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table .lang-tr { color: var(--accent2); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; }
+    .compare-table .lang-de { color: var(--accent); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; }
+    .compare-table .sentence { font-weight: 600; margin-bottom: 2px; }
+    .compare-table .note { font-size: 0.82rem; color: var(--text-secondary); }
+
+    /* V2 visual */
+    .v2-diagram { display: flex; gap: 8px; align-items: center; margin: 24px 0; flex-wrap: wrap; }
+    .v2-slot { border-radius: var(--radius-md); padding: 14px 20px; text-align: center; min-width: 90px; }
+    .v2-slot .pos { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; opacity: 0.7; margin-bottom: 4px; }
+    .v2-slot .word { font-size: 1rem; font-weight: 800; }
+    .v2-pos1 { background: var(--bg-light); border: 2px solid var(--border); }
+    .v2-pos2 { background: var(--accent-light); border: 2px solid var(--accent); }
+    .v2-pos2 .pos, .v2-pos2 .word { color: var(--accent); }
+    .v2-rest { background: var(--bg-light); border: 2px dashed var(--border); }
+    .v2-arrow { font-size: 1.2rem; color: var(--text-secondary); }
+
+    /* Sentence examples */
+    .sentence-list { margin: 24px 0; display: flex; flex-direction: column; gap: 12px; }
+    .sentence-item { background: var(--bg-light); border-radius: var(--radius-md); padding: 16px 20px; }
+    .sentence-item .de { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+    .sentence-item .de .verb-highlight { color: var(--accent); }
+    .sentence-item .tr { font-size: 0.88rem; color: var(--text-secondary); }
+
+    /* Conjunction table */
+    .conj-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
+    .conj-table th { text-align: left; padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; background: var(--bg-light); }
+    .conj-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .conj-table tr:last-child td { border-bottom: none; }
+    .conj-table .word { font-weight: 800; color: var(--accent); font-size: 1rem; }
+    .conj-table .meaning { color: var(--text-secondary); font-size: 0.88rem; }
+    .conj-table .example { font-size: 0.88rem; }
+
+    /* Summary table */
+    .summary-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
+    .summary-table th { text-align: left; padding: 12px 16px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; background: var(--dark); color: #fff; }
+    .summary-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .summary-table tr:last-child td { border-bottom: none; }
+    .summary-table .rule-name { font-weight: 700; }
+    .check { color: var(--green); font-weight: 700; }
+    .cross { color: var(--accent3); font-weight: 700; }
+    .same { color: var(--green); font-weight: 700; }
+
+    .tips-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .tips-grid { grid-template-columns: 1fr; } }
+    .tip-card { background: var(--bg-light); border-radius: var(--radius-md); padding: 20px; }
+    .tip-card .tip-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .tip-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .tip-card p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+
+    .quiz-preview { background: var(--accent-light); border-radius: var(--radius-lg); padding: 32px; margin: 48px 0; text-align: center; }
+    .quiz-preview h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+    .quiz-preview p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px; }
+    .quiz-sent { font-size: 1.15rem; font-weight: 700; margin-bottom: 16px; line-height: 1.8; }
+    .quiz-blank { display: inline-block; border-bottom: 3px solid var(--accent); min-width: 80px; color: var(--accent); font-weight: 800; padding: 0 8px; }
+    .quiz-answer { display: inline-block; background: #DCFCE7; color: #16a34a; font-weight: 800; padding: 4px 16px; border-radius: 999px; margin-top: 12px; font-size: 1rem; }
+
+    .cta-section { background: var(--dark); border-radius: var(--radius-lg); padding: 48px 32px; text-align: center; margin: 48px 0; }
+    .cta-section h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .cta-section p { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--turquoise); color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 999px; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
+    footer a { color: var(--turquoise); text-decoration: none; }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .related-section { margin: 48px 0 0; }
+    .related-section h3 { font-size: 0.8rem; font-weight: 700; margin-bottom: 16px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .related-card { display: block; background: var(--bg-light); border-radius: var(--radius-md); padding: 16px 18px; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border); transition: border-color 0.2s, transform 0.15s; }
+    .related-card:hover { border-color: var(--turquoise); transform: translateY(-2px); }
+    .related-card .rc-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--turquoise-dark); margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.92rem; font-weight: 700; line-height: 1.4; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="https://deutsch-go.com" class="navbar-logo" aria-label="DeutschGo Ana Sayfa">
+        <div class="navbar-logo-icon">
+          <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
+        </div>
+        <span class="navbar-logo-text">DeutschGo</span>
+      </a>
+      <a href="https://deutsch-go.com" class="navbar-back">← Ana Sayfa</a>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="https://deutsch-go.com">DeutschGo</a> · Blog · Almanca Gramer</p>
+      <h1>Almanca Cümle Dizilimi:<br>Türkçe Konuşanlar için Rehber</h1>
+      <p class="subtitle">Türkçe ile Almanca arasında şaşırtıcı benzerlikler var — ama bir de kritik farklar. İkisini birlikte öğrenmek çok daha hızlı yerleştirir.</p>
+      <p class="meta">📚 Okuma süresi: ~8 dakika · A1–A2 seviyesi</p>
+      <div class="rule-chips">
+        <div class="rule-chip">V2 Kuralı</div>
+        <div class="rule-chip">Yan Cümle</div>
+        <div class="rule-chip">Zaman–Yer</div>
+        <div class="rule-chip">Soru Yapısı</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="blog-body">
+    <div class="container">
+
+      <p>Almanca öğrenen Türkçe konuşanlar şunu sık duyar: <em>"Almanca çok zor, cümle sırası çok karmaşık."</em> Ama aslında durum o kadar da kötü değil. Türkçe ile Almanca arasında cümle yapısı açısından <strong>hem çarpıcı benzerlikler hem de önemli farklar</strong> var. Bu ikisini net görmek, işi çok kolaylaştırır.</p>
+
+      <div class="success-box">
+        <p><strong>İyi haber:</strong> Almancada yan cümlelerde fiil sona gider — tıpkı Türkçe'de olduğu gibi. Bu sezgiyi zaten taşıyorsunuz.</p>
+        <p style="margin-top:8px"><strong>Dikkat gereken:</strong> Ana cümlelerde ise fiil her zaman <em>ikinci sıradadır</em> — sona değil.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">1. Temel Fark: Sözcük Sırası</h2>
+
+      <p>Türkçe'nin doğal sözcük sırası <strong>Özne → Nesne → Fiil</strong> (ÖNF) şeklindedir. Fiil genellikle cümlenin sonunda gelir. Almanca'da ise ana cümlede sıra <strong>Özne → Fiil → Nesne</strong> (ÖFN) biçimindedir — yani fiil nesnenin önüne geçer.</p>
+
+      <table class="compare-table fade-up">
+        <thead>
+          <tr>
+            <th>Dil</th>
+            <th>Cümle</th>
+            <th>Sözcük Sırası</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="lang-tr">Türkçe</span></td>
+            <td><span class="sentence">Ben bir elma <strong>yiyorum</strong>.</span><span class="note">Fiil sonda</span></td>
+            <td>Özne → Nesne → Fiil</td>
+          </tr>
+          <tr>
+            <td><span class="lang-de">Almanca</span></td>
+            <td><span class="sentence">Ich <strong>esse</strong> einen Apfel.</span><span class="note">Fiil ikinci sırada</span></td>
+            <td>Özne → Fiil → Nesne</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">2. V2 Kuralı: Fiil Her Zaman İkinci Sıradadır</h2>
+
+      <p>Almanca'nın en temel kuralı budur: <strong>Ana cümlede çekimli fiil daima ikinci konumdadır.</strong> Cümlenin başına ne gelirse gelsin — özne, zaman zarfı, yer zarfı — fiil hep ikinci sıraya oturur.</p>
+
+      <div class="accent-box">
+        <p><strong>V2 Kuralı:</strong> Ana cümlede fiil her zaman 2. sıradadır. Birinci sıraya ne gelirse gelsin, fiil ikinciye yerleşir ve gerekirse özne fiilden sonraya atar.</p>
+      </div>
+
+      <p>Türkçe'de cümleyi tersine çevirdiğinizde fiil yine de sonda kalır. Almanca'da ise cümle başına zaman zarfı getirildiğinde fiil hâlâ ikinci sırada olmalıdır — bu yüzden özne üçüncü sıraya düşer:</p>
+
+      <div class="sentence-list fade-up">
+        <div class="sentence-item">
+          <div class="de">Ich <span class="verb-highlight">gehe</span> heute zur Schule.</div>
+          <div class="tr">Ben bugün okula gidiyorum. <em>(Normal sıra: özne önde)</em></div>
+        </div>
+        <div class="sentence-item">
+          <div class="de">Heute <span class="verb-highlight">gehe</span> ich zur Schule.</div>
+          <div class="tr">Bugün gidiyorum okula ben. <em>(Zaman öne alındı → fiil hâlâ 2. sırada, özne 3. sıraya geçti)</em></div>
+        </div>
+        <div class="sentence-item">
+          <div class="de">Zur Schule <span class="verb-highlight">gehe</span> ich heute.</div>
+          <div class="tr">Okula gidiyorum ben bugün. <em>(Yer öne alındı → fiil yine 2. sırada)</em></div>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <p>⚠️ <strong>Dikkat:</strong> Türkçe'de "Bugün ben okula gidiyorum" ile "Ben bugün okula gidiyorum" arasında fiil yerini korur. Almanca'da bu esneklik yoktur — fiil mutlaka 2. konumda kalır.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">3. Zaman → Tarz → Yer Sırası</h2>
+
+      <p>Bir cümlede birden fazla zarf kullanıyorsanız Almanca'da sıra sabittir: önce <strong>ne zaman</strong>, sonra <strong>nasıl</strong>, en son <strong>nerede/nereye</strong>.</p>
+
+      <div class="info-box">
+        <p><strong>Sıra:</strong> Zaman (wann?) → Tarz (wie?) → Yer (wo?)</p>
+        <p style="margin-top:8px"><em>Ich fahre <strong>morgen</strong> (ne zaman) <strong>mit dem Bus</strong> (nasıl) <strong>zur Schule</strong> (nereye).</em></p>
+        <p style="margin-top:4px;font-size:0.88rem;opacity:0.8">Yarın otobüsle okula gidiyorum.</p>
+      </div>
+
+      <p>Türkçe'de bu sıra daha esnektir ve vurguya göre değişebilir. Almanca'da ise bu sıra kurala bağlıdır. Şöyle düşünebilirsiniz: birileriyle buluşma ayarlarken önce "ne zaman" sonra "nerede" diyoruz — aynı mantık.</p>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">4. Yan Cümleler: İşte Türkçe'ye Benzeyen Kısım!</h2>
+
+      <p>Almanca'da <em>weil</em> (çünkü), <em>dass</em> (ki/-dığı), <em>wenn</em> (-dığında/eğer) gibi bağlaçlarla başlayan yan cümlelerde fiil sona gider. Bu yapı Türkçe'ye çok benzer!</p>
+
+      <table class="compare-table fade-up">
+        <thead>
+          <tr>
+            <th>Dil</th>
+            <th>Cümle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="lang-tr">Türkçe</span></td>
+            <td><span class="sentence">Eve gidiyorum çünkü yorgun<strong>um</strong>.</span><span class="note">Fiil sonda → doğal</span></td>
+          </tr>
+          <tr>
+            <td><span class="lang-de">Almanca</span></td>
+            <td><span class="sentence">Ich gehe nach Hause, weil ich müde <strong>bin</strong>.</span><span class="note">weil'den sonra fiil sona gider</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>En çok kullanılan yan cümle bağlaçları:</p>
+
+      <table class="conj-table fade-up">
+        <thead>
+          <tr><th>Bağlaç</th><th>Türkçe Karşılığı</th><th>Örnek</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="word">weil</span></td>
+            <td>çünkü</td>
+            <td class="example">Ich lerne, weil ich Almanya'ya <strong>gehen möchte</strong>.</td>
+          </tr>
+          <tr>
+            <td><span class="word">dass</span></td>
+            <td>ki, -dığı</td>
+            <td class="example">Ich weiß, dass er morgen <strong>kommt</strong>.</td>
+          </tr>
+          <tr>
+            <td><span class="word">wenn</span></td>
+            <td>-dığında, eğer</td>
+            <td class="example">Wenn du Zeit <strong>hast</strong>, ruf mich an.</td>
+          </tr>
+          <tr>
+            <td><span class="word">obwohl</span></td>
+            <td>-e rağmen</td>
+            <td class="example">Er geht aus, obwohl es kalt <strong>ist</strong>.</td>
+          </tr>
+          <tr>
+            <td><span class="word">bevor</span></td>
+            <td>-den önce</td>
+            <td class="example">Bevor ich <strong>schlafe</strong>, lese ich.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="success-box">
+        <p><strong>Türkçe avantajı:</strong> Türkçe konuşanlar bu yapıyı sezgisel olarak kavrar çünkü zaten "çünkü yorgundum" gibi fiilin sona gittiği yapılara alışkınlar. Almanca'daki farkı sadece bağlacın konumunu ezberlemek yeterli.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">5. Soru Cümleleri</h2>
+
+      <h3>Evet/Hayır Soruları</h3>
+      <p>Türkçe'de soru <strong>-mı/-mi</strong> ekiyle yapılır, fiil yerinde kalır. Almanca'da ise çekimli fiil cümlenin başına taşınır:</p>
+
+      <div class="sentence-list fade-up">
+        <div class="sentence-item">
+          <div class="de"><span class="verb-highlight">Gehst</span> du heute zur Schule?</div>
+          <div class="tr">Bugün okula gidiyor musun? <em>(Türkçe: ek → Almanca: fiil öne)</em></div>
+        </div>
+        <div class="sentence-item">
+          <div class="de"><span class="verb-highlight">Sprichst</span> du Deutsch?</div>
+          <div class="tr">Almanca konuşuyor musun?</div>
+        </div>
+      </div>
+
+      <h3>Soru Kelimesiyle Sorular</h3>
+      <p>Soru kelimesi (wer, was, wo, wann, wie, warum…) birinci sıraya gelir, fiil yine ikinci sıradadır:</p>
+
+      <div class="sentence-list fade-up">
+        <div class="sentence-item">
+          <div class="de"><strong>Wo</strong> <span class="verb-highlight">wohnst</span> du?</div>
+          <div class="tr">Nerede oturuyorsun? <em>(wo = 1. sıra, wohnst = 2. sıra)</em></div>
+        </div>
+        <div class="sentence-item">
+          <div class="de"><strong>Warum</strong> <span class="verb-highlight">lernst</span> du Deutsch?</div>
+          <div class="tr">Neden Almanca öğreniyorsun?</div>
+        </div>
+        <div class="sentence-item">
+          <div class="de"><strong>Wann</strong> <span class="verb-highlight">kommst</span> du?</div>
+          <div class="tr">Ne zaman geliyorsun?</div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">6. Ayrılabilen Fiiller (Trennbare Verben)</h2>
+
+      <p>Almanca'da bazı fiillerin ön eki cümlenin sonuna gider, fiilin kendisi ise ikinci sıradadır:</p>
+
+      <div class="sentence-list fade-up">
+        <div class="sentence-item">
+          <div class="de">Ich <span class="verb-highlight">mache</span> die Tür <strong>auf</strong>. <em style="font-weight:400;color:var(--text-secondary)">(aufmachen = açmak)</em></div>
+          <div class="tr">Kapıyı açıyorum. <em>(auf → sona gitti)</em></div>
+        </div>
+        <div class="sentence-item">
+          <div class="de">Er <span class="verb-highlight">ruft</span> mich morgen <strong>an</strong>. <em style="font-weight:400;color:var(--text-secondary)">(anrufen = aramak)</em></div>
+          <div class="tr">Yarın beni arayacak.</div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p><strong>İpucu:</strong> Yan cümlelerde ayrılan ön ek fiille birleşir ve bütün olarak sona gider: <em>…weil er mich morgen <strong>anruft</strong>.</em></p>
+      </div>
+
+      <hr class="divider">
+
+      <h2 class="fade-up">Özet: Türkçe–Almanca Karşılaştırması</h2>
+
+      <table class="summary-table fade-up">
+        <thead>
+          <tr>
+            <th>Kural</th>
+            <th>Türkçe</th>
+            <th>Almanca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rule-name">Temel sözcük sırası</td>
+            <td>Özne → Nesne → Fiil</td>
+            <td>Özne → Fiil → Nesne</td>
+          </tr>
+          <tr>
+            <td class="rule-name">Ana cümlede fiil konumu</td>
+            <td>Genellikle sonda</td>
+            <td><span class="cross">Her zaman 2. sırada</span></td>
+          </tr>
+          <tr>
+            <td class="rule-name">Yan cümlede fiil</td>
+            <td><span class="same">Sonda ✓</span></td>
+            <td><span class="same">Sonda ✓</span></td>
+          </tr>
+          <tr>
+            <td class="rule-name">Soru yapımı</td>
+            <td>-mı/-mi eki</td>
+            <td>Fiil öne alınır</td>
+          </tr>
+          <tr>
+            <td class="rule-name">Zaman–Yer sırası</td>
+            <td>Esnek</td>
+            <td>Sabit (Zaman → Tarz → Yer)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <div class="tips-grid fade-up">
+        <div class="tip-card">
+          <div class="tip-icon">🎯</div>
+          <h4>V2 Kuralını İçselleştir</h4>
+          <p>Her cümle kurarken kendinize "fiil ikinci sırada mı?" diye sorun. Bu alışkanlık kuralı otomatikleştirir.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔗</div>
+          <h4>weil'den Yararlan</h4>
+          <p>Türkçe'nin "çünkü + fiil sonda" yapısını zaten biliyorsunuz. Almanca'da weil sonrası aynı mantıkla çalışır.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">✍️</div>
+          <h4>Cümleleri Farklı Başlat</h4>
+          <p>"Heute...", "Morgen...", "In Berlin..." ile başlayan cümleler kurun. V2 kuralını farklı pozisyonlarda pratik etmek en iyi yol.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🗣️</div>
+          <h4>Yüksek Sesle Söyle</h4>
+          <p>Cümle yapısı kulak alışkanlığıyla yerleşir. Yanlış sıradan gelen cümle kulağa "yanlış" gelene kadar tekrar edin.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="quiz-preview fade-up">
+        <h3>Kendinizi Test Edin</h3>
+        <p>Boşluğa doğru yapıyı yazın:</p>
+        <div class="quiz-sent">Morgen <span class="quiz-blank">gehe</span> ich ins Kino.</div>
+        <div class="quiz-answer">✓ Fiil 2. sırada — "gehe ich" (özne 3. sıraya geçti)</div>
+      </div>
+
+      <div class="related-section fade-up">
+        <h3>İlgili Yazılar</h3>
+        <div class="related-grid">
+          <a href="/blog/almanca-fiil-cekimi" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Fiil Çekimi: Präsens</div>
+          </a>
+          <a href="/blog/almanca-modal-fiiller" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Modal Fiiller</div>
+          </a>
+          <a href="/blog/almanca-akkusativ" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Akkusativ</div>
+          </a>
+          <a href="/blog/almanca-dativ" class="related-card">
+            <div class="rc-tag">Gramer</div>
+            <div class="rc-title">Almanca Dativ</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-section fade-up">
+        <h2>Cümle Yapısını Konuşarak Pekiştir</h2>
+        <p>DeutschGo'nun AI destekli konuşma pratiğiyle gerçek cümleler kurarak öğrenin. Yanlış yaptığınızda anında düzeltme alın.</p>
+        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store'dan İndir — Ücretsiz
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="https://deutsch-go.com">Ana Sayfa</a></p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
