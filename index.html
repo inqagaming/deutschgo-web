@@ -1101,18 +1101,35 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.35);
-      margin: 0 0 4px;
+      margin: 0 0 6px;
+    }
+
+    .footer-guides-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
     }
 
     .footer-guides-link {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.55);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
       text-decoration: none;
       transition: color 0.2s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .footer-guides-link:hover {
       color: var(--turquoise);
+    }
+
+    .footer-guides-link.all-link {
+      color: var(--turquoise);
+      font-weight: 700;
+      white-space: normal;
+      margin-bottom: 4px;
+      display: inline-block;
     }
 
     .footer-stores {
@@ -1604,33 +1621,35 @@
 
       <div class="footer-guides">
         <p class="footer-guides-title" data-tr="Rehberler" data-en="Guides">Rehberler</p>
-        <a href="/blog" class="footer-guides-link" style="font-weight:800;color:var(--turquoise)" data-tr-href="/blog?lang=tr" data-en-href="/blog?lang=en" data-tr="→ Tüm Yazılar" data-en="→ All Guides">→ Tüm Yazılar</a>
-        <a href="/blog/der-die-das" class="footer-guides-link" data-tr-href="/blog/der-die-das" data-en-href="/blog/german-articles-der-die-das" data-tr="Der, Die, Das — Artikel Rehberi" data-en="Der, Die, Das — German Articles Guide">Der, Die, Das — Artikel Rehberi</a>
-        <a href="/blog/almanca-cogul" class="footer-guides-link" data-tr-href="/blog/almanca-cogul" data-en-href="/blog/german-plural" data-tr="Almanca Çoğul (Plural)" data-en="German Plural (Plural)">Almanca Çoğul (Plural)</a>
-        <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link" data-tr-href="/blog/almanca-fiil-cekimi" data-en-href="/blog/german-verb-conjugation" data-tr="Almanca Fiil Çekimi" data-en="German Verb Conjugation">Almanca Fiil Çekimi</a>
-        <a href="/blog/almanca-akkusativ" class="footer-guides-link" data-tr-href="/blog/almanca-akkusativ" data-en-href="/blog/german-accusative" data-tr="Akkusativ — Belirtme Hâli" data-en="Accusative Case — German Grammar">Akkusativ — Belirtme Hâli</a>
-        <a href="/blog/almanca-kein-nicht" class="footer-guides-link" data-tr-href="/blog/almanca-kein-nicht" data-en-href="/blog/german-kein-nicht" data-tr="Kein ve Nicht: Olumsuzluk" data-en="Kein vs. Nicht: Negation">Kein ve Nicht: Olumsuzluk</a>
-        <a href="/blog/almanca-dativ" class="footer-guides-link" data-tr-href="/blog/almanca-dativ" data-en-href="/blog/german-dative" data-tr="Dativ — Wem? Sorusunun Cevabı" data-en="Dative Case — The Wem? Question">Dativ — Wem? Sorusunun Cevabı</a>
-        <a href="/blog/almanca-sayilar" class="footer-guides-link" data-tr-href="/blog/almanca-sayilar" data-en-href="/blog/german-numbers" data-tr="Almanca Sayılar: 1'den 1000'e" data-en="German Numbers: 1 to 1000">Almanca Sayılar: 1'den 1000'e</a>
-        <a href="/blog/almanca-selamlasma" class="footer-guides-link" data-tr-href="/blog/almanca-selamlasma" data-en-href="/blog/german-greetings" data-tr="Almanca Selamlaşma İfadeleri" data-en="German Greetings &amp; Farewells">Almanca Selamlaşma İfadeleri</a>
-        <a href="/blog/almanca-renkler" class="footer-guides-link" data-tr-href="/blog/almanca-renkler" data-en-href="/blog/german-colors" data-tr="Almanca Renkler (Farben)" data-en="German Colors (Farben)">Almanca Renkler (Farben)</a>
-        <a href="/blog/almanca-gunler-aylar" class="footer-guides-link" data-tr-href="/blog/almanca-gunler-aylar" data-en-href="/blog/german-days-months" data-tr="Almanca Günler ve Aylar" data-en="German Days &amp; Months">Almanca Günler ve Aylar</a>
-        <a href="/blog/almanca-gecmis-zaman" class="footer-guides-link" data-tr-href="/blog/almanca-gecmis-zaman" data-en-href="/blog/german-past-tense" data-tr="Almanca Geçmiş Zaman (Perfekt)" data-en="German Past Tense (Perfekt)">Almanca Geçmiş Zaman (Perfekt)</a>
-        <a href="/blog/almanca-modal-fiiller" class="footer-guides-link" data-tr-href="/blog/almanca-modal-fiiller" data-en-href="/blog/german-modal-verbs" data-tr="Almanca Modal Fiiller" data-en="German Modal Verbs">Almanca Modal Fiiller</a>
-        <a href="/blog/almanca-b1-nasil-gecilir" class="footer-guides-link" data-tr-href="/blog/almanca-b1-nasil-gecilir" data-en-href="/blog/almanca-b1-nasil-gecilir" data-tr="Almanca B1'e Nasıl Geçilir?" data-en="How to Reach German B1?">Almanca B1'e Nasıl Geçilir?</a>
-        <a href="/blog/german-word-order" class="footer-guides-link" data-tr-href="/blog/german-word-order" data-en-href="/blog/german-word-order" data-tr="Almanca Cümle Yapısı (Söz Dizimi)" data-en="German Word Order: Complete Guide">Almanca Cümle Yapısı (Söz Dizimi)</a>
-        <a href="/blog/almanca-goethe-sinavi" class="footer-guides-link" data-tr="Goethe A1/A2 Sınavı Nasıl Geçilir?" data-en="How to Pass Goethe A1/A2?">Goethe A1/A2 Sınavı Nasıl Geçilir?</a>
-        <a href="/blog/almanya-is-bulmak-almanca" class="footer-guides-link" data-tr="Almanya'da İş Bulmak için Almanca" data-en="German for Finding a Job in Germany">Almanya'da İş Bulmak için Almanca</a>
-        <a href="/blog/almanca-ogrenmek-kaynaklar" class="footer-guides-link" data-tr="Almanca Öğrenmek için En İyi Kaynaklar" data-en="Best Resources for Learning German">Almanca Öğrenmek için En İyi Kaynaklar</a>
-        <a href="/blog/almanca-vucut-organlari" class="footer-guides-link" data-tr="Almanca Vücut Organları" data-en="German Body Parts">Almanca Vücut Organları</a>
-        <a href="/blog/almanca-aile-uyeleri" class="footer-guides-link" data-tr="Almanca Aile Üyeleri" data-en="German Family Members">Almanca Aile Üyeleri</a>
-        <a href="/blog/almancada-saat" class="footer-guides-link" data-tr="Almancada Saat Nasıl Söylenir?" data-en="How to Tell Time in German?">Almancada Saat Nasıl Söylenir?</a>
-        <a href="/blog/almanca-prateritum" class="footer-guides-link" data-tr="Almanca Präteritum (Geçmiş Zaman)" data-en="German Präteritum">Almanca Präteritum (Geçmiş Zaman)</a>
-        <a href="/blog/almanca-soru-cumleleri" class="footer-guides-link" data-tr="Almancada Soru Cümleleri" data-en="German Question Sentences">Almancada Soru Cümleleri</a>
-        <a href="/blog/almanya-icin-almanca" class="footer-guides-link" data-tr="Almanya'ya Taşınmak İçin Almanca" data-en="German for Moving to Germany">Almanya'ya Taşınmak İçin Almanca</a>
-        <a href="/blog/almanca-ne-kadar-surer" class="footer-guides-link" data-tr="Almanca Ne Kadar Sürede Öğrenilir?" data-en="How Long to Learn German?">Almanca Ne Kadar Sürede Öğrenilir?</a>
-        <a href="/blog/almanca-a1-kelime-listesi" class="footer-guides-link" data-tr="Almanca A1 Kelime Listesi" data-en="German A1 Vocabulary List">Almanca A1 Kelime Listesi</a>
-        <a href="/blog/almanca-cinsiyet-der-die-das" class="footer-guides-link" data-tr="Almancada Cinsiyet (der/die/das)" data-en="German Gender (der/die/das)">Almancada Cinsiyet (der/die/das)</a>
+        <a href="/blog" class="footer-guides-link all-link" data-tr-href="/blog?lang=tr" data-en-href="/blog?lang=en" data-tr="→ Tüm Yazılar" data-en="→ All Guides">→ Tüm Yazılar</a>
+        <div class="footer-guides-grid">
+          <a href="/blog/der-die-das" class="footer-guides-link" data-tr="Der, Die, Das" data-en="Der, Die, Das">Der, Die, Das</a>
+          <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link" data-tr="Fiil Çekimi" data-en="Verb Conjugation">Fiil Çekimi</a>
+          <a href="/blog/almanca-akkusativ" class="footer-guides-link" data-tr="Akkusativ" data-en="Accusative">Akkusativ</a>
+          <a href="/blog/almanca-dativ" class="footer-guides-link" data-tr="Dativ" data-en="Dative">Dativ</a>
+          <a href="/blog/almanca-cogul" class="footer-guides-link" data-tr="Çoğul (Plural)" data-en="Plural">Çoğul (Plural)</a>
+          <a href="/blog/almanca-kein-nicht" class="footer-guides-link" data-tr="Kein ve Nicht" data-en="Kein vs. Nicht">Kein ve Nicht</a>
+          <a href="/blog/almanca-modal-fiiller" class="footer-guides-link" data-tr="Modal Fiiller" data-en="Modal Verbs">Modal Fiiller</a>
+          <a href="/blog/almanca-gecmis-zaman" class="footer-guides-link" data-tr="Perfekt (Geçmiş)" data-en="Past Tense">Perfekt (Geçmiş)</a>
+          <a href="/blog/almanca-prateritum" class="footer-guides-link" data-tr="Präteritum" data-en="Präteritum">Präteritum</a>
+          <a href="/blog/almanca-soru-cumleleri" class="footer-guides-link" data-tr="Soru Cümleleri" data-en="Questions">Soru Cümleleri</a>
+          <a href="/blog/almanca-cumle-dizilimi" class="footer-guides-link" data-tr="Cümle Yapısı" data-en="Word Order">Cümle Yapısı</a>
+          <a href="/blog/almanca-cinsiyet-der-die-das" class="footer-guides-link" data-tr="Cinsiyet (der/die/das)" data-en="Gender">Cinsiyet (der/die/das)</a>
+          <a href="/blog/almanca-sayilar" class="footer-guides-link" data-tr="Sayılar 1–1000" data-en="Numbers 1–1000">Sayılar 1–1000</a>
+          <a href="/blog/almancada-saat" class="footer-guides-link" data-tr="Saat Söyleme" data-en="Telling Time">Saat Söyleme</a>
+          <a href="/blog/almanca-selamlasma" class="footer-guides-link" data-tr="Selamlaşma" data-en="Greetings">Selamlaşma</a>
+          <a href="/blog/almanca-renkler" class="footer-guides-link" data-tr="Renkler" data-en="Colors">Renkler</a>
+          <a href="/blog/almanca-gunler-aylar" class="footer-guides-link" data-tr="Günler ve Aylar" data-en="Days &amp; Months">Günler ve Aylar</a>
+          <a href="/blog/almanca-a1-kelime-listesi" class="footer-guides-link" data-tr="A1 Kelime Listesi" data-en="A1 Vocabulary">A1 Kelime Listesi</a>
+          <a href="/blog/almanca-vucut-organlari" class="footer-guides-link" data-tr="Vücut Organları" data-en="Body Parts">Vücut Organları</a>
+          <a href="/blog/almanca-aile-uyeleri" class="footer-guides-link" data-tr="Aile Üyeleri" data-en="Family Members">Aile Üyeleri</a>
+          <a href="/blog/almanca-b1-nasil-gecilir" class="footer-guides-link" data-tr="B1'e Nasıl Geçilir?" data-en="How to Reach B1?">B1'e Nasıl Geçilir?</a>
+          <a href="/blog/almanca-goethe-sinavi" class="footer-guides-link" data-tr="Goethe Sınavı" data-en="Goethe Exam">Goethe Sınavı</a>
+          <a href="/blog/almanca-ne-kadar-surer" class="footer-guides-link" data-tr="Ne Kadar Sürer?" data-en="How Long to Learn?">Ne Kadar Sürer?</a>
+          <a href="/blog/almanca-ogrenmek-kaynaklar" class="footer-guides-link" data-tr="Öğrenme Kaynakları" data-en="Learning Resources">Öğrenme Kaynakları</a>
+          <a href="/blog/almanya-icin-almanca" class="footer-guides-link" data-tr="Almanya'ya Taşınmak" data-en="Moving to Germany">Almanya'ya Taşınmak</a>
+          <a href="/blog/almanya-is-bulmak-almanca" class="footer-guides-link" data-tr="Almanya'da İş Bulmak" data-en="Jobs in Germany">Almanya'da İş Bulmak</a>
+        </div>
       </div>
 
       <div class="footer-stores" aria-label="App stores">
