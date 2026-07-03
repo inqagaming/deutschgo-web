@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W44N10VTQL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W44N10VTQL');
+  </script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href*="onelink.me"]');
+      if (!link) return;
+      gtag('event', 'app_store_click', {
+        link_location: link.className || 'unknown',
+        link_label: (link.getAttribute('aria-label') || link.textContent || '').trim(),
+        page_path: window.location.pathname
+      });
+    });
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Almancada Soru Cümleleri: W-Fragen ve Evet/Hayır Soruları | DeutschGo</title>
