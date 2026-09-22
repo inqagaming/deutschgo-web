@@ -142,14 +142,14 @@
 
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="https://deutsch-go.com" class="navbar-logo" aria-label="DeutschGo">
+      <a href="/" class="navbar-logo" aria-label="DeutschGo">
         <div class="navbar-logo-icon">
           <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
         </div>
         <span class="navbar-logo-text">DeutschGo</span>
       </a>
       <div class="navbar-right">
-        <a href="https://deutsch-go.com" class="navbar-home" data-tr="← Ana Sayfa" data-en="← Home">← Ana Sayfa</a>
+        <a href="/" class="navbar-home" data-tr="← Ana Sayfa" data-en="← Home">← Ana Sayfa</a>
         <div class="lang-toggle" role="group">
           <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
           <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
@@ -541,7 +541,7 @@
   </div>
 
   <footer>
-    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="https://deutsch-go.com" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></p>
+    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="/" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></p>
   </footer>
 
   <script>
@@ -563,6 +563,11 @@
       document.querySelectorAll('[data-tr]').forEach(function(el) {
         var text = el.getAttribute('data-' + lang);
         if (text !== null) el.innerHTML = text;
+      });
+
+      // Home links keep the chosen language
+      document.querySelectorAll('a[href="/"], a[href^="/?lang="]').forEach(function(el) {
+        el.setAttribute('href', '/?lang=' + lang);
       });
 
       // Update page title

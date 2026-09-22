@@ -455,7 +455,7 @@
         <a href="#features" data-tr="Özellikler" data-en="Features">Özellikler</a>
         <a href="#pricing" data-tr="Planlar" data-en="Plans">Planlar</a>
         <a href="#faq" data-tr="SSS" data-en="FAQ">SSS</a>
-        <a href="/blog" data-tr="Rehberler" data-en="Guides">Rehberler</a>
+        <a href="/blog" data-tr-href="/blog?lang=tr" data-en-href="/blog?lang=en" data-tr="Rehberler" data-en="Guides">Rehberler</a>
       </nav>
       <div class="nav-right">
         <div class="lang" role="group" aria-label="Language">
@@ -876,7 +876,7 @@
         if (el.hasAttribute('data-html')) el.innerHTML = text;
         else el.textContent = text;
       });
-      document.querySelectorAll('.footer-guides-link[data-tr-href]').forEach(function (el) {
+      document.querySelectorAll('[data-tr-href]').forEach(function (el) {
         var href = el.getAttribute('data-' + lang + '-href');
         if (href) el.setAttribute('href', href);
       });
