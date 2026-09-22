@@ -57,7 +57,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -147,18 +147,20 @@
     .related-card .rc-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--turquoise-dark); margin-bottom: 6px; }
     .related-card .rc-title { font-size: 0.92rem; font-weight: 700; line-height: 1.4; }
   </style>
+  <link rel="stylesheet" href="/blog/blog.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="/?lang=tr" class="navbar-logo">
-        <div class="navbar-logo-icon"><picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture></div>
-        <span class="navbar-logo-text">DeutschGo</span>
-      </a>
-      <a href="/?lang=tr" class="navbar-back">← Ana Sayfa</a>
+  <header class="dg-nav">
+    <div class="dg-nav-inner">
+      <a href="/?lang=tr" class="dg-brand" aria-label="DeutschGo"><img src="/icon.png" alt="" width="36" height="36"><span>Deutsch<b>Go</b></span></a>
+      <nav class="dg-nav-links" aria-label="Main navigation">
+        <a href="/blog?lang=tr">Rehberler</a>
+        <a href="/?lang=tr">Ana sayfa</a>
+      </nav>
+      <a class="dg-nav-cta" href="https://deutschgo.onelink.me/viho/7d18r763" target="_blank" rel="noopener">İndir</a>
     </div>
-  </nav>
+  </header>
 
   <div class="blog-hero">
     <div class="container">
@@ -342,17 +344,18 @@
       <div class="cta-section fade-up">
         <h2>Takvim Kelimelerini Oyunlarla Öğren</h2>
         <p>DeutschGo'nun mini oyunları ve flashcard'larıyla günleri, ayları ve mevsimleri pekiştirin.</p>
-        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          App Store'dan İndir — Ücretsiz
-        </a>
+        <div class="dg-stores"><a href="https://deutschgo.onelink.me/viho/7d18r763" class="dg-store " aria-label="Download on the App Store" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span><small>App Store'dan</small><strong>App Store</strong></span></a><a href="https://deutschgo.onelink.me/viho/7d18r763" class="dg-store " aria-label="Get it on Google Play" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg><span><small>Google Play'den</small><strong>Google Play</strong></span></a></div>
+        <img class="dg-cta-mascot" src="/img/mascot_party.webp" alt="" width="512" height="512" loading="lazy">
       </div>
 
     </div>
   </main>
 
-  <footer>
-    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="/?lang=tr">Ana Sayfa</a></p>
+  <footer class="dg-footer">
+    <div class="dg-footer-inner">
+      <p>© 2026 DeutschGo · A1–B1 Almanca kelime uygulaması · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a></p>
+      <p class="dg-footer-links"><a href="/blog?lang=tr">Rehberler</a><a href="/?lang=tr">Ana sayfa</a><a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener">Gizlilik Politikası</a><a href="https://deutsch-go.com/terms" target="_blank" rel="noopener">Kullanım Koşulları</a></p>
+    </div>
   </footer>
 
   <script>

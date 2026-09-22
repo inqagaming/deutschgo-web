@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title data-tr="Almanca Öğrenme Rehberleri — Blog | DeutschGo" data-en="German Learning Guides — Blog | DeutschGo">Almanca Öğrenme Rehberleri — Blog | DeutschGo</title>
-  <meta name="description" content="Almanca gramer rehberleri, kelime listeleri ve öğrenme ipuçları. A1-A2 seviyesi için ücretsiz içerikler." />
+  <meta name="description" content="Almanca gramer rehberleri, konu konu kelime listeleri ve öğrenme ipuçları. A1'den B1'e ücretsiz, örnekli içerikler." />
   <meta name="keywords" content="almanca öğren, almanca gramer, almanca kelime, deutsch lernen, german grammar, learn german" />
   <meta name="author" content="DeutschGo" />
   <meta name="robots" content="index, follow" />
@@ -36,7 +36,7 @@
   <link rel="alternate" hreflang="x-default" href="https://deutsch-go.com/blog" />
 
   <meta property="og:title" content="Almanca Öğrenme Rehberleri | DeutschGo Blog" />
-  <meta property="og:description" content="Almanca gramer ve kelime rehberleri. A1-A2 için ücretsiz içerikler." />
+  <meta property="og:description" content="Almanca gramer ve kelime rehberleri. A1'den B1'e ücretsiz içerikler." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deutsch-go.com/blog" />
   <meta property="og:image" content="https://deutsch-go.com/og-image.png" />
@@ -50,7 +50,7 @@
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "DeutschGo Blog",
-    "description": "German learning guides for A1-A2 learners",
+    "description": "German grammar and vocabulary guides for A1 to B1 learners",
     "url": "https://deutsch-go.com/blog",
     "publisher": { "@type": "Organization", "name": "DeutschGo", "url": "https://deutsch-go.com" }
   }
@@ -58,118 +58,81 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .hidden { display: none !important; }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
 
-    :root {
-      --turquoise: #00D1B2;
-      --turquoise-dark: #00b89c;
-      --turquoise-light: #e0faf6;
-      --dark: #111418;
-      --bg-light: #F0F4F8;
-      --text-primary: #111418;
-      --text-secondary: #5a6478;
-      --border: #e8edf3;
-      --radius-md: 14px;
-      --radius-lg: 20px;
+    .index-hero { background: var(--dg-page); padding: 64px 0 40px; }
+    .index-hero .eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--dg-teal-ink); margin-bottom: 12px; }
+    .index-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; text-wrap: balance; max-width: 18ch; }
+    .index-hero p.lede { color: var(--dg-ink-soft); font-size: 1.12rem; max-width: 58ch; margin-top: 16px; }
+
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 28px 0 8px; }
+    .filter-btn {
+      font: 600 .92rem var(--dg-font); color: var(--dg-ink-soft); cursor: pointer;
+      background: var(--dg-card); border: 1px solid var(--dg-line); border-radius: 999px; padding: 8px 18px;
     }
+    .filter-btn:hover { border-color: var(--dg-teal); color: var(--dg-teal-ink); }
+    .filter-btn.active { background: var(--dg-ink); border-color: var(--dg-ink); color: #fff; }
 
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Outfit', sans-serif; color: var(--text-primary); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; }
-
-    /* Navbar */
-    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 24px; }
-    .navbar-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; }
-    .navbar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .navbar-logo-icon { width: 34px; height: 34px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
-    .navbar-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
-    .navbar-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--turquoise); }
-    .navbar-right { display: flex; align-items: center; gap: 16px; }
-    .navbar-home { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
-    .navbar-home:hover { color: var(--turquoise); }
-    .lang-toggle { display: flex; border: 1.5px solid var(--border); border-radius: 999px; overflow: hidden; }
-    .lang-btn { background: none; border: none; padding: 5px 14px; font-size: 0.82rem; font-weight: 700; cursor: pointer; color: var(--text-secondary); font-family: inherit; transition: background 0.2s, color 0.2s; }
-    .lang-btn.active { background: var(--turquoise); color: #fff; }
-
-    /* Hero */
-    .blog-hero { background: linear-gradient(135deg, var(--turquoise-light) 0%, #fff 60%); padding: 64px 24px 56px; text-align: center; }
-    .blog-hero .hero-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--turquoise-dark); margin-bottom: 12px; }
-    .blog-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
-    .blog-hero p { font-size: 1.05rem; color: var(--text-secondary); max-width: 520px; margin: 0 auto; }
-
-    /* Filter tabs */
-    .filter-bar { max-width: 1100px; margin: 40px auto 0; padding: 0 24px; display: flex; gap: 10px; flex-wrap: wrap; }
-    .filter-btn { padding: 8px 20px; border-radius: 999px; border: 1.5px solid var(--border); background: #fff; font-size: 0.88rem; font-weight: 700; cursor: pointer; color: var(--text-secondary); font-family: inherit; transition: all 0.2s; }
-    .filter-btn:hover { border-color: var(--turquoise); color: var(--turquoise); }
-    .filter-btn.active { background: var(--turquoise); border-color: var(--turquoise); color: #fff; }
-
-    /* Grid */
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px 0 80px; }
-
-    /* Post card */
-    .post-card { display: block; text-decoration: none; color: var(--text-primary); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px; transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s; }
-    .post-card:hover { border-color: var(--turquoise); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,209,178,0.12); }
-    .post-card .card-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--turquoise-dark); margin-bottom: 10px; }
-    .post-card h2 { font-size: 1.05rem; font-weight: 800; line-height: 1.4; margin-bottom: 10px; }
-    .post-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px; }
-    .post-card .card-meta { font-size: 0.78rem; color: var(--text-secondary); display: flex; align-items: center; gap: 8px; }
-    .post-card .card-meta .dot { opacity: 0.4; }
-    .post-card .card-read { font-size: 0.82rem; font-weight: 700; color: var(--turquoise); margin-top: 14px; display: flex; align-items: center; gap: 4px; }
-
-    /* Hidden by filter */
-    .post-card.hidden { display: none; }
-
-    /* CTA */
-    .blog-cta { background: var(--dark); border-radius: var(--radius-lg); padding: 48px 32px; text-align: center; margin: 0 24px 80px; max-width: 1100px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
-    .blog-cta h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
-    .blog-cta p { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
-    .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--turquoise); color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 999px; transition: background 0.2s, transform 0.15s; }
-    .cta-btn:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
-
-    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
-    footer a { color: var(--turquoise); text-decoration: none; }
-
-    @media (max-width: 600px) {
-      .posts-grid { grid-template-columns: 1fr; }
-      .blog-cta { margin: 0 16px 60px; padding: 36px 24px; }
+    .posts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 20px 0 72px; }
+    @media (max-width: 960px) { .posts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) { .posts-grid { grid-template-columns: 1fr; } }
+    .post-card {
+      display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: var(--dg-ink);
+      background: var(--dg-card); border: 1px solid var(--dg-line); border-radius: 20px; padding: 22px 22px 20px;
+      transition: border-color .2s, transform .15s, box-shadow .2s;
     }
+    .post-card:hover { border-color: var(--dg-teal); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(17,20,24,.07); }
+    .card-tag { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--dg-teal-ink); }
+    .post-card h2 { font-size: 1.12rem; font-weight: 700; line-height: 1.3; letter-spacing: -.01em; text-wrap: balance; }
+    .post-card p { color: var(--dg-ink-soft); font-size: .95rem; line-height: 1.55; }
+    .card-meta { margin-top: auto; padding-top: 6px; display: flex; gap: 6px; font-size: .82rem; font-weight: 600; color: var(--dg-ink-mute); }
+    .card-meta span:first-child { display: none; }
+    .card-read { font-weight: 700; font-size: .9rem; color: var(--dg-teal-ink); }
+
+    .index-cta { padding: 0 0 80px; }
+    .index-cta .cta-section { margin: 0; }
   </style>
+  <link rel="stylesheet" href="/blog/blog.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="/" class="navbar-logo" aria-label="DeutschGo">
-        <div class="navbar-logo-icon">
-          <picture><source srcset="/icon.webp" type="image/webp"><img src="/icon.png" alt="DeutschGo"></picture>
+  <header class="dg-nav">
+    <div class="dg-nav-inner">
+      <a href="/" class="dg-brand" aria-label="DeutschGo"><img src="/icon.png" alt="" width="36" height="36"><span>Deutsch<b>Go</b></span></a>
+      <nav class="dg-nav-links" aria-label="Main navigation">
+        <a href="/blog" aria-current="page" data-tr="Rehberler" data-en="Guides">Rehberler</a>
+        <a href="/" data-tr="Ana sayfa" data-en="Home">Ana sayfa</a>
+      </nav>
+      <div class="dg-nav-right">
+        <div class="dg-lang" role="group" aria-label="Language">
+          <button id="btn-tr" class="active" onclick="setLang('tr')" aria-pressed="true">TR</button>
+          <button id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
         </div>
-        <span class="navbar-logo-text">DeutschGo</span>
-      </a>
-      <div class="navbar-right">
-        <a href="/" class="navbar-home" data-tr="← Ana Sayfa" data-en="← Home">← Ana Sayfa</a>
-        <div class="lang-toggle" role="group">
-          <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
-          <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
-        </div>
+        <a class="dg-nav-cta" href="https://deutschgo.onelink.me/viho/7d18r763" target="_blank" rel="noopener" data-tr="İndir" data-en="Get the app">İndir</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="blog-hero">
-    <p class="hero-label" data-tr="DeutschGo Blog" data-en="DeutschGo Blog">DeutschGo Blog</p>
-    <h1 data-tr="Almanca Öğrenme Rehberleri" data-en="German Learning Guides">Almanca Öğrenme Rehberleri</h1>
-    <p data-tr="Gramer kuralları, kelime listeleri ve öğrenme ipuçları — A1-A2 seviyesi için ücretsiz rehberler." data-en="Grammar rules, vocabulary lists and learning tips — free guides for A1-A2 learners.">Gramer kuralları, kelime listeleri ve öğrenme ipuçları — A1-A2 seviyesi için ücretsiz rehberler.</p>
-  </div>
+  <section class="index-hero">
+    <div class="wrap">
+      <p class="eyebrow" data-tr="DeutschGo Rehberleri" data-en="DeutschGo Guides">DeutschGo Rehberleri</p>
+      <h1 data-tr="Almanca gramer ve kelime rehberleri" data-en="German grammar and vocabulary guides">Almanca gramer ve kelime rehberleri</h1>
+      <p class="lede" data-tr="Artikeller, haller, fiil çekimleri ve konu konu kelime listeleri: A1'den B1'e ücretsiz, örnekli rehberler." data-en="Articles, cases, verb conjugation and vocabulary by topic: free guides with examples, from A1 to B1.">Artikeller, haller, fiil çekimleri ve konu konu kelime listeleri: A1'den B1'e ücretsiz, örnekli rehberler.</p>
+    </div>
+  </section>
 
-  <div class="container">
-    <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterPosts('all')" data-tr="Tümü" data-en="All">Tümü</button>
-      <button class="filter-btn" onclick="filterPosts('grammar')" data-tr="Gramer" data-en="Grammar">Gramer</button>
-      <button class="filter-btn" onclick="filterPosts('vocabulary')" data-tr="Kelime" data-en="Vocabulary">Kelime</button>
-      <button class="filter-btn" onclick="filterPosts('conversation')" data-tr="Konuşma" data-en="Conversation">Konuşma</button>
+  <main class="wrap">
+    <div class="filter-bar" role="group" aria-label="Filter">
+      <button class="filter-btn active" data-filter="all" onclick="filterPosts('all')" data-tr="Tümü" data-en="All">Tümü</button>
+      <button class="filter-btn" data-filter="grammar" onclick="filterPosts('grammar')" data-tr="Gramer" data-en="Grammar">Gramer</button>
+      <button class="filter-btn" data-filter="vocabulary" onclick="filterPosts('vocabulary')" data-tr="Kelime" data-en="Vocabulary">Kelime</button>
+      <button class="filter-btn" data-filter="conversation" onclick="filterPosts('conversation')" data-tr="Konuşma" data-en="Conversation">Konuşma</button>
     </div>
 
     <div class="posts-grid" id="posts-grid">
@@ -527,88 +490,71 @@
         <div class="card-meta"><span>📚</span><span>~5 min</span></div>
         <div class="card-read">Read →</div>
       </a>
-
     </div>
-  </div>
+  </main>
 
-  <div class="blog-cta">
-    <h2 data-tr="Öğrendiklerini Uygula" data-en="Put Your Learning into Practice">Öğrendiklerini Uygula</h2>
-    <p data-tr="Bu rehberlerdeki konuları DeutschGo'da flashcard'lar, AI sohbet ve mini oyunlarla pekiştir." data-en="Reinforce these topics with flashcards, AI chat and mini games in DeutschGo.">Bu rehberlerdeki konuları DeutschGo'da flashcard'lar, AI sohbet ve mini oyunlarla pekiştir.</p>
-    <a href="https://deutschgo.onelink.me/viho/7d18r763" class="cta-btn" target="_blank" rel="noopener">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      <span data-tr="App Store'dan İndir — Ücretsiz" data-en="Download on App Store — Free">App Store'dan İndir — Ücretsiz</span>
-    </a>
-  </div>
+  <section class="index-cta">
+    <div class="wrap">
+      <div class="cta-section">
+        <h2 data-tr="Okuduğunu uygulamada pekiştir." data-en="Practise what you read in the app.">Okuduğunu uygulamada pekiştir.</h2>
+        <p data-tr="100+ kelime setinde 3600+ kelime, gramer ve yapay zekâyla sohbetler, günde birkaç dakika." data-en="3600+ words in 100+ word sets, grammar and AI conversations, a few minutes a day.">100+ kelime setinde 3600+ kelime, gramer ve yapay zekâyla sohbetler, günde birkaç dakika.</p>
+        <div class="dg-stores"><a href="https://deutschgo.onelink.me/viho/7d18r763" class="dg-store" aria-label="Download on the App Store" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span><small data-tr="App Store'dan" data-en="Download on the">App Store'dan</small><strong>App Store</strong></span></a><a href="https://deutschgo.onelink.me/viho/7d18r763" class="dg-store" aria-label="Get it on Google Play" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg><span><small data-tr="Google Play'den" data-en="Get it on">Google Play'den</small><strong>Google Play</strong></span></a></div>
+        <img class="dg-cta-mascot" src="/img/mascot_party.webp" alt="" width="512" height="512" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a> · <a href="/" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></p>
+  <footer class="dg-footer">
+    <div class="dg-footer-inner">
+      <p>© 2026 DeutschGo · <span data-tr="A1–B1 Almanca kelime uygulaması" data-en="A1–B1 German vocabulary app">A1–B1 Almanca kelime uygulaması</span> · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a></p>
+      <p class="dg-footer-links"><a href="/" data-tr="Ana sayfa" data-en="Home">Ana sayfa</a><a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a><a href="https://deutsch-go.com/terms" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a></p>
+    </div>
   </footer>
 
   <script>
-    // Language detection
-    const urlLang = new URLSearchParams(window.location.search).get('lang');
-    const browserLang = (navigator.language || 'en').toLowerCase();
-    let currentLang = urlLang || (browserLang.startsWith('tr') ? 'tr' : 'en');
+    var params = new URLSearchParams(window.location.search);
+    var browserLang = (navigator.language || 'en').toLowerCase();
+    var currentLang = params.get('lang') === 'en' || params.get('lang') === 'tr'
+      ? params.get('lang')
+      : (browserLang.startsWith('tr') ? 'tr' : 'en');
+    var activeFilter = 'all';
 
     function setLang(lang) {
       currentLang = lang;
-
-      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
-      document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
-      document.documentElement.lang = lang;
-
-      // Update text content
-      document.querySelectorAll('[data-tr]').forEach(function(el) {
-        var text = el.getAttribute('data-' + lang);
-        if (text !== null) el.innerHTML = text;
+      ['tr', 'en'].forEach(function (l) {
+        var b = document.getElementById('btn-' + l);
+        b.classList.toggle('active', l === lang);
+        b.setAttribute('aria-pressed', l === lang);
       });
-
-      // Home links keep the chosen language
-      document.querySelectorAll('a[href="/"], a[href^="/?lang="]').forEach(function(el) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-tr]').forEach(function (el) {
+        var text = el.getAttribute('data-' + lang);
+        if (text !== null) el.textContent = text;
+      });
+      // Home links keep the chosen language.
+      document.querySelectorAll('a[href="/"], a[href^="/?lang="]').forEach(function (el) {
         el.setAttribute('href', '/?lang=' + lang);
       });
-
-      // Update page title
-      var titleEl = document.querySelector('title');
-      if (titleEl) {
-        var t = titleEl.getAttribute('data-' + lang);
-        if (t) document.title = t;
-      }
-
-      // Show/hide language cards
-      document.querySelectorAll('.tr-card').forEach(function(el) {
-        el.classList.toggle('hidden', lang === 'en');
-      });
-      document.querySelectorAll('.en-card').forEach(function(el) {
-        el.classList.toggle('hidden', lang === 'tr');
-      });
-
-      // Re-apply active filter
+      var t = document.querySelector('title').getAttribute('data-' + lang);
+      if (t) document.title = t;
       filterPosts(activeFilter);
     }
 
-    // Filter
-    let activeFilter = 'all';
+    // Shows the cards of the current language in [category]. It used to read
+    // the global click event, which does not exist on page load, so the first
+    // call threw and the filter never ran.
     function filterPosts(category) {
       activeFilter = category;
-      document.querySelectorAll('.filter-btn').forEach(function(btn) {
-        btn.classList.remove('active');
+      document.querySelectorAll('.filter-btn').forEach(function (btn) {
+        var on = btn.getAttribute('data-filter') === category;
+        btn.classList.toggle('active', on);
+        btn.setAttribute('aria-pressed', on);
       });
-      event.target.classList.add('active');
-
-      var cards = currentLang === 'tr'
-        ? document.querySelectorAll('.tr-card')
-        : document.querySelectorAll('.en-card');
-
-      var allCards = document.querySelectorAll('.post-card');
-      allCards.forEach(function(card) { card.classList.add('hidden'); });
-
-      cards.forEach(function(card) {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.classList.remove('hidden');
-        }
+      var own = currentLang === 'tr' ? 'tr-card' : 'en-card';
+      document.querySelectorAll('.post-card').forEach(function (card) {
+        var show = card.classList.contains(own) &&
+          (category === 'all' || card.getAttribute('data-category') === category);
+        card.classList.toggle('hidden', !show);
       });
     }
 
