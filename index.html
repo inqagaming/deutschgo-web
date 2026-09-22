@@ -26,9 +26,9 @@
   <meta name="google-site-verification" content="Y_Q69yurX_Oa5TCgkLhS5qOqF9s7qvFExfDC3II8XNc" />
 
   <!-- SEO: Primary -->
-  <title>DeutschGo — Almanca Öğrenme Uygulaması | A1-A2 Deutsch Lernen</title>
-  <meta name="description" content="DeutschGo ile Almancayı ücretsiz öğren. Flashcard'lar, AI sohbet, mini oyunlar ve 110+ gramer konusu. Türkçe arayüzle A1-A2 Almanca. App Store'da şimdi!" />
-  <meta name="keywords" content="almanca öğren, almanca öğrenme uygulaması, deutsch lernen, almanca uygulama, a1 almanca, a2 almanca, almanca flashcard, almanca gramer, almanca ai sohbet, türkçe almanca, almanca başlangıç, Deutsch lernen App, German learning app, learn German free" />
+  <title>DeutschGo — Almanca Öğrenme Uygulaması | A1–B1 Deutsch Lernen</title>
+  <meta name="description" content="DeutschGo ile Almancayı A1'den B1'e öğren: 3600+ kelime, 140+ gramer konusu, 40+ AI sohbet senaryosu, 14 mini oyun ve sesli hikayeler. Türkçe arayüz, ücretsiz başla." />
+  <meta name="keywords" content="almanca öğren, almanca öğrenme uygulaması, deutsch lernen, almanca uygulama, a1 almanca, a2 almanca, b1 almanca, almanca b1 kelimeler, almanca flashcard, almanca gramer, almanca ai sohbet, türkçe almanca, goethe b1, Deutsch lernen App, German learning app, learn German free, German B1" />
   <meta name="author" content="DeutschGo" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://deutsch-go.com/" />
@@ -44,7 +44,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="DeutschGo — Almanca Öğrenme Uygulaması" />
-  <meta property="og:description" content="Flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle A1-A2 Almancayı öğren. Türkçe arayüz, ücretsiz başla." />
+  <meta property="og:description" content="A1'den B1'e Almanca: 3600+ kelime, 140+ gramer konusu, AI sohbet ve mini oyunlar. Türkçe arayüz, ücretsiz başla." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deutsch-go.com" />
   <meta property="og:site_name" content="DeutschGo" />
@@ -54,7 +54,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DeutschGo — Almanca Öğrenme Uygulaması" />
-  <meta name="twitter:description" content="Flashcard'lar, AI sohbet ve mini oyunlarla A1-A2 Almancayı öğren. Ücretsiz başla!" />
+  <meta name="twitter:description" content="A1'den B1'e Almanca: flashcard'lar, AI sohbet, mini oyunlar ve gramer. Ücretsiz başla!" />
   <meta name="twitter:image" content="https://deutsch-go.com/og-image.png?v=2" />
 
   <!-- JSON-LD: Structured Data -->
@@ -63,26 +63,20 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "DeutschGo",
-    "description": "DeutschGo ile A1-A2 Almancayı flashcard'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren.",
+    "description": "DeutschGo ile A1'den B1'e Almancayı flashcard'lar, AI sohbet, mini oyunlar, sesli hikayeler ve gramer kütüphanesiyle öğren.",
     "url": "https://deutsch-go.com",
     "applicationCategory": "EducationApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, Android",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "10",
-      "bestRating": "5"
-    },
     "inLanguage": ["tr", "en", "de"],
     "downloadUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
     "installUrl": "https://apps.apple.com/us/app/deutschgo/id6761081715",
     "screenshot": "https://deutsch-go.com/og-image.png",
-    "featureList": "Flashcards, AI Chat, Mini Games, Grammar Library, Reading Practice, Pronunciation Practice, Listening Practice, Daily Streaks",
+    "featureList": "3600+ words A1-B1, 140+ grammar topics, 40+ AI roleplay scenarios, 14 mini games, audio reading stories, pronunciation practice, verb and adjective hubs, daily streaks",
     "publisher": {
       "@type": "Organization",
       "name": "DeutschGo",
@@ -100,1537 +94,681 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
-    /* ===== RESET & BASE ===== */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* Tokens: the app's own palette (lib/theme/app_theme.dart). */
     :root {
-      --turquoise: #00D1B2;
-      --turquoise-dark: #00b89c;
-      --turquoise-light: #e0faf6;
-      --green: #00C853;
-      --purple: #9C27B0;
-      --orange: #FF7043;
+      --teal: #00D1B2;
+      --teal-deep: #00A38D;
+      --teal-ink: #00796B;
+      --teal-wash: #E0FAF6;
+      --ink: #111418;
+      --ink-2: #1E2227;
+      --ink-soft: #4B5566;
+      --ink-mute: #8A94A6;
+      --page: #F0F4F8;
+      --card: #FFFFFF;
+      --line: #E2E8F0;
       --gold: #FFA000;
-      --red: #FF4B4B;
-      --dark: #111418;
-      --dark-2: #1e2328;
-      --bg-light: #F0F4F8;
-      --bg-white: #ffffff;
-      --text-primary: #111418;
-      --text-secondary: #5a6478;
-      --text-muted: #9ca3af;
-      --border: #e8edf3;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05);
-      --shadow-lg: 0 10px 40px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-xl: 28px;
-      --radius-pill: 999px;
+      --der: #2196F3;
+      --die: #FF4B4B;
+      --das: #00C853;
+      --purple: #7C3AED;
+      --radius: 20px;
+      --shadow: 0 1px 2px rgba(17,20,24,.05), 0 8px 28px rgba(17,20,24,.07);
+      --font: 'Outfit', ui-rounded, 'SF Pro Rounded', system-ui, -apple-system, 'Segoe UI', sans-serif;
     }
 
     html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
 
     body {
-      font-family: 'Outfit', sans-serif;
-      color: var(--text-primary);
-      background: var(--bg-white);
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--page);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
+    img { display: block; max-width: 100%; height: auto; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 6px; }
 
-    /* ===== UTILITY ===== */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
 
-    .sr-only {
-      position: absolute;
-      width: 1px; height: 1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      white-space: nowrap;
-    }
-
-    /* ===== SCROLL ANIMATION ===== */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ===== NAVBAR ===== */
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-    }
-
-    .navbar-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .navbar-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      flex: 1;
-      justify-content: center;
-    }
-
-    .navbar-links a {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .navbar-links a:hover { color: var(--turquoise); }
-
-    @media (max-width: 600px) {
-      .navbar-links { display: none; }
-    }
-
-    .navbar-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-
-    .navbar-logo-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,209,178,0.35);
-    }
-
-    .navbar-logo-icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .navbar-logo-text {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--turquoise);
-      letter-spacing: -0.3px;
-    }
-
-    .lang-toggle {
-      display: flex;
-      align-items: center;
-      background: var(--bg-light);
-      border-radius: var(--radius-pill);
-      padding: 3px;
-      gap: 0;
-      border: 1px solid var(--border);
-    }
-
-    .lang-btn {
-      padding: 6px 16px;
-      border: none;
-      background: transparent;
-      border-radius: var(--radius-pill);
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.2s ease;
-      letter-spacing: 0.3px;
-    }
-
-    .lang-btn.active {
-      background: var(--bg-white);
-      color: var(--turquoise);
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      background: var(--bg-white);
-      padding: 80px 24px 60px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .hero-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero-content {
-      text-align: center;
-      width: 100%;
-    }
-
-    .hero-mockup {
-      display: none;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle, rgba(0,209,178,0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-rating {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
-
-    .hero-stars {
-      color: #FFC107;
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-    }
-
-    .hero-rating-text {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--turquoise-light);
-      color: var(--turquoise-dark);
-      border: 1px solid rgba(0,209,178,0.3);
-      border-radius: var(--radius-pill);
-      padding: 6px 16px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      margin-bottom: 24px;
-      letter-spacing: 0.2px;
-    }
-
-    .hero-title {
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      color: var(--text-primary);
-      max-width: 700px;
-      margin: 0 auto 20px;
-    }
-
-    .hero-title span {
-      background: linear-gradient(135deg, var(--turquoise) 0%, #00a896 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-sub {
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: var(--text-secondary);
-      max-width: 520px;
-      margin: 0 auto 36px;
-      line-height: 1.7;
-    }
-
-    .coming-soon-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
-      color: #fff;
-      border-radius: var(--radius-pill);
-      padding: 7px 20px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      margin-bottom: 40px;
-      letter-spacing: 0.3px;
-      box-shadow: 0 4px 14px rgba(0,209,178,0.4);
-    }
-
-    .coming-soon-dot {
-      width: 7px;
-      height: 7px;
-      background: #fff;
-      border-radius: 50%;
-      animation: pulse-dot 1.5s infinite;
-    }
-
-    @keyframes pulse-dot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(0.7); }
-    }
-
-    /* ===== EMAIL FORM ===== */
-
-    .btn-primary {
-      padding: 13px 26px;
-      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
-      color: #fff;
-      border: none;
-      border-radius: var(--radius-pill);
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-      box-shadow: 0 4px 14px rgba(0,209,178,0.4);
-      white-space: nowrap;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(0,209,178,0.5);
-    }
-
-    .btn-primary:active {
-      transform: translateY(0);
-    }
-
-    /* ===== STORE BUTTONS ===== */
-    .store-buttons {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .store-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 18px;
-      background: var(--bg-light);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-md);
-      text-decoration: none;
-      opacity: 0.55;
-      cursor: not-allowed;
-      position: relative;
-      transition: opacity 0.2s;
-      pointer-events: none;
-    }
-
-    .store-btn-active {
-      opacity: 1;
-      cursor: pointer;
-      pointer-events: auto;
-      background: var(--dark);
-      border-color: var(--dark);
-    }
-
-    .store-btn-active .store-btn-label {
-      color: rgba(255,255,255,0.6);
-    }
-
-    .store-btn-active .store-btn-name {
-      color: #fff;
-    }
-
-    .store-btn-active:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
-    }
-
-    .store-btn-icon {
-      font-size: 1.7rem;
-      line-height: 1;
-    }
-
-    .store-btn-text {
-      text-align: left;
-    }
-
-    .store-btn-label {
-      display: block;
-      font-size: 0.65rem;
-      font-weight: 500;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      line-height: 1;
-      margin-bottom: 2px;
-    }
-
-    .store-btn-name {
-      display: block;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1;
-    }
-
-    .hero-qr {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      margin-top: 20px;
-    }
-    .hero-qr img {
-      width: 160px;
-      height: 160px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    }
-    .hero-qr span {
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--text-muted, #888);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    @media (max-width: 768px) {
-      .hero-qr { display: none; }
-    }
-
-    .store-coming-badge {
-      position: absolute;
-      top: -9px;
-      right: -4px;
-      background: var(--gold);
-      color: #fff;
-      font-size: 0.58rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: var(--radius-pill);
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-      box-shadow: 0 2px 6px rgba(255,160,0,0.4);
-    }
-
-    /* ===== HERO MASCOT ===== */
-    .hero-mascot {
-      margin-top: 64px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .mascot-card {
-      background: linear-gradient(135deg, #f0faf8 0%, #e8f5f2 100%);
-      border: 1.5px solid rgba(0,209,178,0.2);
-      border-radius: var(--radius-xl);
-      padding: 40px 60px;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      box-shadow: var(--shadow-md);
-    }
-
-    .mascot-emoji {
-      width: 120px;
-      height: 120px;
-      border-radius: 28px;
-      overflow: hidden;
-      filter: drop-shadow(0 8px 24px rgba(0,209,178,0.3));
-      animation: float 3.5s ease-in-out infinite;
-    }
-
-    .mascot-emoji img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .mascot-name {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--turquoise-dark);
-      letter-spacing: 0.2px;
-    }
-
-    /* ===== SECTION SHARED ===== */
-    section {
-      padding: 80px 24px;
-    }
-
-    .section-label {
+    .eyebrow {
       display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--turquoise);
+      font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--teal-ink);
       margin-bottom: 12px;
     }
+    h2.title {
+      font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -.02em; font-weight: 800;
+      text-wrap: balance;
+    }
+    .lede { color: var(--ink-soft); font-size: 1.08rem; max-width: 60ch; margin-top: 14px; }
+    section { padding: 96px 0; }
+    @media (max-width: 700px) { section { padding: 64px 0; } }
 
-    .section-title {
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      line-height: 1.2;
-      color: var(--text-primary);
-      margin-bottom: 14px;
+    /* ===== NAV ===== */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(240,244,248,.86);
+      backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s;
+    }
+    .nav.scrolled { border-bottom-color: var(--line); }
+    .nav-inner { height: 68px; display: flex; align-items: center; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 10px; }
+    .brand span { font-weight: 800; font-size: 1.3rem; letter-spacing: -.02em; }
+    .brand span b { color: var(--teal); font-weight: 800; }
+    .nav-links { display: flex; gap: 28px; margin-left: auto; }
+    .nav-links a { text-decoration: none; font-weight: 600; font-size: .92rem; color: var(--ink-soft); }
+    .nav-links a:hover { color: var(--teal-ink); }
+    .nav-right { display: flex; align-items: center; gap: 12px; }
+    .lang { display: flex; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+    .lang button {
+      font: 600 .8rem var(--font); letter-spacing: .04em;
+      border: 0; background: transparent; color: var(--ink-mute);
+      padding: 6px 14px; border-radius: 999px; cursor: pointer;
+    }
+    .lang button.active { background: var(--ink); color: #fff; }
+    .nav-cta {
+      text-decoration: none; font-weight: 700; font-size: .9rem;
+      background: var(--teal); color: var(--ink);
+      padding: 9px 18px; border-radius: 999px;
+    }
+    .nav-cta:hover { background: #12E0C1; }
+    @media (max-width: 820px) { .nav-links { display: none; } .nav-right { margin-left: auto; } }
+    @media (max-width: 420px) { .nav-cta { display: none; } }
+
+    /* ===== HERO ===== */
+    .hero { padding: 56px 0 88px; position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+    @media (max-width: 920px) { .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 48px; } }
+
+    .level-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+      padding: 5px; margin-bottom: 26px; box-shadow: var(--shadow);
+    }
+    .level-pill span { font-size: .78rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+    .level-pill .a1 { background: var(--teal-wash); color: var(--teal-ink); }
+    .level-pill .a2 { background: #FFF3DC; color: #9A5B00; }
+    .level-pill .b1 { background: #EFE7FE; color: #5B21B6; }
+    .level-pill .new { color: var(--ink-soft); font-weight: 600; padding-right: 10px; }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.3rem);
+      line-height: 1.02; letter-spacing: -.035em; font-weight: 800;
+      text-wrap: balance;
+    }
+    .hero h1 .hl { color: var(--teal-deep); }
+    .hero-sub { font-size: 1.15rem; color: var(--ink-soft); max-width: 50ch; margin: 22px 0 32px; }
+
+    /* der / die / das word ticker: the thing every learner of German meets first */
+    .article-ticker {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--card); border-radius: 16px; padding: 12px 16px 12px 12px;
+      box-shadow: var(--shadow); margin-bottom: 32px;
+    }
+    .article-ticker .tag {
+      font-weight: 800; font-size: 1rem; color: #fff; border-radius: 10px;
+      width: 52px; text-align: center; padding: 6px 0; transition: background .3s;
+    }
+    .article-ticker .word { font-weight: 700; font-size: 1.3rem; min-width: 7.5ch; }
+    .article-ticker .gloss { color: var(--ink-mute); font-size: .95rem; }
+
+    .stores { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .store {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--ink); color: #fff; text-decoration: none;
+      padding: 10px 20px 10px 16px; border-radius: 14px; min-width: 176px;
+      transition: transform .15s, background .15s;
+    }
+    .store:hover { transform: translateY(-2px); background: var(--ink-2); }
+    .store small { display: block; font-size: .68rem; opacity: .75; line-height: 1.1; }
+    .store strong { display: block; font-size: 1.08rem; line-height: 1.2; }
+    .qr { display: flex; align-items: center; gap: 10px; color: var(--ink-mute); font-size: .8rem; font-weight: 600; }
+    .qr img { width: 64px; height: 64px; border-radius: 10px; background: #fff; padding: 4px; border: 1px solid var(--line); }
+    @media (max-width: 700px) { .qr { display: none; } }
+
+    .hero-visual { position: relative; justify-self: center; width: min(460px, 100%); }
+    .device {
+      background: var(--ink); border-radius: 34px; padding: 12px;
+      box-shadow: 0 30px 80px rgba(17,20,24,.22), 0 6px 18px rgba(17,20,24,.12);
+      transform: rotate(2.5deg);
+    }
+    .device img { border-radius: 24px; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: var(--page); }
+    .hero-mascot {
+      position: absolute; width: 150px; left: -58px; bottom: -34px;
+      filter: drop-shadow(0 12px 20px rgba(17,20,24,.18));
+    }
+    .hero-bubble {
+      position: absolute; top: 34px; right: -26px;
+      background: var(--card); border-radius: 16px; padding: 12px 16px; box-shadow: var(--shadow);
+      font-weight: 700; font-size: .92rem; display: flex; gap: 10px; align-items: center;
+      transform: rotate(-3deg);
+    }
+    .hero-bubble i { font-style: normal; font-size: 1.4rem; }
+    .hero-bubble small { display: block; font-weight: 500; color: var(--ink-mute); font-size: .78rem; }
+    @media (max-width: 520px) { .hero-mascot { width: 104px; left: -12px; bottom: -28px; } .hero-bubble { right: -4px; } }
+
+    /* ===== NUMBERS ===== */
+    .numbers { padding: 0; }
+    .numbers-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr);
+      background: var(--ink); color: #fff; border-radius: 28px; overflow: hidden;
+    }
+    .num { padding: 30px 18px; text-align: center; border-right: 1px solid rgba(255,255,255,.08); }
+    .num:last-child { border-right: 0; }
+    .num strong { display: block; font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; letter-spacing: -.02em; color: var(--teal); font-variant-numeric: tabular-nums; }
+    .num span { font-size: .88rem; color: rgba(255,255,255,.72); font-weight: 500; }
+    @media (max-width: 900px) {
+      .numbers-grid { grid-template-columns: repeat(3, 1fr); }
+      .num:nth-child(3) { border-right: 0; }
+      .num:nth-child(-n+3) { border-bottom: 1px solid rgba(255,255,255,.08); }
+    }
+    @media (max-width: 480px) {
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+      .num { border-right: 1px solid rgba(255,255,255,.08) !important; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .num:nth-child(2n) { border-right: 0 !important; }
+      .num:nth-last-child(-n+2) { border-bottom: 0; }
     }
 
-    .section-sub {
-      font-size: 1rem;
-      color: var(--text-secondary);
-      max-width: 480px;
-      line-height: 1.7;
+    /* ===== LEVEL PATH ===== */
+    .path-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 44px; }
+    @media (max-width: 820px) { .path-head { grid-template-columns: 1fr; gap: 0; } }
+    .path { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; position: relative; }
+    @media (max-width: 820px) { .path { grid-template-columns: 1fr; } }
+    .stage {
+      background: var(--card); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow);
+      border-top: 6px solid var(--c); display: flex; flex-direction: column; gap: 14px;
     }
+    .stage-top { display: flex; align-items: baseline; justify-content: space-between; }
+    .stage-level { font-size: 2.6rem; font-weight: 800; letter-spacing: -.03em; color: var(--c); line-height: 1; }
+    .stage-name { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-mute); }
+    .stage h3 { font-size: 1.2rem; font-weight: 700; }
+    .stage p { color: var(--ink-soft); font-size: .97rem; }
+    .stage ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+    .stage li { font-size: .8rem; font-weight: 600; background: var(--page); padding: 4px 10px; border-radius: 8px; color: var(--ink-soft); }
+    .stage.a1 { --c: var(--teal-deep); }
+    .stage.a2 { --c: var(--gold); }
+    .stage.b1 { --c: var(--purple); }
+    .new-badge { font-size: .7rem; font-weight: 800; letter-spacing: .08em; background: var(--purple); color: #fff; padding: 3px 8px; border-radius: 6px; }
 
-    .section-header {
-      margin-bottom: 52px;
+    /* ===== SHOWCASE ===== */
+    .showcase { background: var(--card); }
+    .show-row { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .show-row + .show-row { margin-top: 112px; }
+    .show-row.flip .show-media { order: 2; }
+    @media (max-width: 860px) {
+      .show-row { grid-template-columns: 1fr; gap: 32px; }
+      .show-row.flip .show-media { order: 0; }
+      .show-row + .show-row { margin-top: 72px; }
     }
-
-    .section-header.centered {
-      text-align: center;
+    .show-media {
+      background: var(--tint, var(--page)); border-radius: 28px; padding: 36px 36px 0;
+      overflow: hidden; display: flex; justify-content: center;
     }
-
-    .section-header.centered .section-sub {
-      margin: 0 auto;
+    .show-media img {
+      width: 100%; max-width: 420px; border-radius: 18px 18px 0 0;
+      box-shadow: 0 -2px 30px rgba(17,20,24,.12);
+      aspect-ratio: 4 / 3.6; object-fit: cover; object-position: top;
     }
-
-    /* ===== FEATURES ===== */
-    .features {
-      background: var(--bg-light);
+    .show-media.pair { gap: 16px; padding: 32px 28px 0; }
+    .show-media.pair img { width: 50%; aspect-ratio: 3 / 4; }
+    .show-text h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; letter-spacing: -.02em; font-weight: 800; text-wrap: balance; }
+    .show-text p { color: var(--ink-soft); font-size: 1.05rem; margin-top: 14px; max-width: 52ch; }
+    .checks { list-style: none; margin-top: 22px; display: grid; gap: 10px; }
+    .checks li { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; }
+    .checks li::before {
+      content: ''; flex: none; width: 20px; height: 20px; margin-top: 3px; border-radius: 6px;
+      background: var(--teal-wash) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3L15 7' fill='none' stroke='%2300796B' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat;
     }
+    .chat-sample { margin-top: 22px; display: grid; gap: 8px; max-width: 420px; }
+    .bubble { padding: 10px 14px; border-radius: 16px; font-size: .95rem; max-width: 85%; }
+    .bubble.ai { background: var(--page); border-bottom-left-radius: 4px; }
+    .bubble.me { background: var(--teal); color: var(--ink); justify-self: end; border-bottom-right-radius: 4px; font-weight: 500; }
+    .bubble .fix { display: block; font-size: .8rem; color: var(--teal-ink); margin-top: 4px; font-weight: 600; }
 
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+    /* ===== MORE ===== */
+    .more-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 44px; }
+    @media (max-width: 900px) { .more-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .more-grid { grid-template-columns: 1fr; } }
+    .tile { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--line); }
+    .tile-ic {
+      width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+      background: var(--bg); color: var(--fg); margin-bottom: 16px;
     }
-
-    .feature-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 32px 28px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border);
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .feature-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      margin-bottom: 18px;
-    }
-
-    .feature-icon.turquoise { background: var(--turquoise-light); }
-    .feature-icon.purple { background: rgba(156,39,176,0.1); }
-    .feature-icon.orange { background: rgba(255,112,67,0.1); }
-    .feature-icon.green { background: rgba(0,200,83,0.1); }
-
-    .feature-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-    }
-
-    .feature-desc {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-    }
-
-    /* ===== HOW IT WORKS ===== */
-    .how-it-works {
-      background: var(--bg-white);
-    }
-
-    .steps-row {
-      display: flex;
-      gap: 0;
-      align-items: flex-start;
-      position: relative;
-    }
-
-    .steps-row::before {
-      content: '';
-      position: absolute;
-      top: 36px;
-      left: calc(50% / 3 + 10px);
-      right: calc(50% / 3 + 10px);
-      height: 2px;
-      background: linear-gradient(90deg, var(--turquoise), var(--turquoise));
-      opacity: 0.2;
-    }
-
-    .step {
-      flex: 1;
-      text-align: center;
-      padding: 0 24px;
-      position: relative;
-    }
-
-    .step-number {
-      width: 72px;
-      height: 72px;
-      background: linear-gradient(135deg, var(--turquoise) 0%, #00b89c 100%);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      font-size: 1.8rem;
-      box-shadow: 0 4px 16px rgba(0,209,178,0.35);
-    }
-
-    .step-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-    }
-
-    .step-desc {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .step-connector {
-      position: absolute;
-      top: 35px;
-      right: -20px;
-      width: 40px;
-      height: 2px;
-      background: var(--border);
-      z-index: 0;
-    }
-
-    .step:last-child .step-connector { display: none; }
-
-    /* ===== STATS BAR ===== */
-    .stats-bar {
-      background: var(--dark);
-      padding: 60px 24px;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
-      gap: 0;
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-      align-items: center;
-    }
-
-    @media (max-width: 600px) {
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-      }
-    }
-
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .stat-number {
-      font-size: 2.4rem;
-      font-weight: 800;
-      color: var(--turquoise);
-      letter-spacing: -1px;
-      line-height: 1;
-    }
-
-    .stat-label {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.6);
-      letter-spacing: 0.2px;
-    }
-
-    .lang-flags {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 2px;
-    }
-
-    .lang-flag-item {
-      font-size: 2rem;
-      line-height: 1;
-    }
-
-    .stat-divider {
-      width: 1px;
-      height: 40px;
-      background: rgba(255,255,255,0.08);
-      align-self: center;
-    }
-
-    @media (max-width: 600px) {
-      .stat-divider { display: none; }
-    }
-
-    /* ===== FAQ ===== */
-    .faq-section {
-      background: #fff;
-      padding: 100px 24px;
-      text-align: center;
-    }
-
-    .faq-list {
-      max-width: 720px;
-      margin: 48px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      text-align: left;
-    }
-
-    .faq-item {
-      border: 1.5px solid rgba(0,0,0,0.08);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: border-color 0.2s;
-    }
-
-    .faq-item.open {
-      border-color: var(--turquoise);
-    }
-
-    .faq-question {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      padding: 20px 24px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      text-align: left;
-      font-family: inherit;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--dark);
-      transition: background 0.15s;
-    }
-
-    .faq-question:hover { background: rgba(0,209,178,0.04); }
-
-    .faq-icon {
-      font-size: 1.4rem;
-      font-weight: 300;
-      color: var(--turquoise);
-      flex-shrink: 0;
-      transition: transform 0.25s;
-      line-height: 1;
-    }
-
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-    }
-
-    .faq-answer p {
-      padding: 0 24px 20px;
-      font-size: 0.92rem;
-      color: #555;
-      line-height: 1.7;
-    }
-
-    .faq-item.open .faq-answer {
-      max-height: 300px;
-    }
+    .tile-ic svg { width: 22px; height: 22px; }
+    .tile h3 { font-size: 1.08rem; font-weight: 700; }
+    .tile p { color: var(--ink-soft); font-size: .95rem; margin-top: 6px; }
 
     /* ===== PRICING ===== */
-    .pricing-section {
-      background: var(--bg-light);
-      padding: 100px 24px;
-      text-align: center;
+    .pricing { background: var(--card); }
+    .compare {
+      margin-top: 44px; border-radius: 24px; overflow: hidden; border: 1px solid var(--line);
+      max-width: 860px;
     }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      max-width: 780px;
-      margin: 48px auto 0;
+    .compare-scroll { overflow-x: auto; }
+    .compare table { width: 100%; border-collapse: collapse; min-width: 480px; }
+    .compare th, .compare td { padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--line); font-size: .97rem; }
+    .compare tr:last-child td { border-bottom: 0; }
+    .compare thead th { background: var(--page); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-mute); }
+    .compare thead th.pro-col { background: var(--ink); color: var(--teal); }
+    .compare td:nth-child(2), .compare td:nth-child(3), .compare th:nth-child(2), .compare th:nth-child(3) { text-align: center; width: 22%; }
+    .compare td.pro-col { background: #F4FFFD; font-weight: 700; color: var(--teal-ink); }
+    .compare td:first-child { font-weight: 600; }
+    .compare .no { color: var(--ink-mute); }
+    .compare .num-cell { font-variant-numeric: tabular-nums; }
+    .pricing-foot { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
+    .pricing-foot p { color: var(--ink-soft); font-size: .95rem; max-width: 56ch; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      background: var(--teal); color: var(--ink); font-weight: 700; padding: 13px 24px; border-radius: 999px;
     }
+    .btn:hover { background: #12E0C1; }
 
-    .pricing-card {
-      background: #fff;
-      border-radius: 24px;
-      padding: 36px 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      border: 2px solid transparent;
-      position: relative;
-      text-align: left;
+    /* ===== FAQ ===== */
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; }
+    @media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; gap: 28px; } }
+    .faq-side img { width: 160px; margin-top: 28px; }
+    @media (max-width: 860px) { .faq-side img { display: none; } }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-item { background: var(--card); border-radius: 16px; border: 1px solid var(--line); }
+    .faq-q {
+      width: 100%; background: none; border: 0; cursor: pointer; text-align: left;
+      font: 600 1.02rem var(--font); color: var(--ink);
+      padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px;
     }
+    .faq-q .ic { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--page); display: grid; place-items: center; transition: transform .2s, background .2s; font-size: 1.1rem; }
+    .faq-item.open .faq-q .ic { transform: rotate(45deg); background: var(--teal-wash); color: var(--teal-ink); }
+    .faq-a { display: none; padding: 0 20px 20px; color: var(--ink-soft); }
+    .faq-item.open .faq-a { display: block; }
 
-    .pricing-free {
-      border-color: rgba(0,0,0,0.08);
+    /* ===== CLOSING ===== */
+    .closing { padding: 0 0 96px; }
+    .closing-card {
+      background: var(--ink); color: #fff; border-radius: 32px; padding: 56px;
+      display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; position: relative; overflow: hidden;
     }
-
-    .pricing-pro {
-      border-color: var(--turquoise);
-      box-shadow: 0 8px 40px rgba(0, 209, 178, 0.15);
-    }
-
-    .pricing-badge {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: rgba(0,0,0,0.06);
-      color: #555;
-      width: fit-content;
-    }
-
-    .pricing-badge-pro {
-      background: var(--turquoise);
-      color: #fff;
-    }
-
-    .pricing-plan-name {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--dark);
-      line-height: 1;
-    }
-
-    .pricing-features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      flex: 1;
-    }
-
-    .pricing-features li {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: #444;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .pricing-features li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-size: contain;
-    }
-
-    .feat-yes::before {
-      content: '✓';
-      color: var(--turquoise);
-      font-weight: 800;
-      font-size: 0.85rem;
-      top: 0;
-      transform: none;
-      width: auto;
-      height: auto;
-    }
-
-    .feat-no {
-      opacity: 0.4;
-      text-decoration: line-through;
-    }
-
-    .feat-no::before {
-      content: '✕';
-      color: #999;
-      font-weight: 600;
-      font-size: 0.8rem;
-      top: 0;
-      transform: none;
-      width: auto;
-      height: auto;
-    }
-
-    .pricing-cta {
-      display: block;
-      text-align: center;
-      padding: 14px 20px;
-      border-radius: 14px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-
-    .pricing-cta:hover { opacity: 0.85; }
-
-    .pricing-cta-free {
-      background: var(--dark);
-      color: #fff;
-    }
-
-    .pricing-cta-pro {
-      background: var(--turquoise);
-      color: #fff;
-    }
-
-    @media (max-width: 600px) {
-      .pricing-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    .closing-card h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.1; letter-spacing: -.02em; font-weight: 800; max-width: 18ch; text-wrap: balance; }
+    .closing-card p { color: rgba(255,255,255,.72); margin-top: 12px; max-width: 46ch; }
+    .closing-card .stores { margin-top: 28px; }
+    .closing-card .store { background: #fff; color: var(--ink); }
+    .closing-card .store:hover { background: var(--teal-wash); }
+    .closing-card img { width: 220px; }
+    @media (max-width: 760px) { .closing-card { grid-template-columns: 1fr; padding: 36px 24px; } .closing-card img { width: 140px; order: -1; } }
 
     /* ===== FOOTER ===== */
-    .footer {
-      background: var(--dark-2);
-      padding: 40px 24px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-
-    .footer-logo-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 9px;
-      overflow: hidden;
-    }
-
-    .footer-logo-icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .footer-logo-text {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--turquoise);
-    }
-
-    .footer-center {
-      text-align: center;
-      flex: 1;
-    }
-
-    .footer-copy {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.35);
-      line-height: 1.7;
-    }
-
-    .footer-copy a {
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .footer-copy a:hover {
-      color: var(--turquoise);
-    }
-
-    .footer-guides {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .footer-guides-title {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      margin: 0 0 6px;
-    }
-
-    .footer-guides-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 24px;
-    }
-
-    .footer-guides-link {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      transition: color 0.2s;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .footer-guides-link:hover {
-      color: var(--turquoise);
-    }
-
-    .footer-guides-link.all-link {
-      color: var(--turquoise);
-      font-weight: 700;
-      white-space: normal;
-      margin-bottom: 4px;
-      display: inline-block;
-    }
-
-    .footer-stores {
-      display: flex;
-      gap: 12px;
-    }
-
-    .footer-store-btn {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px 14px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-sm);
-      text-decoration: none;
-      opacity: 0.4;
-      pointer-events: none;
-      cursor: not-allowed;
-    }
-
-    .footer-store-btn-active {
-      opacity: 1;
-      pointer-events: auto;
-      cursor: pointer;
-    }
-
-    .footer-store-btn-active:hover {
-      background: rgba(255,255,255,0.1);
-    }
-
-    .footer-store-btn span:first-child {
-      font-size: 1.1rem;
-    }
-
-    .footer-store-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.6);
-    }
-
-    /* ===== SUCCESS MESSAGE ===== */
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .hero { padding: 72px 20px 60px; }
-      section { padding: 64px 20px; }
-
-      .steps-row {
-        flex-direction: column;
-        gap: 32px;
-      }
-
-      .steps-row::before { display: none; }
-      .step-connector { display: none; }
-
-      .step {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
-        gap: 18px;
-        padding: 0;
-      }
-
-      .step-number {
-        margin: 0;
-        flex-shrink: 0;
-        width: 56px;
-        height: 56px;
-        font-size: 1.5rem;
-      }
-
-      .step-body { padding-top: 6px; }
-
-      .footer-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .footer-center { order: 2; }
-      .footer-stores { order: 3; }
-
-      .mascot-card { padding: 32px 40px; }
-    }
-
-    @media (max-width: 480px) {
-      .navbar-logo-text { font-size: 1.1rem; }
-.btn-primary { width: 100%; text-align: center; }
-    }
-
-    /* ===== FEATURES GRID RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (min-width: 600px) and (max-width: 900px) {
-      .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+    .footer { border-top: 1px solid var(--line); padding: 48px 0 40px; font-size: .9rem; color: var(--ink-soft); }
+    .footer-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+    @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-meta p + p { margin-top: 6px; }
+    .footer-meta a { text-decoration: none; color: var(--teal-ink); font-weight: 600; }
+    .footer-guides-title { font-weight: 700; color: var(--ink); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; }
+    .footer-guides-title a { font-weight: 600; color: var(--teal-ink); text-decoration: none; font-size: .85rem; }
+    .footer-guides-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 16px; }
+    .footer-guides-link { text-decoration: none; color: var(--ink-soft); }
+    .footer-guides-link:hover { color: var(--teal-ink); }
   </style>
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="navbar-inner">
-      <a href="#" class="navbar-logo" aria-label="DeutschGo Home">
-        <div class="navbar-logo-icon"><picture><source srcset="icon.webp" type="image/webp"><img src="icon.png" alt="DeutschGo"></picture></div>
-        <span class="navbar-logo-text">DeutschGo</span>
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#" class="brand" aria-label="DeutschGo">
+        <picture><source srcset="icon.webp" type="image/webp"><img src="icon.png" alt="" width="36" height="36"></picture>
+        <span>Deutsch<b>Go</b></span>
       </a>
-
-      <nav class="navbar-links">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#levels" data-tr="Seviyeler" data-en="Levels">Seviyeler</a>
         <a href="#features" data-tr="Özellikler" data-en="Features">Özellikler</a>
         <a href="#pricing" data-tr="Planlar" data-en="Plans">Planlar</a>
         <a href="#faq" data-tr="SSS" data-en="FAQ">SSS</a>
+        <a href="/blog" data-tr="Rehberler" data-en="Guides">Rehberler</a>
       </nav>
-
-      <div class="lang-toggle" role="group" aria-label="Language selector">
-        <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
-        <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button id="btn-tr" class="active" onclick="setLang('tr')" aria-pressed="true">TR</button>
+          <button id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+        </div>
+        <a class="nav-cta" href="https://deutschgo.onelink.me/viho/7d18r763" target="_blank" rel="noopener" data-tr="İndir" data-en="Get the app">İndir</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-badge" data-tr="🇩🇪 Yeni Başlayanlar için Almanca" data-en="🇩🇪 German for Beginners">🇩🇪 Yeni Başlayanlar için Almanca</div>
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="level-pill" aria-label="A1, A2, B1">
+            <span class="a1">A1</span><span class="a2">A2</span><span class="b1">B1</span>
+            <span class="new" data-tr="artık B1 de var" data-en="now with B1">artık B1 de var</span>
+          </div>
 
-        <h1 class="hero-title">
-          <span data-tr="Almancayı Eğlenceli ve" data-en="Learn German in a">Almancayı Eğlenceli ve</span><br />
-          <span data-tr="Etkili Öğren" data-en="Fun &amp; Effective Way">Etkili Öğren</span>
-        </h1>
+          <h1>
+            <span data-tr="Almancayı" data-en="German,">Almancayı</span><br />
+            <span class="hl" data-tr="A1'den B1'e" data-en="from A1 to B1,">A1'den B1'e</span><br />
+            <span data-tr="adım adım öğren." data-en="one step at a time.">adım adım öğren.</span>
+          </h1>
 
-        <p class="hero-sub" data-tr="İlk kelimenden ilk konuşmana — DeutschGo seni flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle oraya ulaştırır." data-en="From your first word to your first conversation — DeutschGo gets you there with flashcards, AI chat, mini games and grammar lessons.">
-          İlk kelimenden ilk konuşmana — DeutschGo seni flashcard'lar, AI sohbet, mini oyunlar ve gramer dersleriyle oraya ulaştırır.
-        </p>
+          <p class="hero-sub" data-tr="İlk kelimeden Goethe B1 kelime listesine kadar: 3600+ kelime, 140+ gramer konusu, AI ile konuşma pratiği ve her gün birkaç dakikalık dersler. Türkçe arayüzle, ücretsiz başla." data-en="From your first word to the Goethe B1 word list: 3600+ words, 140+ grammar topics, speaking practice with AI and lessons that fit into a few minutes a day. Start for free.">İlk kelimeden Goethe B1 kelime listesine kadar: 3600+ kelime, 140+ gramer konusu, AI ile konuşma pratiği ve her gün birkaç dakikalık dersler. Türkçe arayüzle, ücretsiz başla.</p>
 
-        <div class="hero-rating">
-          <span class="hero-stars">★★★★★</span>
-          <span class="hero-rating-text" data-tr="App Store'da 5 Yıldız" data-en="5 Stars on App Store">App Store'da 5 Yıldız</span>
-        </div>
+          <div class="article-ticker" aria-live="polite">
+            <span class="tag" id="tk-tag" style="background:var(--der)">der</span>
+            <span class="word" id="tk-word">Hund</span>
+            <span class="gloss" id="tk-gloss">köpek</span>
+          </div>
 
-        <div class="store-buttons" style="margin-top: 8px;">
-          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store-btn store-btn-active" aria-label="Download on the App Store" target="_blank" rel="noopener">
-            <div class="store-btn-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="stores">
+            <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store" aria-label="Download on the App Store" target="_blank" rel="noopener">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span><small data-tr="App Store'dan" data-en="Download on the">App Store'dan</small><strong>App Store</strong></span>
+            </a>
+            <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
+              <span><small data-tr="Google Play'den" data-en="Get it on">Google Play'den</small><strong>Google Play</strong></span>
+            </a>
+            <div class="qr">
+              <picture><source srcset="qr-code.webp" type="image/webp"><img src="qr-code.png" alt="QR code to download DeutschGo" width="64" height="64" /></picture>
+              <span data-tr="Tara ve<br>indir" data-en="Scan to<br>download">Tara ve<br>indir</span>
             </div>
-            <div class="store-btn-text">
-              <span class="store-btn-label" data-tr="İndir" data-en="Download on the">İndir</span>
-              <span class="store-btn-name">App Store</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="device">
+            <img src="img/learn.webp" alt="DeutschGo Learn screen: today's tasks and the learning path" width="1100" height="1467" fetchpriority="high" />
+          </div>
+          <div class="hero-bubble" aria-hidden="true">
+            <i>🔥</i>
+            <span><span data-tr="Günlük hedef" data-en="Daily goal">Günlük hedef</span><small data-tr="30 XP · 5 görev" data-en="30 XP · 5 tasks">30 XP · 5 görev</small></span>
+          </div>
+          <img class="hero-mascot" src="img/mascot_happy.webp" alt="" width="512" height="512" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NUMBERS ===== -->
+    <section class="numbers" aria-label="DeutschGo in numbers">
+      <div class="wrap">
+        <div class="numbers-grid">
+          <div class="num"><strong>3600+</strong><span data-tr="kelime" data-en="words">kelime</span></div>
+          <div class="num"><strong>100+</strong><span data-tr="ders" data-en="lessons">ders</span></div>
+          <div class="num"><strong>140+</strong><span data-tr="gramer konusu" data-en="grammar topics">gramer konusu</span></div>
+          <div class="num"><strong>40+</strong><span data-tr="AI senaryosu" data-en="AI scenarios">AI senaryosu</span></div>
+          <div class="num"><strong>14</strong><span data-tr="mini oyun" data-en="mini games">mini oyun</span></div>
+          <div class="num"><strong>30+</strong><span data-tr="sesli hikaye" data-en="audio stories">sesli hikaye</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LEVELS ===== -->
+    <section id="levels">
+      <div class="wrap">
+        <div class="path-head">
+          <div>
+            <span class="eyebrow" data-tr="Seviye yolu" data-en="The path">Seviye yolu</span>
+            <h2 class="title" data-tr="Sıfırdan başla, B1'e kadar git." data-en="Start from zero, go all the way to B1.">Sıfırdan başla, B1'e kadar git.</h2>
+          </div>
+          <p class="lede" data-tr="Dersler Avrupa Dil Çerçevesi'nin (CEFR) sırasını izler. Her ders önceki derste öğrendiklerinin üzerine kurulur, kelimeler de gramer konularıyla birlikte gelir." data-en="Lessons follow the order of the Common European Framework (CEFR). Each one builds on the last, and every word set comes with the grammar it needs.">Dersler Avrupa Dil Çerçevesi'nin (CEFR) sırasını izler. Her ders önceki derste öğrendiklerinin üzerine kurulur, kelimeler de gramer konularıyla birlikte gelir.</p>
+        </div>
+
+        <div class="path">
+          <article class="stage a1">
+            <div class="stage-top"><span class="stage-level">A1</span><span class="stage-name" data-tr="Başlangıç" data-en="Beginner">Başlangıç</span></div>
+            <h3 data-tr="Kendini tanıt, günlük hayatta idare et." data-en="Introduce yourself, get through the day.">Kendini tanıt, günlük hayatta idare et.</h3>
+            <p data-tr="Aile, sayılar, saat, alışveriş. Der/die/das ve sein/haben ile ilk cümleler." data-en="Family, numbers, time, shopping. Der/die/das and first sentences with sein and haben.">Aile, sayılar, saat, alışveriş. Der/die/das ve sein/haben ile ilk cümleler.</p>
+            <ul><li>Familie</li><li>Zahlen</li><li>Präsens</li><li>Artikel</li></ul>
+          </article>
+          <article class="stage a2">
+            <div class="stage-top"><span class="stage-level">A2</span><span class="stage-name" data-tr="Temel" data-en="Elementary">Temel</span></div>
+            <h3 data-tr="Geçmişi anlat, planlarını konuş." data-en="Talk about the past and your plans.">Geçmişi anlat, planlarını konuş.</h3>
+            <p data-tr="Seyahat, iş, sağlık. Perfekt, Dativ, modal fiiller ve yan cümleler." data-en="Travel, work, health. Perfekt, the dative, modal verbs and subordinate clauses.">Seyahat, iş, sağlık. Perfekt, Dativ, modal fiiller ve yan cümleler.</p>
+            <ul><li>Perfekt</li><li>Dativ</li><li>Modalverben</li><li>weil / dass</li></ul>
+          </article>
+          <article class="stage b1">
+            <div class="stage-top"><span class="stage-level">B1</span><span class="new-badge" data-tr="YENİ" data-en="NEW">YENİ</span></div>
+            <h3 data-tr="Fikrini savun, Almanya'da yaşa." data-en="Hold an opinion, live in Germany.">Fikrini savun, Almanya'da yaşa.</h3>
+            <p data-tr="Goethe B1 kelime listesinden 1700+ yeni kelime, üç dilde örnek cümlelerle. Konjunktiv II, Passiv ve bağlaçlar." data-en="1700+ new words from the Goethe B1 word list, each with examples in three languages. Konjunktiv II, the passive and connectors.">Goethe B1 kelime listesinden 1700+ yeni kelime, üç dilde örnek cümlelerle. Konjunktiv II, Passiv ve bağlaçlar.</p>
+            <ul><li>Konjunktiv II</li><li>Passiv</li><li>Arbeit &amp; Büro</li><li>Behörden</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHOWCASE ===== -->
+    <section class="showcase" id="features">
+      <div class="wrap">
+
+        <div class="show-row">
+          <div class="show-media" style="--tint:#E0FAF6">
+            <img src="img/flashcard.webp" alt="A flashcard asking for the article of Großmutter" loading="lazy" width="1100" height="900" style="aspect-ratio:1100/900;object-position:center" />
+          </div>
+          <div class="show-text">
+            <span class="eyebrow" data-tr="Kelime kartları" data-en="Word cards">Kelime kartları</span>
+            <h3 data-tr="Her kelimeyi artikeli, çoğulu ve sesiyle öğren." data-en="Learn every word with its article, plural and sound.">Her kelimeyi artikeli, çoğulu ve sesiyle öğren.</h3>
+            <p data-tr="Kartlar sadece çevirmekle kalmaz: der, die ya da das'ı sen seçersin, anlamı üç şıktan bulursun, kelimeyi dinlersin. Yanlış yaptıkların bir sonraki turda yeniden karşına çıkar." data-en="Cards do more than translate: you pick der, die or das, find the meaning among three options and hear the word. What you get wrong comes back in the next round.">Kartlar sadece çevirmekle kalmaz: der, die ya da das'ı sen seçersin, anlamı üç şıktan bulursun, kelimeyi dinlersin. Yanlış yaptıkların bir sonraki turda yeniden karşına çıkar.</p>
+            <ul class="checks">
+              <li data-tr="3600+ kelime, 100+ derste" data-en="3600+ words across 100+ lessons">3600+ kelime, 100+ derste</li>
+              <li data-tr="Her kelimeye Almanca, Türkçe ve İngilizce örnek cümle" data-en="Example sentences in German, Turkish and English">Her kelimeye Almanca, Türkçe ve İngilizce örnek cümle</li>
+              <li data-tr="650+ fiil ve 440+ sıfat için ayrı çalışma merkezleri" data-en="Dedicated hubs for 650+ verbs and 440+ adjectives">650+ fiil ve 440+ sıfat için ayrı çalışma merkezleri</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="show-row flip">
+          <div class="show-media" style="--tint:#EFE7FE">
+            <img src="img/chat.webp" alt="The list of AI roleplay scenarios" loading="lazy" width="1100" height="1467" />
+          </div>
+          <div class="show-text">
+            <span class="eyebrow" data-tr="AI sohbet" data-en="AI chat">AI sohbet</span>
+            <h3 data-tr="Konuşmaya korkmadan başla." data-en="Start speaking without the nerves.">Konuşmaya korkmadan başla.</h3>
+            <p data-tr="Ev ararken emlakçıyla, Ausländerbehörde'de memurla, iş görüşmesinde patronla konuş. AI seviyene göre konuşur ve hatanı nazikçe düzeltir." data-en="Talk to an estate agent about a flat, to an officer at the immigration office, to an interviewer about a job. The AI speaks at your level and gently corrects you.">Ev ararken emlakçıyla, Ausländerbehörde'de memurla, iş görüşmesinde patronla konuş. AI seviyene göre konuşur ve hatanı nazikçe düzeltir.</p>
+            <div class="chat-sample" aria-hidden="true">
+              <div class="bubble ai">Guten Tag! Was kann ich für Sie tun?</div>
+              <div class="bubble me">Ich möchte eine Wohnung mieten.<span class="fix" style="color:#00504A">✓ Perfekt!</span></div>
+              <div class="bubble ai">Sehr gern. Wie viele Zimmer brauchen Sie?</div>
             </div>
-          </a>
+          </div>
+        </div>
 
-          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store-btn store-btn-active" aria-label="Get it on Google Play" target="_blank" rel="noopener">
-            <div class="store-btn-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
+        <div class="show-row">
+          <div class="show-media" style="--tint:#FFF3DC">
+            <img src="img/grammar.webp" alt="The grammar library with A1, A2 and B1 sections" loading="lazy" width="1100" height="1467" />
+          </div>
+          <div class="show-text">
+            <span class="eyebrow" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</span>
+            <h3 data-tr="140+ konu, kısa kartlarla." data-en="140+ topics, in short cards.">140+ konu, kısa kartlarla.</h3>
+            <p data-tr="Akkusativ'den Konjunktiv II'ye her konu birkaç kartlık, okuması kolay bir ders. Hemen ardından gelen alıştırma, konuyu gerçekten anlayıp anlamadığını gösterir." data-en="From the accusative to Konjunktiv II, each topic is a short lesson of a few cards, followed by practice that shows whether it really clicked.">Akkusativ'den Konjunktiv II'ye her konu birkaç kartlık, okuması kolay bir ders. Hemen ardından gelen alıştırma, konuyu gerçekten anlayıp anlamadığını gösterir.</p>
+            <ul class="checks">
+              <li data-tr="A1 Core, A2 Extended, B1 Confident" data-en="A1 Core, A2 Extended, B1 Confident">A1 Core, A2 Extended, B1 Confident</li>
+              <li data-tr="Cümle yapısı, zamanlar, fiiller, artikeller" data-en="Word order, tenses, verbs, articles">Cümle yapısı, zamanlar, fiiller, artikeller</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="show-row flip">
+          <div class="show-media pair" style="--tint:#FFE7E0">
+            <img src="img/games.webp" alt="The mini games screen" loading="lazy" width="1100" height="1467" />
+            <img src="img/listen.webp" alt="The Listen and Choose game" loading="lazy" width="1100" height="1000" />
+          </div>
+          <div class="show-text">
+            <span class="eyebrow" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</span>
+            <h3 data-tr="Tekrar, oyun gibi." data-en="Revision that plays like a game.">Tekrar, oyun gibi.</h3>
+            <p data-tr="14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinle ve seç, artikel ustası, eşleştir, hızlı kelime, hikayede boşluk doldurma ve dahası. Her gün yeni bir günün oyunu." data-en="14 games that only use words from lessons you have opened: listen and choose, article master, match, speed vocab, story gap fill and more — plus a new game of the day, every day.">14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinle ve seç, artikel ustası, eşleştir, hızlı kelime, hikayede boşluk doldurma ve dahası. Her gün yeni bir günün oyunu.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== MORE ===== -->
+    <section>
+      <div class="wrap">
+        <span class="eyebrow" data-tr="Ve daha fazlası" data-en="And more">Ve daha fazlası</span>
+        <h2 class="title" data-tr="Her gün birkaç dakika yeter." data-en="A few minutes a day is enough.">Her gün birkaç dakika yeter.</h2>
+
+        <div class="more-grid">
+          <div class="tile" style="--bg:#E0FAF6;--fg:#00796B">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></div>
+            <h3 data-tr="Sesli okuma hikayeleri" data-en="Stories read aloud">Sesli okuma hikayeleri</h3>
+            <p data-tr="30+ kısa hikaye, hepsi seslendirilmiş. Okurken dinle, sonunda kendini küçük bir testle dene." data-en="30+ short stories, all narrated. Listen while you read, then check yourself with a short quiz.">30+ kısa hikaye, hepsi seslendirilmiş. Okurken dinle, sonunda kendini küçük bir testle dene.</p>
+          </div>
+          <div class="tile" style="--bg:#FDE7F0;--fg:#C2185B">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5"/></svg></div>
+            <h3 data-tr="Telaffuz puanı" data-en="Pronunciation score">Telaffuz puanı</h3>
+            <p data-tr="Kelimeyi mikrofona söyle, ne kadar doğru söylediğini hemen gör." data-en="Say the word into the mic and see right away how close you got.">Kelimeyi mikrofona söyle, ne kadar doğru söylediğini hemen gör.</p>
+          </div>
+          <div class="tile" style="--bg:#E8EAF6;--fg:#3F51B5">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div>
+            <h3 data-tr="Hata tekrarı ve AI koç" data-en="Mistake review and AI coach">Hata tekrarı ve AI koç</h3>
+            <p data-tr="Yanlış yaptığın kelimeler birikir, sen tekrar ettikçe azalır. AI koç nerede takıldığını anlatır." data-en="Words you got wrong collect in one place and shrink as you review them. The AI coach explains where you get stuck.">Yanlış yaptığın kelimeler birikir, sen tekrar ettikçe azalır. AI koç nerede takıldığını anlatır.</p>
+          </div>
+          <div class="tile" style="--bg:#FFF3DC;--fg:#B26A00">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg></div>
+            <h3 data-tr="Seri, XP ve rozetler" data-en="Streaks, XP and badges">Seri, XP ve rozetler</h3>
+            <p data-tr="Günlük hedefini tamamla, serini koru. Bir gün kaçırırsan seri dondurma seni kurtarır." data-en="Hit your daily goal and keep your streak. Miss a day and a streak freeze has your back.">Günlük hedefini tamamla, serini koru. Bir gün kaçırırsan seri dondurma seni kurtarır.</p>
+          </div>
+          <div class="tile" style="--bg:#E3F2FD;--fg:#1565C0">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></div>
+            <h3 data-tr="Dinleme pratiği" data-en="Listening practice">Dinleme pratiği</h3>
+            <p data-tr="Her kelime ve örnek cümle doğal bir sesle okunur. Kulağın Almancaya her gün biraz daha alışır." data-en="Every word and example sentence is read in a natural voice, so your ear gets a little more used to German every day.">Her kelime ve örnek cümle doğal bir sesle okunur. Kulağın Almancaya her gün biraz daha alışır.</p>
+          </div>
+          <div class="tile" style="--bg:#E8F5E9;--fg:#2E7D32">
+            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
+            <h3 data-tr="Türkçe, İngilizce, Almanca" data-en="Turkish, English, German">Türkçe, İngilizce, Almanca</h3>
+            <p data-tr="Uygulamayı üç dilden birinde kullan. Açıklamalar ve çeviriler seçtiğin dilde gelir." data-en="Use the app in any of three languages. Explanations and translations follow your choice.">Uygulamayı üç dilden birinde kullan. Açıklamalar ve çeviriler seçtiğin dilde gelir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing" id="pricing" aria-label="Plans">
+      <div class="wrap">
+        <span class="eyebrow" data-tr="Planlar" data-en="Plans">Planlar</span>
+        <h2 class="title" data-tr="Ücretsiz başla, istediğinde Pro'ya geç." data-en="Start free, go Pro when you're ready.">Ücretsiz başla, istediğinde Pro'ya geç.</h2>
+        <p class="lede" data-tr="A1'in temel dersleri, gramer ve AI sohbet ücretsiz. Pro, B1'e kadar her şeyi açar." data-en="The A1 basics, grammar and AI chat are free. Pro opens everything up to B1.">A1'in temel dersleri, gramer ve AI sohbet ücretsiz. Pro, B1'e kadar her şeyi açar.</p>
+
+        <div class="compare">
+          <div class="compare-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"><span class="sr-only" data-tr="Özellik" data-en="Feature">Özellik</span></th>
+                  <th scope="col">Free</th>
+                  <th scope="col" class="pro-col">Pro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-tr="Kelime setleri, gramer, oyunlar" data-en="Word sets, grammar, games">Kelime setleri, gramer, oyunlar</td><td data-tr="Temel" data-en="Basics">Temel</td><td class="pro-col" data-tr="Tümü, A1–B1" data-en="All, A1–B1">Tümü, A1–B1</td></tr>
+                <tr><td data-tr="Günlük AI mesajı" data-en="AI messages a day">Günlük AI mesajı</td><td class="num-cell">30</td><td class="pro-col num-cell">100</td></tr>
+                <tr><td data-tr="Can" data-en="Hearts">Can</td><td class="num-cell">5</td><td class="pro-col">∞</td></tr>
+                <tr><td data-tr="Reklamlar" data-en="Ads">Reklamlar</td><td data-tr="Var" data-en="Yes">Var</td><td class="pro-col" data-tr="Yok" data-en="None">Yok</td></tr>
+                <tr><td data-tr="Hata tekrarı ve AI koç" data-en="Mistake review and AI coach">Hata tekrarı ve AI koç</td><td class="no">—</td><td class="pro-col">✓</td></tr>
+                <tr><td data-tr="Telaffuz puanı" data-en="Pronunciation score">Telaffuz puanı</td><td class="no">—</td><td class="pro-col">✓</td></tr>
+                <tr><td data-tr="Sesli hikayeler" data-en="Stories read aloud">Sesli hikayeler</td><td class="no">—</td><td class="pro-col">✓</td></tr>
+                <tr><td data-tr="Çevrimdışı kelime setleri" data-en="Offline word sets">Çevrimdışı kelime setleri</td><td class="no">—</td><td class="pro-col">✓</td></tr>
+                <tr><td data-tr="Seri dondurma" data-en="Streak freeze">Seri dondurma</td><td data-tr="Kazanarak" data-en="Earn it">Kazanarak</td><td class="pro-col" data-tr="+1 / hafta" data-en="+1 / week">+1 / hafta</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pricing-foot">
+          <a class="btn" href="https://deutschgo.onelink.me/viho/7d18r763" target="_blank" rel="noopener" data-tr="Ücretsiz indir" data-en="Download free">Ücretsiz indir</a>
+          <p data-tr="Pro fiyatları uygulamada, bulunduğun ülkenin para biriminde gösterilir. Aboneliğini istediğin zaman App Store ya da Google Play'den iptal edebilirsin." data-en="Pro prices are shown in the app, in your local currency. Cancel any time from the App Store or Google Play.">Pro fiyatları uygulamada, bulunduğun ülkenin para biriminde gösterilir. Aboneliğini istediğin zaman App Store ya da Google Play'den iptal edebilirsin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-side">
+          <span class="eyebrow" data-tr="SSS" data-en="FAQ">SSS</span>
+          <h2 class="title" data-tr="Sıkça sorulan sorular" data-en="Frequently asked questions">Sıkça sorulan sorular</h2>
+          <p class="lede" data-tr="Cevabını bulamadığın bir şey mi var? <a href='mailto:info@deutsch-go.com'>info@deutsch-go.com</a> adresine yaz." data-en="Something we didn't cover? Write to <a href='mailto:info@deutsch-go.com'>info@deutsch-go.com</a>.">Cevabını bulamadığın bir şey mi var? <a href='mailto:info@deutsch-go.com'>info@deutsch-go.com</a> adresine yaz.</p>
+          <img src="img/mascot_thinking.webp" alt="" width="512" height="512" loading="lazy" />
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="DeutschGo ücretsiz mi?" data-en="Is DeutschGo free?">DeutschGo ücretsiz mi?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="Evet. A1'in temel dersleri, gramer kütüphanesi, mini oyunlar ve günde 30 AI mesajı ücretsiz. Pro; A1'den B1'e tüm dersleri, günde 100 AI mesajını, sınırsız canı, reklamsız kullanımı, sesli hikayeleri ve telaffuz puanını açar." data-en="Yes. The A1 basics, the grammar library, mini games and 30 AI messages a day are free. Pro opens every lesson from A1 to B1, 100 AI messages a day, unlimited hearts, no ads, stories read aloud and the pronunciation score.">Evet. A1'in temel dersleri, gramer kütüphanesi, mini oyunlar ve günde 30 AI mesajı ücretsiz. Pro; A1'den B1'e tüm dersleri, günde 100 AI mesajını, sınırsız canı, reklamsız kullanımı, sesli hikayeleri ve telaffuz puanını açar.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="Hangi seviyeleri kapsıyor?" data-en="Which levels does it cover?">Hangi seviyeleri kapsıyor?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="A1, A2 ve B1. B1 dersleri Goethe-Zertifikat B1 kelime listesine göre hazırlandı ve 1700+ kelime içeriyor. Sıfırdan başlayabilir ya da bildiğin yerden devam edebilirsin." data-en="A1, A2 and B1. The B1 lessons are built on the Goethe-Zertifikat B1 word list and hold 1700+ words. Start from zero or pick up where you are.">A1, A2 ve B1. B1 dersleri Goethe-Zertifikat B1 kelime listesine göre hazırlandı ve 1700+ kelime içeriyor. Sıfırdan başlayabilir ya da bildiğin yerden devam edebilirsin.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="Hiç Almanca bilmeden başlayabilir miyim?" data-en="Can I start with no German at all?">Hiç Almanca bilmeden başlayabilir miyim?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="Kesinlikle. İlk ders kendini tanıtmakla başlar; her kelime sesli okunur ve Türkçe karşılığıyla gelir." data-en="Absolutely. The first lesson starts with introducing yourself; every word is read aloud and comes with its translation.">Kesinlikle. İlk ders kendini tanıtmakla başlar; her kelime sesli okunur ve Türkçe karşılığıyla gelir.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="AI sohbet nasıl çalışıyor?" data-en="How does the AI chat work?">AI sohbet nasıl çalışıyor?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="40+ gerçek hayat senaryosundan birini seçersin: kafe, doktor, ev arama, iş görüşmesi, resmi daireler. AI rolünü oynar, seviyene göre konuşur ve hatalarını düzeltir." data-en="Pick one of 40+ real-life scenarios: a café, the doctor, flat hunting, a job interview, government offices. The AI plays its part, speaks at your level and corrects your mistakes.">40+ gerçek hayat senaryosundan birini seçersin: kafe, doktor, ev arama, iş görüşmesi, resmi daireler. AI rolünü oynar, seviyene göre konuşur ve hatalarını düzeltir.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="İnternet olmadan kullanabilir miyim?" data-en="Does it work offline?">İnternet olmadan kullanabilir miyim?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="Pro ile kelime setlerini indirip internetsiz çalışabilirsin. AI sohbet ve sesli içerikler için bağlantı gerekir." data-en="With Pro you can download word sets and study without a connection. AI chat and audio need one.">Pro ile kelime setlerini indirip internetsiz çalışabilirsin. AI sohbet ve sesli içerikler için bağlantı gerekir.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-tr="Hangi cihazlarda var?" data-en="Which devices is it on?">Hangi cihazlarda var?</span><span class="ic" aria-hidden="true">+</span></button>
+            <div class="faq-a"><p data-tr="iPhone, iPad ve Android telefon ve tabletlerde. İlerlemen hesabına kaydedilir, cihaz değiştirsen de kaldığın yerden devam edersin." data-en="iPhone, iPad and Android phones and tablets. Your progress is saved to your account, so you carry on where you left off on any device.">iPhone, iPad ve Android telefon ve tabletlerde. İlerlemen hesabına kaydedilir, cihaz değiştirsen de kaldığın yerden devam edersin.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLOSING ===== -->
+    <section class="closing">
+      <div class="wrap">
+        <div class="closing-card">
+          <div>
+            <h2 data-tr="Bugün ilk kelimeni öğren." data-en="Learn your first word today.">Bugün ilk kelimeni öğren.</h2>
+            <p data-tr="Ücretsiz indir, birkaç dakikada ilk dersini bitir." data-en="Download free and finish your first lesson in a few minutes.">Ücretsiz indir, birkaç dakikada ilk dersini bitir.</p>
+            <div class="stores">
+              <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store" aria-label="Download on the App Store" target="_blank" rel="noopener">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <span><small data-tr="App Store'dan" data-en="Download on the">App Store'dan</small><strong>App Store</strong></span>
+              </a>
+              <a href="https://deutschgo.onelink.me/viho/7d18r763" class="store" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
+                <span><small data-tr="Google Play'den" data-en="Get it on">Google Play'den</small><strong>Google Play</strong></span>
+              </a>
             </div>
-            <div class="store-btn-text">
-              <span class="store-btn-label" data-tr="Al" data-en="Get it on">Al</span>
-              <span class="store-btn-name">Google Play</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="hero-qr">
-          <picture><source srcset="qr-code.webp" type="image/webp"><img src="qr-code.png" alt="QR Code - Download DeutschGo" /></picture>
-          <span data-tr="Tara ve İndir" data-en="Scan to Download">Tara ve İndir</span>
-        </div>
-      </div>
-
-      <div class="hero-mockup">
-        <picture><source srcset="screenshots/16_v4.webp" type="image/webp"><img src="screenshots/16_v4.png" alt="DeutschGo App Screenshot" width="390" height="844" loading="lazy" /></picture>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FEATURES ===== -->
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-label" data-tr="Özellikler" data-en="Features">Özellikler</span>
-        <h2 class="section-title" data-tr="Her Şey Tek Uygulamada" data-en="Everything in One App">Her Şey Tek Uygulamada</h2>
-        <p class="section-sub" data-tr="Almancayı öğrenmek için ihtiyacınız olan her araç, eğlenceli ve etkili bir şekilde bir araya getirildi." data-en="Every tool you need to learn German, brought together in a fun and effective way.">
-          Almancayı öğrenmek için ihtiyacınız olan her araç, eğlenceli ve etkili bir şekilde bir araya getirildi.
-        </p>
-      </div>
-
-      <div class="features-grid">
-        <!-- Card 1 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon turquoise">📚</div>
-          <div class="feature-title" data-tr="Flashcard'lar" data-en="Flashcards">Flashcard'lar</div>
-          <p class="feature-desc" data-tr="Kategorilere göre düzenlenmiş 2000+ kelime ile kelime dağarcığını hızla genişlet." data-en="Expand your vocabulary fast with 2000+ words organized by category.">
-            Kategorilere göre düzenlenmiş 2000+ kelime ile kelime dağarcığını hızla genişlet.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon purple">🤖</div>
-          <div class="feature-title" data-tr="AI Sohbet" data-en="AI Chat">AI Sohbet</div>
-          <p class="feature-desc" data-tr="Gerçek senaryolarda Almanca konuş. AI, seviyene göre sana eşlik eder." data-en="Practice German in real-life scenarios. The AI adapts to your level and guides you.">
-            Gerçek senaryolarda Almanca konuş. AI, seviyene göre sana eşlik eder.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon orange">🎮</div>
-          <div class="feature-title" data-tr="Mini Oyunlar" data-en="Mini Games">Mini Oyunlar</div>
-          <p class="feature-desc" data-tr="Öğrendiklerini eğlenceli oyunlarla pekiştir, günlük pratikle ilerlemeyi hisset." data-en="Reinforce what you've learned with fun games and feel your progress every day.">
-            Öğrendiklerini eğlenceli oyunlarla pekiştir, günlük pratikle ilerlemeyi hisset.
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon green">📖</div>
-          <div class="feature-title" data-tr="Gramer Kütüphanesi" data-en="Grammar Library">Gramer Kütüphanesi</div>
-          <p class="feature-desc" data-tr="Snap kartlarıyla adım adım Almanca gramer. 110+ konu, net açıklamalar." data-en="Step-by-step German grammar with snap cards. 110+ topics, clear explanations.">
-            Snap kartlarıyla adım adım Almanca gramer. 110+ konu, net açıklamalar.
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon turquoise">📰</div>
-          <div class="feature-title" data-tr="Okuma Pratiği" data-en="Reading Practice">Okuma Pratiği</div>
-          <p class="feature-desc" data-tr="Günlük değişen hikayelerle okuma becerisini geliştir, sınavlarla kendini test et." data-en="Improve your reading skills with daily stories and test yourself with quizzes.">
-            Günlük değişen hikayelerle okuma becerisini geliştir, sınavlarla kendini test et.
-          </p>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon purple">🎤</div>
-          <div class="feature-title" data-tr="Telaffuz Pratiği" data-en="Pronunciation Practice">Telaffuz Pratiği</div>
-          <p class="feature-desc" data-tr="Mikrofona konuş, Almanca telaffuzunu sesli olarak pratik yap." data-en="Speak into the mic and practice your German pronunciation out loud.">
-            Mikrofona konuş, Almanca telaffuzunu sesli olarak pratik yap.
-          </p>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon orange">🔥</div>
-          <div class="feature-title" data-tr="Günlük Seri & Rozetler" data-en="Daily Streaks & Badges">Günlük Seri & Rozetler</div>
-          <p class="feature-desc" data-tr="Her gün giriş yap, serinini kır ve başarılarını rozetlerle belgele." data-en="Log in every day, keep your streak alive and earn badges for your achievements.">
-            Her gün giriş yap, serinini kır ve başarılarını rozetlerle belgele.
-          </p>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="feature-card fade-up">
-          <div class="feature-icon green">🎧</div>
-          <div class="feature-title" data-tr="Dinleme Pratiği" data-en="Listening Practice">Dinleme Pratiği</div>
-          <p class="feature-desc" data-tr="Almanca cümleleri dinle, kulağını yeni dile alıştır." data-en="Listen to German sentences and train your ear to the new language.">
-            Almanca cümleleri dinle, kulağını yeni dile alıştır.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="how-it-works" id="how">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-label" data-tr="Nasıl Çalışır?" data-en="How It Works">Nasıl Çalışır?</span>
-        <h2 class="section-title" data-tr="3 Adımda Başla" data-en="Start in 3 Steps">3 Adımda Başla</h2>
-      </div>
-
-      <div class="steps-row fade-up">
-        <!-- Step 1 -->
-        <div class="step">
-          <div class="step-connector"></div>
-          <div class="step-number">1️⃣</div>
-          <div class="step-body">
-            <div class="step-title" data-tr="İndir &amp; Kayıt Ol" data-en="Download &amp; Sign Up">İndir &amp; Kayıt Ol</div>
-            <p class="step-desc" data-tr="Uygulamayı indir, ücretsiz hesap oluştur." data-en="Download the app and create your free account.">
-              Uygulamayı indir, ücretsiz hesap oluştur.
-            </p>
           </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="step">
-          <div class="step-connector"></div>
-          <div class="step-number">2️⃣</div>
-          <div class="step-body">
-            <div class="step-title" data-tr="Modülünü Seç" data-en="Pick Your Module">Modülünü Seç</div>
-            <p class="step-desc" data-tr="Flashcard, AI sohbet, gramer veya okuma — hangi modülden başlayacağına sen karar ver." data-en="Flashcards, AI chat, grammar or reading — you decide where to start.">
-              Flashcard, AI sohbet, gramer veya okuma — hangi modülden başlayacağına sen karar ver.
-            </p>
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="step">
-          <div class="step-number">3️⃣</div>
-          <div class="step-body">
-            <div class="step-title" data-tr="Her Gün Pratik Yap" data-en="Practice Every Day">Her Gün Pratik Yap</div>
-            <p class="step-desc" data-tr="Günde 10 dakika ile Almancada fark yarat." data-en="Just 10 minutes a day makes all the difference in German.">
-              Günde 10 dakika ile Almancada fark yarat.
-            </p>
-          </div>
+          <img src="img/mascot_party.webp" alt="" width="512" height="512" loading="lazy" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== PRICING ===== -->
-  <section class="pricing-section" id="pricing" aria-label="Pricing">
-    <div class="section-inner">
-      <p class="section-eyebrow" data-tr="PLANLAR" data-en="PLANS">PLANLAR</p>
-      <h2 class="section-title" data-tr="Ücretsiz Başla, İstersen Yükselt" data-en="Start Free, Upgrade Anytime">Ücretsiz Başla, İstersen Yükselt</h2>
-      <p class="section-subtitle" data-tr="DeutschGo'yu tamamen ücretsiz kullanabilirsin. Pro ile sınırları kaldır." data-en="DeutschGo is fully usable for free. Go Pro to remove all limits.">DeutschGo'yu tamamen ücretsiz kullanabilirsin. Pro ile sınırları kaldır.</p>
-
-      <div class="pricing-grid">
-        <!-- FREE -->
-        <div class="pricing-card pricing-free">
-          <div class="pricing-badge" data-tr="Ücretsiz" data-en="Free">Ücretsiz</div>
-          <h3 class="pricing-plan-name">Free</h3>
-          <ul class="pricing-features">
-            <li class="feat-yes" data-tr="Tüm flashcard kategorileri (sınırlı)" data-en="Flashcard categories (limited)">Tüm flashcard kategorileri (sınırlı)</li>
-            <li class="feat-yes" data-tr="Günlük 5 can" data-en="5 lives per day">Günlük 5 can</li>
-            <li class="feat-yes" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</li>
-            <li class="feat-yes" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</li>
-            <li class="feat-yes" data-tr="Günlük AI sohbet (sınırlı)" data-en="Daily AI chat (limited)">Günlük AI sohbet (sınırlı)</li>
-            <li class="feat-no" data-tr="Reklam gösterimleri" data-en="Ads shown">Reklam gösterimleri</li>
-            <li class="feat-no" data-tr="Tüm premium kategoriler" data-en="All premium categories">Tüm premium kategoriler</li>
-          </ul>
-          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="pricing-cta pricing-cta-free" target="_blank" rel="noopener" data-tr="Ücretsiz İndir" data-en="Download Free">Ücretsiz İndir</a>
-        </div>
-
-        <!-- PRO -->
-        <div class="pricing-card pricing-pro">
-          <div class="pricing-badge pricing-badge-pro" data-tr="Pro" data-en="Pro">Pro</div>
-          <h3 class="pricing-plan-name">Pro</h3>
-          <ul class="pricing-features">
-            <li class="feat-yes" data-tr="Tüm A1-A2 premium kategoriler" data-en="All A1-A2 premium categories">Tüm A1-A2 premium kategoriler</li>
-            <li class="feat-yes" data-tr="Sınırsız can" data-en="Unlimited lives">Sınırsız can</li>
-            <li class="feat-yes" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</li>
-            <li class="feat-yes" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</li>
-            <li class="feat-yes" data-tr="Sınırsız AI sohbet" data-en="Unlimited AI chat">Sınırsız AI sohbet</li>
-            <li class="feat-yes" data-tr="Tamamen reklamsız" data-en="No ads">Tamamen reklamsız</li>
-            <li class="feat-yes" data-tr="Tüm premium kategoriler açık" data-en="All premium categories unlocked">Tüm premium kategoriler açık</li>
-          </ul>
-          <a href="https://deutschgo.onelink.me/viho/7d18r763" class="pricing-cta pricing-cta-pro" target="_blank" rel="noopener" data-tr="App Store'da Görüntüle" data-en="View on App Store">App Store'da Görüntüle</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FAQ ===== -->
-  <section class="faq-section" id="faq">
-    <div class="section-inner">
-      <p class="section-eyebrow" data-tr="SSS" data-en="FAQ">SSS</p>
-      <h2 class="section-title" data-tr="Sıkça Sorulan Sorular" data-en="Frequently Asked Questions">Sıkça Sorulan Sorular</h2>
-
-      <div class="faq-list">
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="DeutschGo ücretsiz mi?" data-en="Is DeutschGo free?">DeutschGo ücretsiz mi?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="Evet, DeutschGo'yu ücretsiz olarak kullanabilirsin. Flashcard'lar, gramer kütüphanesi, mini oyunlar ve günlük AI sohbet Free planda dahildir. Pro'ya geçerek sınırsız can, tüm kategoriler, sınırsız AI sohbet ve reklamsız deneyim elde edebilirsin." data-en="Yes, DeutschGo is free to use. Flashcards, grammar library, mini games and daily AI chat are all included in the Free plan. Upgrade to Pro for unlimited lives, all categories, unlimited AI chat and an ad-free experience.">Evet, DeutschGo'yu ücretsiz olarak kullanabilirsin. Flashcard'lar, gramer kütüphanesi, mini oyunlar ve günlük AI sohbet Free planda dahildir. Pro'ya geçerek sınırsız can, tüm kategoriler, sınırsız AI sohbet ve reklamsız deneyim elde edebilirsin.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="DeutschGo hangi platformlarda kullanılabiliyor?" data-en="Which platforms is DeutschGo available on?">DeutschGo hangi platformlarda kullanılabiliyor?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="DeutschGo hem iOS (App Store) hem de Android (Google Play) platformlarında kullanılabiliyor. iPhone, iPad ve Android cihazlarda ücretsiz indirebilirsin." data-en="DeutschGo is available on both iOS (App Store) and Android (Google Play). You can download it for free on iPhone, iPad and Android devices.">DeutschGo hem iOS (App Store) hem de Android (Google Play) platformlarında kullanılabiliyor. iPhone, iPad ve Android cihazlarda ücretsiz indirebilirsin.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="Almanca bilgim olmadan başlayabilir miyim?" data-en="Can I start with zero German knowledge?">Almanca bilgim olmadan başlayabilir miyim?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="Kesinlikle. DeutschGo A1 seviyesinden, yani sıfırdan başlayacak şekilde tasarlandı. Temel kelimelerden günlük konuşmaya kadar adım adım ilerleyebilirsin." data-en="Absolutely. DeutschGo is designed to start from A1 level — from scratch. You can progress step by step from basic vocabulary to everyday conversations.">Kesinlikle. DeutschGo A1 seviyesinden, yani sıfırdan başlayacak şekilde tasarlandı. Temel kelimelerden günlük konuşmaya kadar adım adım ilerleyebilirsin.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="İnternet bağlantısı gerekiyor mu?" data-en="Does it require an internet connection?">İnternet bağlantısı gerekiyor mu?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="Flashcard'lar ve gramer içerikleri için internet gerekmez, çevrimdışı çalışır. AI sohbet ve bazı özellikler için internet bağlantısı gereklidir." data-en="Flashcards and grammar content work offline — no internet needed. AI chat and some features require an internet connection.">Flashcard'lar ve gramer içerikleri için internet gerekmez, çevrimdışı çalışır. AI sohbet ve bazı özellikler için internet bağlantısı gereklidir.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="Uygulama hangi dillerde kullanılabiliyor?" data-en="What languages is the app available in?">Uygulama hangi dillerde kullanılabiliyor?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="DeutschGo şu an Türkçe, İngilizce ve Almanca arayüz desteklemektedir. Uygulama içinden istediğin dili seçebilirsin." data-en="DeutschGo currently supports Turkish, English and German interfaces. You can switch between languages from within the app.">DeutschGo şu an Türkçe, İngilizce ve Almanca arayüz desteklemektedir. Uygulama içinden istediğin dili seçebilirsin.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-tr="AI sohbet nasıl çalışıyor?" data-en="How does the AI chat work?">AI sohbet nasıl çalışıyor?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-tr="AI sohbet, gerçek hayat senaryoları üzerine kurulu rol yapma konuşmalarından oluşur. Kafe siparişi, otel rezervasyonu, iş görüşmesi gibi 44 farklı senaryo arasından seçim yapabilirsin. AI seviyene göre uyum sağlar, hatalarını düzeltir ve seni yönlendirir." data-en="AI chat is built around real-life roleplay scenarios — ordering at a café, booking a hotel, job interviews and more. Choose from 44 scenarios across A1 and A2 levels. The AI adapts to your level, corrects your mistakes and guides you through the conversation.">AI sohbet, gerçek hayat senaryoları üzerine kurulu rol yapma konuşmalarından oluşur. Kafe siparişi, otel rezervasyonu, iş görüşmesi gibi 44 farklı senaryo arasından seçim yapabilirsin. AI seviyene göre uyum sağlar, hatalarını düzeltir ve seni yönlendirir.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== STATS BAR ===== -->
-  <section class="stats-bar" id="stats" aria-label="App statistics">
-    <div class="stats-grid">
-      <div class="stat-item fade-up">
-        <div class="stat-number">2000+</div>
-        <div class="stat-label" data-tr="Kelime" data-en="Words">Kelime</div>
-      </div>
-
-      <div class="stat-divider" aria-hidden="true"></div>
-
-      <div class="stat-item fade-up">
-        <div class="stat-number">110+</div>
-        <div class="stat-label" data-tr="Gramer Konusu" data-en="Grammar Topics">Gramer Konusu</div>
-      </div>
-
-      <div class="stat-divider" aria-hidden="true"></div>
-
-      <div class="stat-item fade-up">
-        <div class="stat-number">40+</div>
-        <div class="stat-label" data-tr="AI Senaryo" data-en="AI Scenarios">AI Senaryo</div>
-      </div>
-
-      <div class="stat-divider" aria-hidden="true"></div>
-
-      <div class="stat-item fade-up">
-        <div class="lang-flags">
-          <span class="lang-flag-item">🇹🇷</span>
-          <span class="lang-flag-item">🇬🇧</span>
-          <span class="lang-flag-item">🇩🇪</span>
-        </div>
-        <div class="stat-label" data-tr="Dil Desteği" data-en="Language Support">Dil Desteği</div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="contact">
-    <div class="footer-inner">
-      <a href="#" class="footer-logo" aria-label="DeutschGo">
-        <div class="footer-logo-icon"><picture><source srcset="icon.webp" type="image/webp"><img src="icon.png" alt="DeutschGo"></picture></div>
-        <span class="footer-logo-text">DeutschGo</span>
-      </a>
-
-      <div class="footer-center">
-        <p class="footer-copy">
-          © 2026 DeutschGo ·
-          <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a>
-        </p>
-        <p class="footer-copy" style="margin-top:4px;font-size:0.75rem;" data-tr="A1-A2 Almanca öğrenme uygulaması" data-en="A1-A2 German language learning app">
-          A1-A2 Almanca öğrenme uygulaması
-        </p>
-        <p class="footer-copy" style="margin-top:10px;font-size:0.75rem;">
+    <div class="wrap footer-grid">
+      <div class="footer-meta">
+        <a href="#" class="brand" aria-label="DeutschGo" style="margin-bottom:14px">
+          <picture><source srcset="icon.webp" type="image/webp"><img src="icon.png" alt="" width="36" height="36"></picture>
+          <span>Deutsch<b>Go</b></span>
+        </a>
+        <p data-tr="A1–B1 Almanca öğrenme uygulaması" data-en="A1–B1 German learning app">A1–B1 Almanca öğrenme uygulaması</p>
+        <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a></p>
+        <p>
           <a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
           &nbsp;·&nbsp;
           <a href="https://deutsch-go.com/terms" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a>
@@ -1638,8 +776,7 @@
       </div>
 
       <div class="footer-guides">
-        <p class="footer-guides-title" data-tr="Rehberler" data-en="Guides">Rehberler</p>
-        <a href="/blog" class="footer-guides-link all-link" data-tr-href="/blog?lang=tr" data-en-href="/blog?lang=en" data-tr="→ Tüm Yazılar" data-en="→ All Guides">→ Tüm Yazılar</a>
+        <p class="footer-guides-title"><span data-tr="Rehberler" data-en="Guides">Rehberler</span><a href="/blog" class="footer-guides-link all-link" data-tr-href="/blog?lang=tr" data-en-href="/blog?lang=en" data-tr="Tüm yazılar →" data-en="All guides →">Tüm yazılar →</a></p>
         <div class="footer-guides-grid">
           <a href="/blog/der-die-das" class="footer-guides-link" data-tr="Der, Die, Das" data-en="Der, Die, Das">Der, Die, Das</a>
           <a href="/blog/almanca-fiil-cekimi" class="footer-guides-link" data-tr="Fiil Çekimi" data-en="Verb Conjugation">Fiil Çekimi</a>
@@ -1673,105 +810,97 @@
           <a href="/blog/german-vs-dutch" class="footer-guides-link" data-tr="German vs Dutch" data-en="German vs Dutch">German vs Dutch</a>
         </div>
       </div>
-
-      <div class="footer-stores" aria-label="App stores">
-        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="footer-store-btn footer-store-btn-active" aria-label="App Store" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          <span class="footer-store-label">App Store</span>
-        </a>
-        <a href="https://deutschgo.onelink.me/viho/7d18r763" class="footer-store-btn footer-store-btn-active" aria-label="Google Play" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3.18 23.76c.3.16.64.2.97.12l11.4-11.4-2.55-2.55L3.18 23.76z" fill="#EA4335"/><path d="M20.68 10.04l-2.9-1.66-2.86 2.86 2.86 2.86 2.92-1.68c.83-.48.83-1.9-.02-2.38z" fill="#FBBC04"/><path d="M2.21.62C1.9.94 1.72 1.44 1.72 2.1v19.8c0 .66.18 1.16.5 1.47l.08.07L13.5 12.24v-.28L2.3.55l-.09.07z" fill="#4285F4"/><path d="M14.55 11.52L3.18.24c-.33-.31-.77-.35-1.17-.1l11.4 11.38 1.14-1.14v.14z" fill="#34A853"/></svg>
-          <span class="footer-store-label">Google Play</span>
-        </a>
-      </div>
     </div>
   </footer>
 
-  <!-- ===== JAVASCRIPT ===== -->
   <script>
-    // ── Language switching ──────────────────────────────────────────────────
-    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    let currentLang = browserLang.startsWith('tr') ? 'tr' : 'en';
+    // ── Language ────────────────────────────────────────────────────────────
+    var params = new URLSearchParams(location.search);
+    var browserLang = (navigator.language || 'en').toLowerCase();
+    var currentLang = params.get('lang') === 'en' || params.get('lang') === 'tr'
+      ? params.get('lang')
+      : (browserLang.startsWith('tr') ? 'tr' : 'en');
+
+    var META = {
+      tr: {
+        title: 'DeutschGo — Almanca Öğrenme Uygulaması | A1–B1 Deutsch Lernen',
+        desc: "DeutschGo ile Almancayı A1'den B1'e öğren: 3600+ kelime, 140+ gramer konusu, 40+ AI sohbet senaryosu, 14 mini oyun ve sesli hikayeler. Türkçe arayüz, ücretsiz başla."
+      },
+      en: {
+        title: 'DeutschGo — Learn German from A1 to B1',
+        desc: 'Learn German from A1 to B1 with DeutschGo: 3600+ words, 140+ grammar topics, 40+ AI roleplay scenarios, 14 mini games and stories read aloud. Free on iOS and Android.'
+      }
+    };
 
     function setLang(lang) {
       currentLang = lang;
-
-      // Toggle button states
-      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
-      document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
-
-      // Update <html lang>
+      ['tr', 'en'].forEach(function (l) {
+        var b = document.getElementById('btn-' + l);
+        b.classList.toggle('active', l === lang);
+        b.setAttribute('aria-pressed', l === lang);
+      });
       document.documentElement.lang = lang;
-
-      // Update all [data-tr] / [data-en] text nodes
-      document.querySelectorAll('[data-tr]').forEach(function(el) {
+      document.querySelectorAll('[data-tr]').forEach(function (el) {
         var text = el.getAttribute('data-' + lang);
         if (text !== null) el.innerHTML = text;
       });
-
-      // Update href for footer guide links
-      document.querySelectorAll('.footer-guides-link[data-tr-href]').forEach(function(el) {
+      document.querySelectorAll('.footer-guides-link[data-tr-href]').forEach(function (el) {
         var href = el.getAttribute('data-' + lang + '-href');
         if (href) el.setAttribute('href', href);
       });
-
-      // Update placeholders
-      document.querySelectorAll('[data-placeholder-' + lang + ']').forEach(function(el) {
-        el.placeholder = el.getAttribute('data-placeholder-' + lang);
-      });
-
-      // Update page title & meta description
-      if (lang === 'en') {
-        document.title = 'DeutschGo — Learn German in a Fun & Effective Way | A1-A2';
-        var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'Learn A1-A2 German with DeutschGo — flashcards, AI chat, mini games and grammar library. Now on App Store, coming soon on Google Play!');
-      } else {
-        document.title = 'DeutschGo — Almancayı Eğlenceli Öğren | A1-A2';
-        var desc = document.querySelector('meta[name="description"]');
-        if (desc) desc.setAttribute('content', 'DeutschGo ile A1-A2 Almancayı flashcard\'lar, AI sohbet, mini oyunlar ve gramer kütüphanesiyle öğren. App Store\'da şimdi, Google Play\'de yakında!');
-      }
+      document.title = META[lang].title;
+      var desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute('content', META[lang].desc);
+      tick(true);
     }
 
+    // ── der / die / das ticker ─────────────────────────────────────────────
+    var WORDS = [
+      ['der', 'Hund', 'köpek', 'dog'],
+      ['die', 'Wohnung', 'daire', 'flat'],
+      ['das', 'Brot', 'ekmek', 'bread'],
+      ['der', 'Termin', 'randevu', 'appointment'],
+      ['die', 'Großmutter', 'büyükanne', 'grandmother'],
+      ['das', 'Gespräch', 'konuşma', 'conversation']
+    ];
+    var COLORS = { der: 'var(--der)', die: 'var(--die)', das: 'var(--das)' };
+    var tickIndex = 0;
+    function tick(stay) {
+      if (!stay) tickIndex = (tickIndex + 1) % WORDS.length;
+      var w = WORDS[tickIndex];
+      var tag = document.getElementById('tk-tag');
+      tag.textContent = w[0];
+      tag.style.background = COLORS[w[0]];
+      document.getElementById('tk-word').textContent = w[1];
+      document.getElementById('tk-gloss').textContent = currentLang === 'tr' ? w[2] : w[3];
+    }
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(tick, 2400);
+    }
 
-    // Auto-apply detected language on load
     setLang(currentLang);
 
+    // ── Nav border on scroll ────────────────────────────────────────────────
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 8);
+    }, { passive: true });
+
     // ── FAQ accordion ───────────────────────────────────────────────────────
-    document.querySelectorAll('.faq-question').forEach(function(btn) {
-      btn.addEventListener('click', function() {
+    document.querySelectorAll('.faq-q').forEach(function (btn) {
+      btn.addEventListener('click', function () {
         var item = btn.closest('.faq-item');
-        var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+        var open = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function (el) {
           el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
         });
-        if (!isOpen) {
+        if (!open) {
           item.classList.add('open');
           btn.setAttribute('aria-expanded', 'true');
         }
       });
     });
-
-    // ── Intersection Observer for fade-up animations ────────────────────────
-    (function() {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      // Stagger feature cards
-      document.querySelectorAll('.fade-up').forEach(function(el, i) {
-        el.style.transitionDelay = (i * 0.08) + 's';
-        observer.observe(el);
-      });
-    })();
   </script>
-
 </body>
 </html>
