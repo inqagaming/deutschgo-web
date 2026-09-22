@@ -241,26 +241,33 @@
     .qr img { width: 64px; height: 64px; border-radius: 10px; background: #fff; padding: 4px; border: 1px solid var(--line); }
     @media (max-width: 700px) { .qr { display: none; } }
 
-    .hero-visual { position: relative; justify-self: center; width: min(460px, 100%); }
-    .device {
-      background: var(--ink); border-radius: 34px; padding: 12px;
-      box-shadow: 0 30px 80px rgba(17,20,24,.22), 0 6px 18px rgba(17,20,24,.12);
-      transform: rotate(2.5deg);
+    /* Phone frame around an app screen. Screens are 676×1385 crops without the status bar. */
+    .phone {
+      background: var(--ink); border-radius: 46px; padding: 10px;
+      box-shadow: 0 30px 70px rgba(17,20,24,.20), 0 6px 18px rgba(17,20,24,.10);
+      position: relative; width: 100%;
     }
-    .device img { border-radius: 24px; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: var(--page); }
+    .phone::before {
+      content: ''; position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+      width: 32%; height: 24px; border-radius: 999px; background: var(--ink); z-index: 1;
+    }
+    .phone .screen { border-radius: 37px; overflow: hidden; background: #F0F4F8; padding-top: 50px; }
+    .phone img { width: 100%; aspect-ratio: 676 / 1385; object-fit: cover; object-position: top; }
+    .hero-visual { position: relative; justify-self: center; width: min(320px, 76vw); }
+    .hero-visual .phone { transform: rotate(3deg); }
     .hero-mascot {
       position: absolute; width: 150px; left: -58px; bottom: -34px;
       filter: drop-shadow(0 12px 20px rgba(17,20,24,.18));
     }
     .hero-bubble {
-      position: absolute; top: 34px; right: -26px;
+      position: absolute; top: 96px; right: -64px;
       background: var(--card); border-radius: 16px; padding: 12px 16px; box-shadow: var(--shadow);
       font-weight: 700; font-size: .92rem; display: flex; gap: 10px; align-items: center;
       transform: rotate(-3deg);
     }
     .hero-bubble i { font-style: normal; font-size: 1.4rem; }
     .hero-bubble small { display: block; font-weight: 500; color: var(--ink-mute); font-size: .78rem; }
-    @media (max-width: 520px) { .hero-mascot { width: 104px; left: -12px; bottom: -28px; } .hero-bubble { right: -4px; } }
+    @media (max-width: 520px) { .hero-mascot { width: 100px; left: -30px; bottom: -24px; } .hero-bubble { right: -22px; } }
 
     /* ===== NUMBERS ===== */
     .numbers { padding: 0; }
@@ -316,16 +323,17 @@
       .show-row + .show-row { margin-top: 72px; }
     }
     .show-media {
-      background: var(--tint, var(--page)); border-radius: 28px; padding: 36px 36px 0;
-      overflow: hidden; display: flex; justify-content: center;
+      background: var(--tint, var(--page)); border-radius: 28px; padding: 44px 24px 0;
+      overflow: hidden; display: flex; justify-content: center; align-items: flex-start; gap: 20px;
+      height: 520px;
     }
-    .show-media img {
-      width: 100%; max-width: 420px; border-radius: 18px 18px 0 0;
-      box-shadow: 0 -2px 30px rgba(17,20,24,.12);
-      aspect-ratio: 4 / 3.6; object-fit: cover; object-position: top;
+    .show-media .phone { width: 260px; flex: none; }
+    .show-media.pair .phone:nth-child(2) { margin-top: 56px; }
+    @media (max-width: 560px) {
+      .show-media { height: 440px; padding-top: 32px; }
+      .show-media .phone { width: 220px; }
+      .show-media.pair .phone { width: 170px; }
     }
-    .show-media.pair { gap: 16px; padding: 32px 28px 0; }
-    .show-media.pair img { width: 50%; aspect-ratio: 3 / 4; }
     .show-text h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; letter-spacing: -.02em; font-weight: 800; text-wrap: balance; }
     .show-text p { color: var(--ink-soft); font-size: 1.05rem; margin-top: 14px; max-width: 52ch; }
     .checks { list-style: none; margin-top: 22px; display: grid; gap: 10px; }
@@ -489,9 +497,7 @@
         </div>
 
         <div class="hero-visual">
-          <div class="device">
-            <img src="img/learn.webp" alt="DeutschGo Learn screen: today's tasks and the learning path" width="1100" height="1467" fetchpriority="high" />
-          </div>
+          <div class="phone"><div class="screen"><img src="img/tr/learn.webp" data-shot="learn" alt="DeutschGo Learn screen: today's tasks and the learning path" width="676" height="1385" fetchpriority="high" /></div></div>
           <div class="hero-bubble" aria-hidden="true">
             <i>🔥</i>
             <span><span data-tr="Günlük hedef" data-en="Daily goal">Günlük hedef</span><small data-tr="30 XP · 5 görev" data-en="30 XP · 5 tasks">30 XP · 5 görev</small></span>
@@ -555,7 +561,7 @@
 
         <div class="show-row">
           <div class="show-media" style="--tint:#E0FAF6">
-            <img src="img/flashcard.webp" alt="A flashcard asking for the article of Großmutter" loading="lazy" width="1100" height="900" style="aspect-ratio:1100/900;object-position:center" />
+            <div class="phone"><div class="screen"><img src="img/tr/flashcard.webp" data-shot="flashcard" alt="A flashcard asking for the article of Herr" width="676" height="1385" loading="lazy" /></div></div>
           </div>
           <div class="show-text">
             <span class="eyebrow" data-tr="Kelime kartları" data-en="Word cards">Kelime kartları</span>
@@ -571,7 +577,7 @@
 
         <div class="show-row flip">
           <div class="show-media" style="--tint:#EFE7FE">
-            <img src="img/chat.webp" alt="The list of AI roleplay scenarios" loading="lazy" width="1100" height="1467" />
+            <div class="phone"><div class="screen"><img src="img/tr/chat.webp" data-shot="chat" alt="The list of AI roleplay scenarios" width="676" height="1385" loading="lazy" /></div></div>
           </div>
           <div class="show-text">
             <span class="eyebrow" data-tr="AI sohbet" data-en="AI chat">AI sohbet</span>
@@ -587,7 +593,7 @@
 
         <div class="show-row">
           <div class="show-media" style="--tint:#FFF3DC">
-            <img src="img/grammar.webp" alt="The grammar library with A1, A2 and B1 sections" loading="lazy" width="1100" height="1467" />
+            <div class="phone"><div class="screen"><img src="img/tr/grammar.webp" data-shot="grammar" alt="The grammar library with A1 and A2 sections" width="676" height="1385" loading="lazy" /></div></div>
           </div>
           <div class="show-text">
             <span class="eyebrow" data-tr="Gramer kütüphanesi" data-en="Grammar library">Gramer kütüphanesi</span>
@@ -602,13 +608,24 @@
 
         <div class="show-row flip">
           <div class="show-media pair" style="--tint:#FFE7E0">
-            <img src="img/games.webp" alt="The mini games screen" loading="lazy" width="1100" height="1467" />
-            <img src="img/listen.webp" alt="The Listen and Choose game" loading="lazy" width="1100" height="1000" />
+            <div class="phone"><div class="screen"><img src="img/tr/games.webp" data-shot="games" alt="The mini games screen" width="676" height="1385" loading="lazy" /></div></div>
+            <div class="phone"><div class="screen"><img src="img/tr/verbs.webp" data-shot="verbs" alt="A verb conjugation game" width="676" height="1385" loading="lazy" /></div></div>
           </div>
           <div class="show-text">
             <span class="eyebrow" data-tr="Mini oyunlar" data-en="Mini games">Mini oyunlar</span>
             <h3 data-tr="Tekrar, oyun gibi." data-en="Revision that plays like a game.">Tekrar, oyun gibi.</h3>
-            <p data-tr="14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinle ve seç, artikel ustası, eşleştir, hızlı kelime, hikayede boşluk doldurma ve dahası. Her gün yeni bir günün oyunu." data-en="14 games that only use words from lessons you have opened: listen and choose, article master, match, speed vocab, story gap fill and more — plus a new game of the day, every day.">14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinle ve seç, artikel ustası, eşleştir, hızlı kelime, hikayede boşluk doldurma ve dahası. Her gün yeni bir günün oyunu.</p>
+            <p data-tr="14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinleme ustası, artikel ustası, fiil çekimi, eşleştirme, hızlı kelime ve dahası. Her gün yeni bir günün oyunu, istediğinde de tüm seviyelerden karma bir sınav." data-en="14 games that only use words from lessons you have opened: listening master, article master, verb conjugation, match, speed vocab and more, with a new game of the day and a mixed quiz across every level.">14 oyun, yalnızca açtığın derslerdeki kelimelerle: dinleme ustası, artikel ustası, fiil çekimi, eşleştirme, hızlı kelime ve dahası. Her gün yeni bir günün oyunu, istediğinde de tüm seviyelerden karma bir sınav.</p>
+          </div>
+        </div>
+
+        <div class="show-row">
+          <div class="show-media" style="--tint:#DDF3F7">
+            <div class="phone"><div class="screen"><img src="img/tr/progress.webp" data-shot="progress" alt="The profile screen with streak, hearts, lessons and badges" width="676" height="1385" loading="lazy" /></div></div>
+          </div>
+          <div class="show-text">
+            <span class="eyebrow" data-tr="İlerleme" data-en="Progress">İlerleme</span>
+            <h3 data-tr="İlerlemeni gör, serini koru." data-en="See your progress, keep your streak.">İlerlemeni gör, serini koru.</h3>
+            <p data-tr="Günlük serin, kazandığın XP, bitirdiğin dersler ve rozetlerin tek ekranda. Yıldızladığın kelimeler de burada seni bekler." data-en="Your daily streak, XP, finished lessons and badges on one screen, with the words you starred waiting for you.">Günlük serin, kazandığın XP, bitirdiğin dersler ve rozetlerin tek ekranda. Yıldızladığın kelimeler de burada seni bekler.</p>
           </div>
         </div>
 
@@ -847,6 +864,11 @@
       document.querySelectorAll('.footer-guides-link[data-tr-href]').forEach(function (el) {
         var href = el.getAttribute('data-' + lang + '-href');
         if (href) el.setAttribute('href', href);
+      });
+      document.querySelectorAll('img[data-shot]').forEach(function (img) {
+        var shot = img.getAttribute('data-shot');
+        img.onerror = function () { img.onerror = null; img.src = 'img/tr/' + shot + '.webp'; };
+        img.src = 'img/' + lang + '/' + shot + '.webp';
       });
       document.title = META[lang].title;
       var desc = document.querySelector('meta[name="description"]');
