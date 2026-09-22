@@ -207,15 +207,14 @@
     .level-pill .new { color: var(--ink-soft); font-weight: 600; padding-right: 10px; }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.3rem);
+      font-size: clamp(2rem, 4.9vw, 3.6rem);
       line-height: 1.02; letter-spacing: -.035em; font-weight: 800;
       text-wrap: balance;
     }
     .hero h1 .hl { color: var(--teal-deep); }
-    /* Three lines in both languages: each line stays whole, and the longer
-       Turkish lines are set a little smaller so they still fit the column. */
+    /* Three lines in both languages, at one size, so switching TR/EN does not
+       resize the headline. The size is set by the longer Turkish lines. */
     .hero h1 span { white-space: nowrap; }
-    html[lang="tr"] .hero h1 { font-size: clamp(2rem, 4.9vw, 3.6rem); }
     .hero-sub { font-size: 1.15rem; color: var(--ink-soft); max-width: 50ch; margin: 22px 0 32px; }
 
     /* der / die / das word ticker: the thing every learner of German meets first */
