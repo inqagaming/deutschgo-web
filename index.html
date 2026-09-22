@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W44N10VTQL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W44N10VTQL');
-  </script>
-  <script>
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest('a[href*="onelink.me"]');
-      if (!link) return;
-      gtag('event', 'app_store_click', {
-        link_location: link.className || 'unknown',
-        link_label: (link.getAttribute('aria-label') || link.textContent || '').trim(),
-        page_path: window.location.pathname
-      });
-    });
-  </script>
+  <!-- Analytics and AppsFlyer load only after cookie consent: /consent.js -->
+  <script src="/consent.js" defer data-appsflyer></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,12 +69,6 @@
       "url": "https://deutsch-go.com"
     }
   }
-  </script>
-
-  <!-- AppsFlyer Smart Banner -->
-  <script>
-  !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyersdk.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "004eb0ab-52e6-4ed5-814a-1c4b01a2ece7"}});
-  AF('banners', 'showBanner')
   </script>
 
   <!-- Google Fonts -->
@@ -797,9 +774,11 @@
         <p data-tr="A1–B1 Almanca kelime uygulaması" data-en="A1–B1 German vocabulary app">A1–B1 Almanca kelime uygulaması</p>
         <p>© 2026 DeutschGo · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a></p>
         <p>
-          <a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
+          <a href="https://inqagaming.github.io/deutschgo-legal/privacy-policy.html" target="_blank" rel="noopener" data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</a>
           &nbsp;·&nbsp;
-          <a href="https://deutsch-go.com/terms" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a>
+          <a href="https://inqagaming.github.io/deutschgo-legal/terms-of-service.html" target="_blank" rel="noopener" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</a>
+          &nbsp;·&nbsp;
+          <button type="button" data-consent-open data-tr="Çerez tercihleri" data-en="Cookie settings">Çerez tercihleri</button>
         </p>
       </div>
 

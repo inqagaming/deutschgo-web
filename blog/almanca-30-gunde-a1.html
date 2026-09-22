@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W44N10VTQL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W44N10VTQL');
-  </script>
-  <script>
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest('a[href*="onelink.me"]');
-      if (!link) return;
-      gtag('event', 'app_store_click', {
-        link_location: link.className || 'unknown',
-        link_label: (link.getAttribute('aria-label') || link.textContent || '').trim(),
-        page_path: window.location.pathname
-      });
-    });
-  </script>
+  <!-- Analytics and AppsFlyer load only after cookie consent: /consent.js -->
+  <script src="/consent.js" defer></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -358,7 +341,7 @@
   <footer class="dg-footer">
     <div class="dg-footer-inner">
       <p>© 2026 DeutschGo · A1–B1 Almanca kelime uygulaması · <a href="mailto:info@deutsch-go.com">info@deutsch-go.com</a></p>
-      <p class="dg-footer-links"><a href="/blog?lang=tr">Rehberler</a><a href="/?lang=tr">Ana sayfa</a><a href="https://deutsch-go.com/privacy-policy" target="_blank" rel="noopener">Gizlilik Politikası</a><a href="https://deutsch-go.com/terms" target="_blank" rel="noopener">Kullanım Koşulları</a></p>
+      <p class="dg-footer-links"><a href="/blog?lang=tr">Rehberler</a><a href="/?lang=tr">Ana sayfa</a><a href="https://inqagaming.github.io/deutschgo-legal/privacy-policy.html" target="_blank" rel="noopener">Gizlilik Politikası</a><a href="https://inqagaming.github.io/deutschgo-legal/terms-of-service.html" target="_blank" rel="noopener">Kullanım Koşulları</a><button type="button" data-consent-open>Çerez tercihleri</button></p>
     </div>
   </footer>
 
