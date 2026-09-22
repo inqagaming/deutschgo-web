@@ -4,7 +4,7 @@
     {
       "name": "deutschgo-web",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd /Users/ali.avcibasi/StudioProjects/deutschgo-web && python3 -m http.server 8765"],
+      "runtimeArgs": ["-c", "cd /Users/ali.avcibasi/DeutschGo-Apps/deutschgo-web && python3 -m http.server 8765"],
       "port": 8765
     }
   ]

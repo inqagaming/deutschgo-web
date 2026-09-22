@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://deutsch-go.com/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/?lang=tr"/>
@@ -14,7 +14,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://deutsch-go.com/blog</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog?lang=tr"/>
@@ -460,5 +460,35 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/how-to-reach-german-b1"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-b1-nasil-gecilir"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-30-gunde-a1</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-30-gunde-a1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-a1-in-30-days"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-a1-in-30-days</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-a1-in-30-days"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-30-gunde-a1"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/almanca-a1-sinavi-hazirlik</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://deutsch-go.com/blog/almanca-a1-sinavi-hazirlik"/>
+  </url>
+  <url>
+    <loc>https://deutsch-go.com/blog/german-vs-dutch</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deutsch-go.com/blog/german-vs-dutch"/>
   </url>
 </urlset>
