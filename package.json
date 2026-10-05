@@ -1,0 +1,16 @@
+{
+  "name": "deutschgo-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "deutsch-go.com — static site and its browser tests",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "serve": "python3 serve.py 4173"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
